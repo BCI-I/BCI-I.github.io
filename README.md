@@ -1,1 +1,1 @@
-# BCI-MIT
+# MIT BCI Club
