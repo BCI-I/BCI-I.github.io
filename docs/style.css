@@ -1,0 +1,34 @@
+body {
+  background-color: #2A3947 !important;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: Algerian;
+}
+
+nav {
+  background-color: #2A3947 !important;
+}
+nav .navbar {
+  height: 120px !important;
+}
+nav img {
+  width: 120px;
+  height: 80px;
+  max-height: 80px !important;
+}
+nav .navbartitle {
+  color: white !important;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.description h1, .description h2, .description h3, .description h4, .description h5, .description h6 {
+  color: white;
+  margin-top: 20px;
+}
+.description p {
+  color: white;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
