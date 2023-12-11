@@ -14,7 +14,7 @@ nav {
   background-color: #2A3947 !important;
 }
 nav .navbar-item:hover {
-  color: rgba(255, 204, 103, 0.9843137255);
+  color: #ffcc67fb;
 }
 nav .navbar {
   height: 120px !important;
@@ -96,7 +96,7 @@ footer {
 .description .description-content .highlight {
   display: inline;
   padding: 0.25em 0.35rem;
-  background: rgba(255, 204, 103, 0.9843137255);
+  background: #ffcc67fb;
   color: #2A3947;
   border-radius: 0.25em;
   font-weight: 900;
@@ -110,6 +110,7 @@ footer {
 .description .description-content h1, .description .description-content h2, .description .description-content h3, .description .description-content h4, .description .description-content h5, .description .description-content h6 {
   color: white;
   cursor: default;
+  scroll-margin-top: 100px;
 }
 .description .description-content h2 {
   margin-top: 7rem;
@@ -121,7 +122,7 @@ footer {
   padding-left: 2rem;
   margin-top: 3rem;
   margin-bottom: 0px;
-  color: rgba(244, 211, 146, 0.9843137255);
+  color: #f4d392fb;
 }
 .description .description-content p {
   color: white;
@@ -130,15 +131,15 @@ footer {
   font-weight: 200;
 }
 .description .description-content b {
-  color: rgba(254, 191, 65, 0.9843137255);
+  color: #febf41fb;
 }
 .description .description-content a {
-  color: rgb(173, 136, 255);
+  color: #ad88ff;
   font-weight: 600;
 }
 .description .toc {
   position: fixed;
-  top: 40vh;
+  bottom: 4vh;
   left: 0;
   width: 225px;
   padding-left: 1em;
@@ -150,7 +151,7 @@ footer {
   color: #aabfd1;
 }
 .description .toc a:hover {
-  color: rgba(255, 204, 103, 0.9843137255);
+  color: #ffcc67fb;
   font-weight: 900;
   text-decoration: underline;
 }
@@ -174,6 +175,12 @@ footer {
   background: white;
   margin: 0.5em;
   line-height: 100px;
+  text-align: center;
+}
+.partner-logo img {
+  max-width: 100%;
+  height: 80px;
+  max-height: 80px;
 }
 
 .partner-logo-transparent {
