@@ -1,14 +1,31 @@
 $dark: #2A3947
-
+$darker: #1E2A35
+$darkest: #0d1e32
+$offwhite: #d5d5d5
+$grey: #aabfd1
+$highlight: #ffcc67fb
+$highlight_bold : #febf41fb
+$link: rgb(173, 136, 255)
+$h4color: #f4d392fb
 
 body
     background-color: $dark !important
     min-height: 100vh
     min-width: 100vw
-    font-family: Algerian
+    font-family: Nunito Sans
+    padding-top: 120px  // navbar height
 
+    color: white
+    font-size: 1.6rem
+    cursor: default
+
+
+/* --------------------------------- navbar --------------------------------- */
 nav
     background-color: $dark !important
+
+    .navbar-item:hover
+        color: $highlight
 
     .navbar
         height: 120px !important
@@ -22,13 +39,149 @@ nav
         color: white !important
         font-size: 60px
         font-weight: 700
+        padding-left: 4rem
 
+    .navbarpage
+        color: white !important
+        font-size: 30px
+        font-weight: 700
+        margin-right: 2rem
+
+/* --------------------------------- footer --------------------------------- */
+footer
+    background-color: $dark !important
+    position: absolute
+    bottom: 0
+    width: 100%
+    border-top: 1px solid white
+
+/* ------------------------------ landing page ------------------------------ */
+.landing-hero
+    color: $offwhite
+    background-color: $darker
+    font-size: 4rem
+    font-weight: 700
+    padding: 2rem 6rem 2rem 6rem
+
+    strong
+        color: white
+        font-weight: 900
+        text-decoration: underline
+
+/* ----------------------------- hackathon page ----------------------------- */
+.transparent
+    background-color: transparent !important
+
+.hackathon-hero
+    color: white
+    background-color: $darker
+    background-image: url(imgs/header_head_only_transp.png)
+    background-repeat: no-repeat
+    background-position: right
+    background-size: 20%
+    
+    font-size: 4rem
+    font-weight: 700
+    padding: 2rem 6rem 2rem 6rem
+
+
+    strong
+        color: white
+        font-weight: 900
+        text-decoration: underline
+
+.transparent
+    color: rgba(0, 0, 0, 0)
+    
 
 .description
-    h1, h2, h3, h4, h5, h6
-        color: white 
-        margin-top: 20px
+    margin-top: -4rem
+    .description-content
+        padding-left: 300px
+        padding-right: 6rem
 
-    p
-        color: white
-        font-size: 20px
+        .highlight
+            display: inline
+            padding: .25em .35rem
+            background: $highlight
+            color: $dark
+            border-radius: .25em
+            font-weight: 900
+
+        .title
+            font-size: 3rem
+            font-weight: 700
+            width: calc(100% - 100px)
+            text-align: center
+
+        h1, h2, h3, h4, h5, h6
+            color: white
+            cursor: default
+
+        h2
+            margin-top: 7rem
+            font-weight: 900
+
+        h4
+            font-weight: 800
+            font-size: 1.5rem
+            padding-left: 2rem
+            margin-top: 3rem
+            margin-bottom: 0px
+            color: $h4color
+
+        p
+            color: white
+            font-size: 20px
+            cursor: default
+            font-weight: 200
+
+        b
+            color: $highlight_bold
+
+        a
+            color: $link
+            font-weight: 600
+
+
+    .toc
+        position: fixed
+        top: 40vh
+        left: 0
+        width: 225px
+        padding-left: 1em
+
+        a
+            font-size: 1.75rem
+            font-weight: 800
+            margin-top: 2.5rem
+            color: $grey
+
+        a:hover
+            color: $highlight
+            font-weight: 900
+            text-decoration: underline
+
+.sponsor_card
+    padding: 2rem
+    border-radius: 12px
+    max-width: 70%
+    margin: 2rem auto
+
+    img
+        margin-bottom: 1rem
+
+    b
+        color: $dark !important
+        font-weight: 900 !important
+
+    
+.partner-logo
+    // max-width: 200px
+    height: 100px
+    background: white
+    margin: 0.5em
+    line-height: 100px
+
+.partner-logo-transparent
+    background: transparent

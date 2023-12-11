@@ -2,11 +2,19 @@ body {
   background-color: #2A3947 !important;
   min-height: 100vh;
   min-width: 100vw;
-  font-family: Algerian;
+  font-family: Nunito Sans;
+  padding-top: 120px;
+  color: white;
+  font-size: 1.6rem;
+  cursor: default;
 }
 
+/* --------------------------------- navbar --------------------------------- */
 nav {
   background-color: #2A3947 !important;
+}
+nav .navbar-item:hover {
+  color: rgba(255, 204, 103, 0.9843137255);
 }
 nav .navbar {
   height: 120px !important;
@@ -20,15 +28,156 @@ nav .navbartitle {
   color: white !important;
   font-size: 60px;
   font-weight: 700;
+  padding-left: 4rem;
+}
+nav .navbarpage {
+  color: white !important;
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 2rem;
 }
 
-.description h1, .description h2, .description h3, .description h4, .description h5, .description h6 {
-  color: white;
-  margin-top: 20px;
+/* --------------------------------- footer --------------------------------- */
+footer {
+  background-color: #2A3947 !important;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid white;
 }
-.description p {
+
+/* ------------------------------ landing page ------------------------------ */
+.landing-hero {
+  color: #d5d5d5;
+  background-color: #1E2A35;
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 2rem 6rem 2rem 6rem;
+}
+.landing-hero strong {
+  color: white;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+/* ----------------------------- hackathon page ----------------------------- */
+.transparent {
+  background-color: transparent !important;
+}
+
+.hackathon-hero {
+  color: white;
+  background-color: #1E2A35;
+  background-image: url(imgs/header_head_only_transp.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 20%;
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 2rem 6rem 2rem 6rem;
+}
+.hackathon-hero strong {
+  color: white;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.transparent {
+  color: rgba(0, 0, 0, 0);
+}
+
+.description {
+  margin-top: -4rem;
+}
+.description .description-content {
+  padding-left: 300px;
+  padding-right: 6rem;
+}
+.description .description-content .highlight {
+  display: inline;
+  padding: 0.25em 0.35rem;
+  background: rgba(255, 204, 103, 0.9843137255);
+  color: #2A3947;
+  border-radius: 0.25em;
+  font-weight: 900;
+}
+.description .description-content .title {
+  font-size: 3rem;
+  font-weight: 700;
+  width: calc(100% - 100px);
+  text-align: center;
+}
+.description .description-content h1, .description .description-content h2, .description .description-content h3, .description .description-content h4, .description .description-content h5, .description .description-content h6 {
+  color: white;
+  cursor: default;
+}
+.description .description-content h2 {
+  margin-top: 7rem;
+  font-weight: 900;
+}
+.description .description-content h4 {
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 0px;
+  color: rgba(244, 211, 146, 0.9843137255);
+}
+.description .description-content p {
   color: white;
   font-size: 20px;
+  cursor: default;
+  font-weight: 200;
+}
+.description .description-content b {
+  color: rgba(254, 191, 65, 0.9843137255);
+}
+.description .description-content a {
+  color: rgb(173, 136, 255);
+  font-weight: 600;
+}
+.description .toc {
+  position: fixed;
+  top: 40vh;
+  left: 0;
+  width: 225px;
+  padding-left: 1em;
+}
+.description .toc a {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-top: 2.5rem;
+  color: #aabfd1;
+}
+.description .toc a:hover {
+  color: rgba(255, 204, 103, 0.9843137255);
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.sponsor_card {
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 70%;
+  margin: 2rem auto;
+}
+.sponsor_card img {
+  margin-bottom: 1rem;
+}
+.sponsor_card b {
+  color: #2A3947 !important;
+  font-weight: 900 !important;
+}
+
+.partner-logo {
+  height: 100px;
+  background: white;
+  margin: 0.5em;
+  line-height: 100px;
+}
+
+.partner-logo-transparent {
+  background: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
