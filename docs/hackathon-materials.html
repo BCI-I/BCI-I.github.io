@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BCI hackathon</title>
+    <!-- favicon -->
+    <link rel="icon" href="imgs/white_logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
+  <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+<body>
+    <!-- ------------------------------- navbar -------------------------------- -->
+    <nav class="navbar is-transparent is-fixed-top">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html">
+            <img src="imgs/white_logo.svg" alt="Brain Computer Initiative Logo">
+          </a>
+          <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="navbar-menu" >
+          <div class="navbar-start">
+            <a class="navbar-item navbartitle" href="https://bci-i.github.io/">
+              BCI initiative
+            </a>
+          </div>
+          <div class="navbar-end">
+            <a class="navbar-item navbarpage" href="https://bci-i.github.io/hackathon">
+              MIT hackathon
+            </a>
+          </div>
+        </div>
+    </nav>
+
+    <section class="hero hackathon-hero">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <p>
+                    MIT's first BCI Hackathon
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="materials">
+        <h1 class="has-text-centered">Intro to BCI</h1>
+
+            <p>
+                A few paragraphs covering the basic principles of modern BCI.
+            </p><br>
+
+            <p>
+                Link to resources about EEG data aquisition, processing and analysis. 
+            </p><br>
+
+            <p>
+                Link to a few relevant publications and projects available online.
+            </p><br>
+
+
+
+
+        <h1 class="has-text-centered">Hardware</h1>
+
+        <p>
+            Add a couple general paragraphs describing the kind of hardware used in the 
+            competition. 
+        </p>
+
+        <h1 class="has-text-centered" id="xon">X.on EEG headset</h1>
+
+        <!-- xon image -->
+        <div class="has-text-centered imgcontainer">
+            <img src="imgs/xon.png" alt="X.on EEG headset">
+            <p>The X.on EEG headset</p>
+        </div>
+
+        <p>
+            The
+            <a href="https://www.x-on.io/" target="_blank">X.on</a>
+            EEG headsets by 
+            <a href="https://www.brainproducts.com/" target="_blank">Brain Products</a>
+            is caracterized by its flexibility, ease of use and high quality signal.
+            It features 
+            <span class="highlight">7 electrodes</span> (passive sponge-based; channels: F3, F4, C3, Cz, C4, P3, P4 + ear clip ground)
+            weighs only 110g, allows for 
+            <span class="highlight">wireless data streaming</span> over Bluetooth and has more than 5 hours of battery life. 
+        </p><br>
+
+        <div class="has-text-centered imgcontainer">
+            <img src="imgs/xon_electrodes.png" alt="X.on EEG headset">
+            <p>X.on EEG headset channels</p>
+        </div>
+
+
+        <p>
+            Paragraph <span class="highlight">to be added</span>: how to stream data through the APP or 
+            directly through LSL (Lab Streaming Layer) on a computer.
+        </p><br>
+
+        <p>
+            <b>Lab Streaming Layer instructions</b>.<br>
+            TODO: add link to LSL website & basic instructions on how to use LSL
+            to stream data and access them in Python. 
+        </p><br>
+
+        <h1 class="has-text-centered">Duckiebot</h1>
+
+        <p>
+            To add: describe the Duckiebot robot, how to use it, and the software ecosystem around it.
+        </p>
+
+    </section>
+</body>

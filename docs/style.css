@@ -15,7 +15,7 @@ nav {
   background-color: #2A3947 !important;
 }
 nav .navbar-item:hover {
-  color: #ffcc67fb;
+  color: rgba(255, 204, 103, 0.9843137255);
 }
 nav .navbar {
   height: 120px !important;
@@ -101,6 +101,15 @@ footer {
   color: rgba(0, 0, 0, 0);
 }
 
+.highlight {
+  display: inline;
+  padding: 0.25em 0.35rem;
+  background: rgba(255, 204, 103, 0.9843137255);
+  color: #2A3947;
+  border-radius: 0.25em;
+  font-weight: 900;
+}
+
 .description {
   margin-top: -4rem;
 }
@@ -112,14 +121,6 @@ footer {
   .description .description-content {
     padding: 0px 2rem;
   }
-}
-.description .description-content .highlight {
-  display: inline;
-  padding: 0.25em 0.35rem;
-  background: #ffcc67fb;
-  color: #2A3947;
-  border-radius: 0.25em;
-  font-weight: 900;
 }
 .description .description-content .title {
   font-size: 2.5rem;
@@ -147,7 +148,7 @@ footer {
   padding-left: 2rem;
   margin-top: 3rem;
   margin-bottom: 0px;
-  color: #f4d392fb;
+  color: rgba(244, 211, 146, 0.9843137255);
 }
 .description .description-content p {
   color: white;
@@ -156,11 +157,16 @@ footer {
   font-weight: 200;
 }
 .description .description-content b {
-  color: #ffcc67fb;
+  color: rgba(255, 204, 103, 0.9843137255);
 }
 .description .description-content a {
-  color: #ad88ff;
-  font-weight: 600;
+  color: rgb(173, 136, 255);
+  font-weight: 800;
+}
+.description .description-content a:hover {
+  color: rgba(255, 204, 103, 0.9843137255);
+  font-weight: 900;
+  text-decoration: underline;
 }
 .description .toc {
   position: fixed;
@@ -181,7 +187,7 @@ footer {
   color: #aabfd1;
 }
 .description .toc a:hover {
-  color: #ffcc67fb;
+  color: rgba(255, 204, 103, 0.9843137255);
   font-weight: 900;
   text-decoration: underline;
 }
@@ -191,7 +197,7 @@ footer {
   padding: 24px 6rem 2rem 6rem;
   margin-top: 2em;
   border-radius: 12px;
-  max-height: 500px;
+  max-height: 800px;
   overflow-y: scroll;
 }
 @media (max-width: 768px) {
@@ -209,6 +215,9 @@ footer {
   max-width: 70%;
   margin: 2rem auto;
 }
+.sponsors-container .sponsor_card p {
+  color: #2A3947 !important;
+}
 @media (max-width: 768px) {
   .sponsors-container .sponsor_card {
     max-width: 100%;
@@ -220,6 +229,20 @@ footer {
 .sponsors-container .sponsor_card b {
   color: #2A3947 !important;
   font-weight: 900 !important;
+}
+.sponsors-container .sponsor_card a {
+  color: black !important;
+  font-weight: 800;
+}
+.sponsors-container .sponsor_card a:hover {
+  font-weight: 900;
+  text-decoration: underline;
+}
+.sponsors-container .sponsor_card .sponsor-name {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-decoration: underline;
 }
 .sponsors-container .partner-logo {
   height: 100px;
@@ -241,6 +264,58 @@ footer {
 }
 .sponsors-container .partner-logo-transparent {
   background: transparent;
+}
+
+/* ----------------------------- materials page ----------------------------- */
+.imgcontainer {
+  border-radius: 24px;
+  margin: 1rem 0px;
+}
+.imgcontainer img {
+  border-radius: 24px;
+  max-width: 50%;
+  max-height: 100%;
+}
+@media (max-width: 768px) {
+  .imgcontainer img {
+    max-width: 100%;
+  }
+}
+.imgcontainer p {
+  font-size: 0.9rem !important;
+}
+
+.materials {
+  padding: 2rem 6rem 2rem 6rem;
+}
+@media (max-width: 768px) {
+  .materials {
+    padding: 12px 24px;
+  }
+}
+.materials h1, .materials h2, .materials h3, .materials h4, .materials h5, .materials h6 {
+  color: white;
+  cursor: default;
+}
+.materials h1 {
+  font-size: 2rem;
+  margin-top: 2em;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+.materials h2 {
+  font-size: 1.3rem;
+  margin-top: 0.5em;
+  font-weight: 700;
+}
+.materials a {
+  color: rgb(173, 136, 255);
+  font-weight: 800;
+}
+.materials a:hover {
+  color: rgba(255, 204, 103, 0.9843137255);
+  font-weight: 900;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
