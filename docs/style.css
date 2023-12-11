@@ -4,8 +4,9 @@ body {
   min-width: 100vw;
   font-family: Nunito Sans;
   padding-top: 120px;
+  padding-bottom: 120px;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1rem;
   cursor: default;
 }
 
@@ -54,6 +55,13 @@ footer {
   font-weight: 700;
   padding: 2rem 6rem 2rem 6rem;
 }
+@media (max-width: 768px) {
+  .landing-hero {
+    padding: 12px 24px;
+    font-size: 2.5rem;
+    background-size: 40%;
+  }
+}
 .landing-hero strong {
   color: white;
   font-weight: 900;
@@ -70,11 +78,18 @@ footer {
   background-color: #1E2A35;
   background-image: url(imgs/header_head_only_transp.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: bottom right;
   background-size: 20%;
   font-size: 4rem;
   font-weight: 700;
   padding: 2rem 6rem 2rem 6rem;
+}
+@media (max-width: 768px) {
+  .hackathon-hero {
+    padding: 12px 24px;
+    font-size: 2.5rem;
+    background-size: 40%;
+  }
 }
 .hackathon-hero strong {
   color: white;
@@ -93,6 +108,11 @@ footer {
   padding-left: 300px;
   padding-right: 6rem;
 }
+@media (max-width: 768px) {
+  .description .description-content {
+    padding: 0px 2rem;
+  }
+}
 .description .description-content .highlight {
   display: inline;
   padding: 0.25em 0.35rem;
@@ -102,10 +122,15 @@ footer {
   font-weight: 900;
 }
 .description .description-content .title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   width: calc(100% - 100px);
   text-align: center;
+}
+@media (max-width: 768px) {
+  .description .description-content .title {
+    width: 100%;
+  }
 }
 .description .description-content h1, .description .description-content h2, .description .description-content h3, .description .description-content h4, .description .description-content h5, .description .description-content h6 {
   color: white;
@@ -118,7 +143,7 @@ footer {
 }
 .description .description-content h4 {
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding-left: 2rem;
   margin-top: 3rem;
   margin-bottom: 0px;
@@ -126,12 +151,12 @@ footer {
 }
 .description .description-content p {
   color: white;
-  font-size: 20px;
+  font-size: 1.2rem;
   cursor: default;
   font-weight: 200;
 }
 .description .description-content b {
-  color: #febf41fb;
+  color: #ffcc67fb;
 }
 .description .description-content a {
   color: #ad88ff;
@@ -143,6 +168,11 @@ footer {
   left: 0;
   width: 225px;
   padding-left: 1em;
+}
+@media (max-width: 768px) {
+  .description .toc {
+    display: none;
+  }
 }
 .description .toc a {
   font-size: 1.75rem;
@@ -156,34 +186,60 @@ footer {
   text-decoration: underline;
 }
 
-.sponsor_card {
+.sponsors-container {
+  background-color: #1E2A35;
+  padding: 24px 6rem 2rem 6rem;
+  margin-top: 2em;
+  border-radius: 12px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+@media (max-width: 768px) {
+  .sponsors-container {
+    padding: 24px;
+  }
+}
+.sponsors-container h2 {
+  margin-top: 0px !important;
+  width: 100% !important;
+}
+.sponsors-container .sponsor_card {
   padding: 2rem;
   border-radius: 12px;
   max-width: 70%;
   margin: 2rem auto;
 }
-.sponsor_card img {
+@media (max-width: 768px) {
+  .sponsors-container .sponsor_card {
+    max-width: 100%;
+  }
+}
+.sponsors-container .sponsor_card img {
   margin-bottom: 1rem;
 }
-.sponsor_card b {
+.sponsors-container .sponsor_card b {
   color: #2A3947 !important;
   font-weight: 900 !important;
 }
-
-.partner-logo {
+.sponsors-container .partner-logo {
   height: 100px;
   background: white;
   margin: 0.5em;
   line-height: 100px;
   text-align: center;
 }
-.partner-logo img {
+@media (max-width: 768px) {
+  .sponsors-container .partner-logo {
+    max-width: 80%;
+    margin: 0.5em auto;
+  }
+}
+.sponsors-container .partner-logo img {
   max-width: 100%;
   height: 80px;
   max-height: 80px;
 }
-
-.partner-logo-transparent {
+.sponsors-container .partner-logo-transparent {
   background: transparent;
 }
 

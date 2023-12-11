@@ -4,7 +4,7 @@ $darkest: #0d1e32
 $offwhite: #d5d5d5
 $grey: #aabfd1
 $highlight: #ffcc67fb
-$highlight_bold : #febf41fb
+$highlight_bold : #ffcc67fb
 $link: rgb(173, 136, 255)
 $h4color: #f4d392fb
 
@@ -14,9 +14,10 @@ body
     min-width: 100vw
     font-family: Nunito Sans
     padding-top: 120px  // navbar height
+    padding-bottom: 120px  // footer height
 
     color: white
-    font-size: 1.6rem
+    font-size: 1.0rem
     cursor: default
 
 
@@ -63,6 +64,13 @@ footer
     font-weight: 700
     padding: 2rem 6rem 2rem 6rem
 
+
+    @media (max-width: 768px)
+        padding: 12px 24px
+        font-size: 2.5rem
+        background-size: 40%
+
+
     strong
         color: white
         font-weight: 900
@@ -77,12 +85,18 @@ footer
     background-color: $darker
     background-image: url(imgs/header_head_only_transp.png)
     background-repeat: no-repeat
-    background-position: right
+    background-position: bottom right
     background-size: 20%
     
     font-size: 4rem
     font-weight: 700
     padding: 2rem 6rem 2rem 6rem
+
+    @media (max-width: 768px)
+        padding: 12px 24px
+        font-size: 2.5rem
+        background-size: 40%
+
 
 
     strong
@@ -96,9 +110,13 @@ footer
 
 .description
     margin-top: -4rem
+
     .description-content
         padding-left: 300px
         padding-right: 6rem
+
+        @media (max-width: 768px)
+            padding: 0px 2rem
 
         .highlight
             display: inline
@@ -109,10 +127,13 @@ footer
             font-weight: 900
 
         .title
-            font-size: 3rem
+            font-size: 2.5rem
             font-weight: 700
             width: calc(100% - 100px)
             text-align: center
+
+            @media (max-width: 768px)
+                width: 100%
 
         h1, h2, h3, h4, h5, h6
             color: white
@@ -125,7 +146,7 @@ footer
 
         h4
             font-weight: 800
-            font-size: 1.5rem
+            font-size: 1.6rem
             padding-left: 2rem
             margin-top: 3rem
             margin-bottom: 0px
@@ -133,7 +154,7 @@ footer
 
         p
             color: white
-            font-size: 20px
+            font-size: 1.2rem
             cursor: default
             font-weight: 200
 
@@ -152,6 +173,10 @@ footer
         width: 225px
         padding-left: 1em
 
+        // hide on mobile
+        @media (max-width: 768px)
+            display: none   
+
         a
             font-size: 1.75rem
             font-weight: 800
@@ -163,33 +188,56 @@ footer
             font-weight: 900
             text-decoration: underline
 
-.sponsor_card
-    padding: 2rem
+
+.sponsors-container
+    background-color: $darker
+    padding: 24px 6rem 2rem 6rem
+    margin-top: 2em
     border-radius: 12px
-    max-width: 70%
-    margin: 2rem auto
+    max-height: 500px
+    overflow-y: scroll
 
-    img
-        margin-bottom: 1rem
+    @media (max-width: 768px)
+        padding: 24px
 
-    b
-        color: $dark !important
-        font-weight: 900 !important
+    h2
+        margin-top: 0px !important
+        width: 100% !important
 
-    
-.partner-logo
-    height: 100px
-    background: white
-    margin: 0.5em
-    line-height: 100px
-    text-align: center
+    .sponsor_card
+        padding: 2rem
+        border-radius: 12px
+        max-width: 70%
+        margin: 2rem auto
 
-    img
-        max-width: 100%
-        height: 80px
-        max-height: 80px
+        @media (max-width: 768px)
+            max-width: 100%
+
+        img
+            margin-bottom: 1rem
+
+        b
+            color: $dark !important
+            font-weight: 900 !important
+
         
+    .partner-logo
+        height: 100px
+        background: white
+        margin: 0.5em
+        line-height: 100px
+        text-align: center
 
-.partner-logo-transparent
-    background: transparent
-    
+        @media (max-width: 768px)
+            max-width: 80%
+            margin: 0.5em auto
+
+        img
+            max-width: 100%
+            height: 80px
+            max-height: 80px
+            
+
+    .partner-logo-transparent
+        background: transparent
+        
