@@ -386,10 +386,14 @@ footer .content {
 /* -------------------------------------------------------------------------- */
 .materials {
   padding: 2rem 6rem 2rem 6rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 @media (max-width: 768px) {
   .materials {
     padding: 12px 24px;
+    max-width: 100%;
+    margin: 0;
   }
 }
 .materials h1, .materials h2, .materials h3, .materials h4, .materials h5, .materials h6 {
@@ -403,9 +407,15 @@ footer .content {
   margin-bottom: 0.5rem;
 }
 .materials h2 {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   margin-top: 0.5em;
   font-weight: 700;
+}
+.materials h3 {
+  font-size: 1.4rem;
+  margin-top: 0.5em;
+  font-weight: 700;
+  color: #f4d392fb;
 }
 .materials a {
   color: #ad88ff;
