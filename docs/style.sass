@@ -20,6 +20,8 @@ body
     font-size: 1.0rem
     cursor: default
 
+    text-align: justify
+    text-justify: inter-word
 
 /* --------------------------------- navbar --------------------------------- */
 nav
@@ -110,15 +112,26 @@ footer
 
 .highlight
     display: inline
-    padding: .25em .35rem
+    padding: .1em .25rem
     background: $highlight
     color: $dark
     border-radius: .25em
     font-weight: 900
 
+.development-icon
+    color: rgb(180, 180,180)
+    font-size: 1.1rem
 
 .description
     margin-top: -4rem
+    max-width: 1200px
+    margin: 0 auto
+
+    .wwcol
+        padding: 0 3rem
+
+        @media (max-width: 768px)
+            padding: 0
 
     .description-content
         padding-left: 300px
@@ -131,7 +144,6 @@ footer
         .title
             font-size: 2.5rem
             font-weight: 700
-            width: calc(100% - 100px)
             text-align: center
 
             @media (max-width: 768px)

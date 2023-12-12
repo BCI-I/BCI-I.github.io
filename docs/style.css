@@ -8,6 +8,8 @@ body {
   color: white;
   font-size: 1rem;
   cursor: default;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* --------------------------------- navbar --------------------------------- */
@@ -15,7 +17,7 @@ nav {
   background-color: #2A3947 !important;
 }
 nav .navbar-item:hover {
-  color: rgba(255, 204, 103, 0.9843137255);
+  color: #ffcc67fb;
 }
 nav .navbar {
   height: 120px !important;
@@ -103,15 +105,30 @@ footer {
 
 .highlight {
   display: inline;
-  padding: 0.25em 0.35rem;
-  background: rgba(255, 204, 103, 0.9843137255);
+  padding: 0.1em 0.25rem;
+  background: #ffcc67fb;
   color: #2A3947;
   border-radius: 0.25em;
   font-weight: 900;
 }
 
+.development-icon {
+  color: #b4b4b4;
+  font-size: 1.1rem;
+}
+
 .description {
   margin-top: -4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.description .wwcol {
+  padding: 0 3rem;
+}
+@media (max-width: 768px) {
+  .description .wwcol {
+    padding: 0;
+  }
 }
 .description .description-content {
   padding-left: 300px;
@@ -125,7 +142,6 @@ footer {
 .description .description-content .title {
   font-size: 2.5rem;
   font-weight: 700;
-  width: calc(100% - 100px);
   text-align: center;
 }
 @media (max-width: 768px) {
@@ -148,7 +164,7 @@ footer {
   padding-left: 2rem;
   margin-top: 3rem;
   margin-bottom: 0px;
-  color: rgba(244, 211, 146, 0.9843137255);
+  color: #f4d392fb;
 }
 .description .description-content p {
   color: white;
@@ -157,14 +173,14 @@ footer {
   font-weight: 200;
 }
 .description .description-content b {
-  color: rgba(255, 204, 103, 0.9843137255);
+  color: #ffcc67fb;
 }
 .description .description-content a {
-  color: rgb(173, 136, 255);
+  color: #ad88ff;
   font-weight: 800;
 }
 .description .description-content a:hover {
-  color: rgba(255, 204, 103, 0.9843137255);
+  color: #ffcc67fb;
   font-weight: 900;
   text-decoration: underline;
 }
@@ -187,7 +203,7 @@ footer {
   color: #aabfd1;
 }
 .description .toc a:hover {
-  color: rgba(255, 204, 103, 0.9843137255);
+  color: #ffcc67fb;
   font-weight: 900;
   text-decoration: underline;
 }
@@ -309,11 +325,11 @@ footer {
   font-weight: 700;
 }
 .materials a {
-  color: rgb(173, 136, 255);
+  color: #ad88ff;
   font-weight: 800;
 }
 .materials a:hover {
-  color: rgba(255, 204, 103, 0.9843137255);
+  color: #ffcc67fb;
   font-weight: 900;
   text-decoration: underline;
 }
