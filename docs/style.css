@@ -12,7 +12,9 @@ body {
   text-justify: inter-word;
 }
 
-/* --------------------------------- navbar --------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   NAVBAR                                   */
+/* -------------------------------------------------------------------------- */
 nav {
   background-color: #2A3947 !important;
 }
@@ -49,7 +51,9 @@ footer {
   border-top: 1px solid white;
 }
 
-/* ------------------------------ landing page ------------------------------ */
+/* -------------------------------------------------------------------------- */
+/*                                   LANDING                                  */
+/* -------------------------------------------------------------------------- */
 .landing-hero {
   color: #d5d5d5;
   background-color: #1E2A35;
@@ -70,11 +74,31 @@ footer {
   text-decoration: underline;
 }
 
-/* ----------------------------- hackathon page ----------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                 COMPONENTS                                 */
+/* -------------------------------------------------------------------------- */
 .transparent {
+  color: rgba(0, 0, 0, 0);
   background-color: transparent !important;
 }
 
+.highlight {
+  display: inline;
+  padding: 0.1em 0.25rem;
+  background: #ffcc67fb;
+  color: #2A3947;
+  border-radius: 0.25em;
+  font-weight: 900;
+}
+
+.development-icon {
+  color: #b4b4b4;
+  font-size: 1.1rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  HACKATHON                                 */
+/* -------------------------------------------------------------------------- */
 .hackathon-hero {
   color: white;
   background-color: #1E2A35;
@@ -97,24 +121,6 @@ footer {
   color: white;
   font-weight: 900;
   text-decoration: underline;
-}
-
-.transparent {
-  color: rgba(0, 0, 0, 0);
-}
-
-.highlight {
-  display: inline;
-  padding: 0.1em 0.25rem;
-  background: #ffcc67fb;
-  color: #2A3947;
-  border-radius: 0.25em;
-  font-weight: 900;
-}
-
-.development-icon {
-  color: #b4b4b4;
-  font-size: 1.1rem;
 }
 
 .description {
@@ -208,6 +214,7 @@ footer {
   text-decoration: underline;
 }
 
+/* -------------------------------- sponsors -------------------------------- */
 .sponsors-container {
   background-color: #1E2A35;
   padding: 24px 6rem 2rem 6rem;
@@ -266,6 +273,7 @@ footer {
   margin: 0.5em;
   line-height: 100px;
   text-align: center;
+  max-width: 500px;
 }
 @media (max-width: 768px) {
   .sponsors-container .partner-logo {
@@ -282,7 +290,9 @@ footer {
   background: transparent;
 }
 
-/* ----------------------------- materials page ----------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                             HACKATHON MATERIALS                            */
+/* -------------------------------------------------------------------------- */
 .imgcontainer {
   border-radius: 24px;
   margin: 1rem 0px;
