@@ -14,14 +14,21 @@ body
     min-width: 100vw
     font-family: Nunito Sans
     padding-top: 120px  // navbar height
-    padding-bottom: 120px  // footer height
-
     color: white
     font-size: 1.0rem
     cursor: default
 
     text-align: justify
     text-justify: inter-word
+
+    a
+        color: $link
+        font-weight: 800
+
+    a:hover
+        color: $highlight
+        font-weight: 900
+        text-decoration: underline
 
 /* -------------------------------------------------------------------------- */
 /*                                   NAVBAR                                   */
@@ -55,32 +62,21 @@ nav
 /* --------------------------------- footer --------------------------------- */
 footer
     background-color: $dark !important
-    position: absolute
-    bottom: 0
     width: 100%
     border-top: 1px solid white
-
-/* -------------------------------------------------------------------------- */
-/*                                   LANDING                                  */
-/* -------------------------------------------------------------------------- */
-.landing-hero
-    color: $offwhite
-    background-color: $darker
-    font-size: 4rem
-    font-weight: 700
-    padding: 2rem 6rem 2rem 6rem
-
+    padding: 2rem 6rem 1rem 6rem !important
 
     @media (max-width: 768px)
-        padding: 12px 24px
-        font-size: 2.5rem
-        background-size: 40%
+        padding: 12px 24px !important
+    
+    .content
+        max-width: 80% 
+        margin: 0 2rem 0 0 
+        font-size: 0.8rem 
 
-
-    strong
-        color: white
-        font-weight: 900
-        text-decoration: underline
+        @media (max-width: 768px)
+            max-width: 100% 
+            margin: 0 0 0 0
 
 /* -------------------------------------------------------------------------- */
 /*                                 COMPONENTS                                 */
@@ -88,7 +84,10 @@ footer
 
 .transparent
     color: rgba(0, 0, 0, 0)
-    background-color: transparent !important
+
+.dim
+    color: rgb(160, 160, 160)
+    margin-right: 0.2rem
 
 
 .highlight
@@ -103,6 +102,82 @@ footer
     color: rgb(180, 180,180)
     font-size: 1.1rem
 
+.imgcontainer
+    border-radius: 24px
+    margin: 1rem 0px
+
+    img
+        border-radius: 24px
+        max-width: 80%
+        max-height: 100%
+
+        @media (max-width: 768px)
+            max-width: 100%
+
+
+    p
+        font-size: .9rem !important
+
+.videocontainer
+    border-radius: 24px
+    margin: 1rem 0px
+
+    video
+        border-radius: 24px
+        max-width: 80%
+        max-height: 100%
+
+        @media (max-width: 768px)
+            max-width: 100%
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   LANDING                                  */
+/* -------------------------------------------------------------------------- */
+.landing-hero
+    color: $offwhite
+    background-color: $darker
+    font-size: 3rem
+    font-weight: 700
+    padding: 0rem 6rem 0rem 6rem
+
+    @media (max-width: 1400px)
+        font-size: 3rem
+
+    @media (max-width: 768px)
+        padding: 12px 24px
+        font-size: 2.5rem
+        background-size: 40%
+
+    strong
+        color: white
+        font-weight: 900
+        text-decoration: underline
+
+.landing-content
+    padding: 2rem 6rem
+    max-width: 1200px
+    margin: 0 auto
+
+    @media (max-width: 768px)
+        padding: 12px 24px
+
+    p
+        width: 80%
+        margin: 0 auto
+        font-size: 1.2rem
+
+        @media (max-width: 768px)
+            width: 100%
+
+    h1
+        font-size: 2.5rem
+        font-weight: 700
+        margin-top: 2rem
+
+        @media (max-width: 768px)
+            width: 100%
 
 /* -------------------------------------------------------------------------- */
 /*                                  HACKATHON                                 */
@@ -181,14 +256,9 @@ footer
         b
             color: $highlight_bold
 
-        a
-            color: $link
-            font-weight: 800
-
-        a:hover
-            color: $highlight
-            font-weight: 900
-            text-decoration: underline
+        li
+            padding-left: 4rem
+            margin-bottom: .75rem
 
     .toc
         position: fixed
@@ -232,7 +302,7 @@ footer
     .sponsor_card
         padding: 2rem
         border-radius: 12px
-        max-width: 70%
+        max-width: 80%
         margin: 2rem auto
 
         p
@@ -289,21 +359,6 @@ footer
 /*                             HACKATHON MATERIALS                            */
 /* -------------------------------------------------------------------------- */
 
-.imgcontainer
-    border-radius: 24px
-    margin: 1rem 0px
-
-    img
-        border-radius: 24px
-        max-width: 50%
-        max-height: 100%
-
-        @media (max-width: 768px)
-            max-width: 100%
-
-
-    p
-        font-size: .9rem !important
 
 .materials
     padding: 2rem 6rem 2rem 6rem

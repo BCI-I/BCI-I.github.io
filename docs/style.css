@@ -4,12 +4,20 @@ body {
   min-width: 100vw;
   font-family: Nunito Sans;
   padding-top: 120px;
-  padding-bottom: 120px;
   color: white;
   font-size: 1rem;
   cursor: default;
   text-align: justify;
   text-justify: inter-word;
+}
+body a {
+  color: #ad88ff;
+  font-weight: 800;
+}
+body a:hover {
+  color: #ffcc67fb;
+  font-weight: 900;
+  text-decoration: underline;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -45,33 +53,25 @@ nav .navbarpage {
 /* --------------------------------- footer --------------------------------- */
 footer {
   background-color: #2A3947 !important;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   border-top: 1px solid white;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                   LANDING                                  */
-/* -------------------------------------------------------------------------- */
-.landing-hero {
-  color: #d5d5d5;
-  background-color: #1E2A35;
-  font-size: 4rem;
-  font-weight: 700;
-  padding: 2rem 6rem 2rem 6rem;
+  padding: 2rem 6rem 1rem 6rem !important;
 }
 @media (max-width: 768px) {
-  .landing-hero {
-    padding: 12px 24px;
-    font-size: 2.5rem;
-    background-size: 40%;
+  footer {
+    padding: 12px 24px !important;
   }
 }
-.landing-hero strong {
-  color: white;
-  font-weight: 900;
-  text-decoration: underline;
+footer .content {
+  max-width: 80%;
+  margin: 0 2rem 0 0;
+  font-size: 0.8rem;
+}
+@media (max-width: 768px) {
+  footer .content {
+    max-width: 100%;
+    margin: 0 0 0 0;
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -79,7 +79,11 @@ footer {
 /* -------------------------------------------------------------------------- */
 .transparent {
   color: rgba(0, 0, 0, 0);
-  background-color: transparent !important;
+}
+
+.dim {
+  color: #a0a0a0;
+  margin-right: 0.2rem;
 }
 
 .highlight {
@@ -94,6 +98,98 @@ footer {
 .development-icon {
   color: #b4b4b4;
   font-size: 1.1rem;
+}
+
+.imgcontainer {
+  border-radius: 24px;
+  margin: 1rem 0px;
+}
+.imgcontainer img {
+  border-radius: 24px;
+  max-width: 80%;
+  max-height: 100%;
+}
+@media (max-width: 768px) {
+  .imgcontainer img {
+    max-width: 100%;
+  }
+}
+.imgcontainer p {
+  font-size: 0.9rem !important;
+}
+
+.videocontainer {
+  border-radius: 24px;
+  margin: 1rem 0px;
+}
+.videocontainer video {
+  border-radius: 24px;
+  max-width: 80%;
+  max-height: 100%;
+}
+@media (max-width: 768px) {
+  .videocontainer video {
+    max-width: 100%;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   LANDING                                  */
+/* -------------------------------------------------------------------------- */
+.landing-hero {
+  color: #d5d5d5;
+  background-color: #1E2A35;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0rem 6rem 0rem 6rem;
+}
+@media (max-width: 1400px) {
+  .landing-hero {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .landing-hero {
+    padding: 12px 24px;
+    font-size: 2.5rem;
+    background-size: 40%;
+  }
+}
+.landing-hero strong {
+  color: white;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.landing-content {
+  padding: 2rem 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .landing-content {
+    padding: 12px 24px;
+  }
+}
+.landing-content p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .landing-content p {
+    width: 100%;
+  }
+}
+.landing-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  .landing-content h1 {
+    width: 100%;
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -181,14 +277,9 @@ footer {
 .description .description-content b {
   color: #ffcc67fb;
 }
-.description .description-content a {
-  color: #ad88ff;
-  font-weight: 800;
-}
-.description .description-content a:hover {
-  color: #ffcc67fb;
-  font-weight: 900;
-  text-decoration: underline;
+.description .description-content li {
+  padding-left: 4rem;
+  margin-bottom: 0.75rem;
 }
 .description .toc {
   position: fixed;
@@ -235,7 +326,7 @@ footer {
 .sponsors-container .sponsor_card {
   padding: 2rem;
   border-radius: 12px;
-  max-width: 70%;
+  max-width: 80%;
   margin: 2rem auto;
 }
 .sponsors-container .sponsor_card p {
@@ -293,24 +384,6 @@ footer {
 /* -------------------------------------------------------------------------- */
 /*                             HACKATHON MATERIALS                            */
 /* -------------------------------------------------------------------------- */
-.imgcontainer {
-  border-radius: 24px;
-  margin: 1rem 0px;
-}
-.imgcontainer img {
-  border-radius: 24px;
-  max-width: 50%;
-  max-height: 100%;
-}
-@media (max-width: 768px) {
-  .imgcontainer img {
-    max-width: 100%;
-  }
-}
-.imgcontainer p {
-  font-size: 0.9rem !important;
-}
-
 .materials {
   padding: 2rem 6rem 2rem 6rem;
 }
