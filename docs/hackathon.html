@@ -1,475 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- title -->
+    <title>BCII</title>
+    <link rel="icon" href="imgs/white_logo.svg" type="image/x-icon" />
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/a85270c6fc.js"
+      crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito Sans">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Teko">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cormorant Upright ">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cormorant Infant">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Space Mono">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Kaushan Script ">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Mark Script ">
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet"
+      href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>BCI hackathon</title>
-        <!-- favicon -->
-        <link rel="icon" href="imgs/white_logo.svg" type="image/x-icon" />
-        <link rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-            integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-            crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/a85270c6fc.js"
-            crossorigin="anonymous"></script>
-        <!-- fonts -->
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Nunito Sans">
-        <!-- Bulma Version 0.9.0-->
-        <link rel="stylesheet"
-            href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-        <link rel="stylesheet" type="text/css" href="style.css">
+  <body>
+    <!-- <p class="BCII-name-navbar">BCI <i style="font-weight: 400">initiative</i></p> -->
+      <!-- ------------------------------- navbar -------------------------------- -->
+      <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img src="imgs/white_logo.svg"
+                    alt="Brain Computer Initiative Logo">
+            </a>
+            <div class="navbar-burger"
+                data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
 
-    </head>
-
-    <body>
-        <!-- ------------------------------- navbar -------------------------------- -->
-        <nav class="navbar is-transparent is-fixed-top">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="index.html">
-                    <img src="imgs/white_logo.svg"
-                        alt="Brain Computer Initiative Logo">
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item BCII-name-navbar"
+                    href="https://bci-i.github.io/">
+                    BCI initiative
                 </a>
-                <div class="navbar-burger"
-                    data-target="navbarExampleTransparentExample">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            </div>
+            <!-- <div class="navbar-end">
+                <a class="navbar-item navbarpage"
+                    href="https://bci-i.github.io/hackathon">
+                    MIT hackathon
+                </a>
+            </div> -->
+        </div>
+    </nav>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               at a glance                               -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section class="hackathon-at-a-glance narrow">
+      <p class="hackathon-tile-title">MIT's <span class="textaccent">first</span>
+        BCI hackathon</p>
+      <div class="tile is-ancestor hackathon-tiles">
+        <!-- -------------------------------- what --------------------------------- -->
+        <div class="tile is-parent">
+          <article class="tile is-child h-what h-tile">
+            <div class="content">
+              <p class="title">What</p>
+              <div class="content">
+                What are we doing
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="tile is-vertical is-8">
+          <div class="tile is-parent">
+            <!-- --------------------------------- why --------------------------------- -->
+            <article class="tile is-child h-why h-tile">
+              <p class="title">Why</p>
+              <div class="content">
+                Why we do this
+                <br><br>
+              </div>
+            </article>
+          </div>
+
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <!-- -------------------------------- when --------------------------------- -->
+              <article class="tile is-child h-when h-tile">
+                <p class="title">When</p>
+                <div class="content">
+                  February 2023
                 </div>
+              </article>
+
+              <!-- -------------------------------- where -------------------------------- -->
+              <article class="tile is-child h-where h-tile">
+                <p class="title">Where</p>
+                <div class="content">
+                  At MIT
+                </div>
+              </article>
             </div>
 
-            <div class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item navbartitle"
-                        href="https://bci-i.github.io/">
-                        BCI initiative
-                    </a>
+            <!-- --------------------------------- how --------------------------------- -->
+            <div class="tile is-parent">
+              <article class="tile is-child h-how h-tile">
+                <p class="title">How</p>
+                <div class="content">
+                  How to sign up, who can participate
                 </div>
-                <div class="navbar-end">
-                    <a class="navbar-item navbarpage"
-                        href="https://bci-i.github.io/hackathon">
-                        MIT hackathon
-                    </a>
-                </div>
+              </article>
             </div>
-        </nav>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- -------------------------------- pge --------------------------------- -->
+    <div class="sep-line"></div>
 
-        <section class="hero hackathon-hero">
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <p>
-                        MIT's first BCI Hackathon
-                    </p>
-                </div>
-            </div>
-        </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                             hackathon info                              -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section class="hackathon-info narrow">
+      <h1 class="fancy-title" style="margin-top:0; margin-bottom:0.25em"><i>Hackathon
+          Details</i></h1>
+      <p>
+        Description about how the hackathon is structured
+      </p>
+      <h1 class="hackathon-subtitle">Hardware</h1>
+      <p>Describe the hardware used</p>
 
-        <section class="description">
+      <h1 class="hackathon-subtitle">Competition</h1>
+      <p>Describe the competition</p>
 
-            <div class="toc">
-                <a href="#what">What</a><br>
-                <a href="#why">Why</a><br>
-                <a href="#where">Where</a><br>
-                <a href="#when">When</a><br>
-                <a href="#how">How</a><br>
-                <a href="#tech">Tech & Science</a><br>
-                <a href="#sponsor">Sponsors</a><br>
-            </div>
+      <h1 class="hackathon-subtitle">Prizes</h1>
+      <div class="development-icon">
+        <span class="icon-text">
+          <span class="icon is-large">
+            <i class="fa-solid fa-code"></i>
+          </span>
+          <span>under development</span>
+          <span class="icon is-large">
+            <i class="fa-solid fa-code"></i>
+          </span>
+        </span>
+      </div>
 
-            <div class="description-content">
-                <!-- -------------------------------- what --------------------------------- -->
-                <h2 class="title is-1" id="what" style="margin-top:3rem;">What</h2>
-                <p>
-                    We are happy to announce MIT's inaugural <span
-                        class="highlight">Brain-Computer Interface (BCI)
-                        Hackathon</span>.
-                    Participate in this <span class="highlight">48-hour</span>
-                    event, where teams of 3-5 MIT members will compete to
-                    develop the most effective algorithm to <span
-                        class="highlight">control a robot using only their brain</span>.
-                </p><br>
-                <p>
-                    The hackathon is scheduled for <span class="highlight">February
-                        2024</span> at MIT and is <b>free</b> for all MIT
-                    members.
-                    Winning teams will be eligible for a <span>cash prize</span>.
-                </p>
+      <h1 class="hackathon-subtitle">Schedule</h1>
+      <div class="development-icon">
+        <span class="icon-text">
+          <span class="icon is-large">
+            <i class="fa-solid fa-code"></i>
+          </span>
+          <span>under development</span>
+          <span class="icon is-large">
+            <i class="fa-solid fa-code"></i>
+          </span>
+        </span>
+      </div>
 
-                <!-- --------------------------------- why --------------------------------- -->
-                <h2 class="title is-1" id="why">Why</h2>
-                <p>
-                    Brain Computer Interfaces (BCIs) empower direct control of
-                    computers and other devices through brain activity.
-                    This rapidly expanding field of research finds applications
-                    in medicine, entertainment, and beyond. BCIs hold
-                    the potential to revolutionize technology interaction and
-                    enhance the lives of individuals dealing with neurological
-                    disorders and injuries.
-                </p><br>
-                <p>
-                    Despite remarkable recent progress, substantial work remains
-                    for BCIs to become viable in real-world applications.
-                    We invite <span class="highlight">you</span> to contribute
-                    to <span class="highlight">advancing the field of BCI</span>
-                    research and development.
-                    This hackathon aims to bring together students from diverse
-                    backgrounds, fostering learning about BCIs and sparking
-                    their interest in this innovative field.
-                    <br>
-                    For entrepreneurial participants, winning the hackathon can
-                    serve as a significant step towards securing <a
-                        href="#prizes">seed funding</a> for your BCI venture.
-                </p>
-                <br>
+      <h1 class="hackathon-subtitle">Preparing for the hackathon</h1>
+      <div class="development-icon">
+        <span class="icon-text">
+          <span class="icon is-large">
+            <i class="fa-solid fa-code"></i>
+          </span>
+          <span>under development</span>
+          <span class="icon is-large">
+            <i class="fa-solid fa-code"></i>
+          </span>
+        </span>
+      </div>
 
-                <!-- ----------------------------- where/when ------------------------------ -->
-                <div class="columns">
-                    <div class="column wwcol">
-                        <h2 class="title is-1" id="where">Where</h2>
-                        <p>
-                            The hackathon will be held at the <a
-                                href="https://mcgovern.mit.edu/" ,
-                                target="_blank">McGovern Institute for Brain
-                                Research</a> at MIT.
-                            <br>
-                            The exact venue information will be announced closer
-                            to the date.
-                        </p>
-                    </div>
-                    <div class="column wwcol">
-                        <h2 class="title is-1" id="when">When</h2>
-                        <p>
-                            The hackathon is a 48-hour event and will be held on
-                            <span class="highlight">February 10<sup>th</sup> &
-                                11<sup>th</sup></span> 2024.
-                        </p>
-                    </div>
-                </div>
+      <!-- ------------------------------ sponsors ------------------------------- -->
+      <h1 class="fancy-title" style="margin-top:1.5em"><i>Our Sponsors</i></h1>
 
-                <!-- --------------------------------- how --------------------------------- -->
-                <h2 class="title is-1" id="how">How</h2>
-                <!-- ------------------------- competition details ------------------------- -->
-                <h4 class="subtitle is-4" id="compdet">Competition details</h4>
-                <p>
-                    The hackathon adopts a competitive structure where teams
-                    have a <span class="highlight">48-hour</span> window to
-                    develop an algorithm for controlling a robot using only
-                    their brain. This physical device control adds an extra
-                    layer of complexity compared to software-only challenges,
-                    allowing teams to demonstrate their prowess in <span
-                        class="highlight">solving real-world problems</span>.
-                </p><br>
-                <p>
-                    BCI is a technical field that demands knowledge of
-                    neuroscience, signal processing, machine learning, and more.
-                    It also relies on specialized hardware for measuring brain
-                    activity. To aid your preparation, we offer <a
-                        href="https://bci-i.github.io/hackathon-materials">materials</a>
-                    that will equip you to hit the ground running once the
-                    competition commences.
-                </p>
+      <h1 class="hackathon-subtitle">Platinum level sponsors</h1>
+      <p>Describe platinum sponsors</p>
 
-                <!-- ------------------------------- signup -------------------------------- -->
-                <h4 class="subtitle is-4">Signing up</h4>
-                <p>
-                    While sign-ups are not open yet, you can express your
-                    interest in the hackathon by filling out
-                    <a href="https://forms.gle/vDCepkobDhjm2tmHA"
-                        target="_blank">this form</a>.
-                </p><br>
-                <p>
-                    Sign-ups will open in January 2024.
-                    <br>
-                    The hackathon will be open to all MIT members - more details
-                    <a href="#rules">below</a>.
-                </p>
+      <h1 class="hackathon-subtitle">Gold level sponsors</h1>
+      <p>Describe platinum sponsors</p>
 
-                <!-- ------------------------------- prizes -------------------------------- -->
-                <h4 class="subtitle is-4" id="prizes">Prizes</h4>
-                <p>
-                    Three winning teams will be awarded small cash prizes.
-                </p>
-                <div class="development-icon">
-                    <span class="icon-text">
-                        <span class="icon is-large">
-                            <i class="fa-solid fa-code"></i>
-                        </span>
-                        <span>Under Development</span>
-                        <span class="icon is-large">
-                            <i class="fa-solid fa-code"></i>
-                        </span>
-                    </span>
-                </div>
+      <h1 class="hackathon-subtitle">Partners</h1>
+      <p>Describe platinum sponsors</p>
 
-                <!-- -------------------------------- rule --------------------------------- -->
-                <h4 class="subtitle is-4" id="rules">Rules</h4>
-                <p>
-                    <!-- list rules -->
-                    <ul>
-                        <li> <span class="dim">⊚</span> Teams must consist of
-                            3-5 MIT members.</li>
-                        <li> <span class="dim">⊚</span> Only MIT members are
-                            allowed to participate.</li>
-                        <li> <span class="dim">⊚</span> Only the <a href="tech">hardware</a>
-                            provided can be used.</li>
-                        <li> <span class="dim">⊚</span> ... more to follow ...
-                        </li>
-                    </ul>
-                </p>
-                <div class="development-icon">
-                    <span class="icon-text">
-                        <span class="icon is-large">
-                            <i class="fa-solid fa-code"></i>
-                        </span>
-                        <span>Under Development</span>
-                        <span class="icon is-large">
-                            <i class="fa-solid fa-code"></i>
-                        </span>
-                    </span>
-                </div>
-
-                <!-- ------------------------------ schedule ------------------------------- -->
-                <h4 class="subtitle is-4">Schedule</h4>
-                <div class="development-icon">
-                    <span class="icon-text">
-                        <span class="icon is-large">
-                            <i class="fa-solid fa-code"></i>
-                        </span>
-                        <span>Under Development</span>
-                        <span class="icon is-large">
-                            <i class="fa-solid fa-code"></i>
-                        </span>
-                    </span>
-                </div>
-
-                <!-- ------------------------------ hardware ------------------------------- -->
-                <h2 class="title is-1" id="tech">Hardware</h2>
-                <p>
-                    To enhance accessibility and ensure a level playing field
-                    for all teams, identical hardware will be provided. All
-                    teams will utilize an <span class="highlight">X.on EEG
-                        headset</span> to record brain activity and a <span
-                        class="highlight">Duckiebot</span> for control.
-                    Familiarizing yourself with the <a
-                        href="https://bci-i.github.io/hackathon-materials">materials</a>
-                    we've prepared will aid in your preparation for the
-                    hackathon.
-                </p>
-
-                <!-- --------------------------------- Xon --------------------------------- -->
-                <h4 class="subtitle is-4">The X.on EEG headset</h4>
-                <p>
-                    Teams will use the <a href="https://xon-eeg.com/"
-                        target="_blank">X.on</a> wireless EEG headset by
-                    <a href="https://www.brainproducts.com/" target="_blank">Brain
-                        Products</a>
-                    to record brain activity.
-                </p>
-                <div class="videocontainer has-text-centered">
-                    <video width="640" height="360" autoplay>
-                        <source src="imgs/x.on-hero-video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                  
-
-                <p>
-                    X.on is a new EEG headsets caractterized by its high signal
-                    quality, ease of use, and comfort.
-                    <br>
-                    It has <span class="highlight">7 EEG channels</span>, a
-                    ground, an integrated amplifier
-                    and the ability to <span class="highlight">wirelessly stream
-                        data</span>
-                    through a Bluetooth connection.
-                    <br>
-                    You can find additional information on the X.on headset and
-                    how to use it for the hackathon <a
-                        href="https://bci-i.github.io/hackathon-materials">here</a>.
-                </p>
-
-                <!-- ------------------------------ duckiebot ------------------------------ -->
-                <h4 class="subtitle is-4">The Duckiebot</h4>
-                <div class="has-text-centered imgcontainer">
-                    <img src="imgs/duckiebot.jpg" alt="X.on EEG headset">
-                    <p>The DuckieBot</p>
-                </div>
-
-                <p>
-                    Teams will use the EEG data to control a
-                    <a href="https://get.duckietown.com/products/duckiebot-db21"
-                        target="_blank">DuckieBot</a>.
-
-                    Duckiebots are small, affordable, robots by
-                    <a href="https://duckietown.com/" target="_blank">Duckietown</a>,
-                    an MIT spin-off company
-                </p><br>
-
-                <p>
-                    Duckiebots are designed for <span class="highlight">testing
-                        self-driving algorithms</span>.
-                    They have all the hardware necessary to drive autonomously:
-                    a front-facing camera, IMUs, time-of-flight sensor.
-                    They also pack a brain powerful enough to make sense of all
-                    these data (they come with an NVIDIA Jetson Nano 4GB).
-                    While Duckiebots are smart enough on their own, we want you
-                    to make them even smarter by
-                    <span class="highlight"> controlling them with your brain!
-                    </span>
-                    <br>
-                    You can find additional information on the Duckiebots and
-                    how to use them for the hackathon <a
-                        href="https://bci-i.github.io/hackathon-materials">here</a>.
-                </p>
-
-                <!-- ------------------------------ sponsors ------------------------------- -->
-                <h2 class="title is-1 no-margin-top" id="sponsor">Sponsors</h2>
-                <div class="sponsors-container">
-                    <p>
-                        This event would not be possible without the generous
-                        support of our sponsors.
-                    </p>
-
-                    <h4 class="subtitle is-4">Platinum level sponsors</h4>
-                    <p>Platinum level sponsor made this event possible by
-                        lending the hardware used during the competition.
-                        The EEG headsets and robots were generously provided by
-                        the following companies.
-                        These companies are passionate about BCI and robotics
-                        and are excited
-                        to promote education and research in this field.
-                    </p><br>
-
-                    <div class="card sponsor_card">
-                        <a href="https://www.brainproducts.com/" target="_blank">
-                            <div class="card-image">
-                                <figure class="image">
-                                    <img src="imgs/BrainProductsLogo.svg"
-                                        alt="Brain Products Logo">
-                                </figure>
-                            </div>
-                        </a>
-                        <div class="content">
-                            <a href="https://www.brainproducts.com/"
-                                target="_blank" class="sponsor-name">Brain
-                                Products</a><br>
-                            <p><i>Advancing human knowledge in the field of
-                                    neuroscience research.</i></p>
-                            <p>Brain Products is a leading manufacturer of
-                                hardware and software solutions for
-                                neurophysiological research.
-                                They supported the hackathon by lending their
-                                new
-                                <a href="https://xon-eeg.com/" target="_blank">X.on</a>
-                                wireless EEG headset.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card sponsor_card">
-                        <a href="https://duckietown.com/" target="_blank">
-
-                            <div class="card-image">
-                                <figure class="image">
-                                    <img src="imgs/duckietown-logo.png"
-                                        alt="Duckiet Town Logo">
-                                </figure>
-                            </div>
-                        </a>
-                        <div class="content">
-                            <a href="https://duckietown.com/"
-                                target="_blank" class="sponsor-name">Duckietown</a><br><br>
-                            <p>
-                                <i>Making the world excited about the beauty,
-                                    the fun,
-                                    the importance, and the challenges of
-                                    robotics and AI, through learning
-                                    experiences that are tangible, accessible,
-                                    and inclusive.</i>
-                            </p>
-                            <p>
-                                Duckietown develops affordable hardware,
-                                software and educational content to promote
-                                education on robotics and self driving vehicles
-                                across the globe.
-                            </p>
-                        </div>
-                    </div>
-
-                    <h4 class="subtitle is-4">Gold level sponsors</h4>
-                    <p>Gold level sponsors financially supported the hackathon.</p><br>
-
-                    <div class="card sponsor_card">
-                        <a href="https://precisionneuro.io/" target="_blank">
-
-                            <div class="card-image">
-                                <figure class="image">
-                                    <img
-                                        src="imgs/Precision-Neuroscience-logo-featured.png"
-                                        alt="Precision Neuroscience Logo">
-                                </figure>
-                            </div>
-                        </a>
-                        <div class="content">
-                            <a href="https://precisionneuro.io/"
-                                target="_blank" class="sponsor-name">Precision
-                                Neuroscience</a><br><br>
-                            <p>
-                                <i>Restoring freedom through brain–computer
-                                    interfaces.</i>
-                            </p>
-                            <p>
-                                Precision Neuroscience builds powerful,
-                                minimally invasive
-                                brain implants that will help provide
-                                breakthrough
-                                treatments to people with neurological
-                                conditions.
-                            </p>
-                        </div>
-                    </div>
-
-                    <h4 class="subtitle is-4">Partners</h4>
-                    <p>The hackathon was supported by the following MIT Centers.</p><br>
-                    <div class="columns">
-                        <div
-                            class="column partner-logo partner-logo-transparent">
-                            <a href="https://mcgovern.mit.edu/" target="_blank">
-                                <img src="imgs/mcgovern_logo.svg"
-                                    alt="McGovern Institute Logo">
-                            </a>
-                        </div>
-
-                        <div class="column partner-logo">
-                            <a href="https://sandbox.mit.edu/" target="_blank">
-                                <img " src="imgs/sandbox.png" alt="Sandbox Logo">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="columns">
-                        <div class="column partner-logo">
-                            <a href="https://bcs.mit.edu/" target="_blank">
-                                <img " src="imgs/bcs_logo.png"
-                                    alt="Brain and Cognitive Sciences Logo">
-                            </a>
-                        </div>
-
-                        <div class="column partner-logo">
-                            <a
-                                href="https://yangtan.mit.edu/k-lisa-yang-center-for-bionics/"
-                                target="_blank">
-                                <img
-                                    src="imgs/Yang-Tan-Collective-Logo_Color.jpg"
-                                    alt="K. Lisa Yang Logo">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </body>
+    </section>
+  </body>

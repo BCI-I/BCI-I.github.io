@@ -1,0 +1,580 @@
+$dark: #2A3947
+$darker: #1E2A35
+$darkest: #0d1e32
+$offwhite: #d5d5d5
+$grey: #aabfd1
+$highlight: #ffcc67fb
+$highlight_light: #f8d794fb
+$highlight_bold : #ffcc67fb
+$link: rgb(173, 136, 255)
+$h4color: #f4d392fb
+$salmon: #ec8566
+$green: #64b168
+$lightblue: #61aeed
+$lilla: #a98cdf
+
+body
+    background-color: $dark !important
+    min-height: 100vh
+    min-width: 100vw
+    font-family: Nunito Sans
+    color: white
+    font-size: 1.0rem
+    cursor: default
+    padding-bottom: 3em
+    text-align: justify
+    text-justify: inter-word
+
+    a
+        color: $link
+        font-weight: 800
+
+    a:hover
+        color: $highlight
+        font-weight: 900
+        text-decoration: underline
+
+
+/* -------------------------------------------------------------------------- */
+/*                               global elements                              */
+/* -------------------------------------------------------------------------- */
+
+.textaccent
+    color: $highlight !important
+    font-weight: 900
+    text-decoration: underline
+
+.sep-line
+    height: 3px
+    border-radius: 3px
+    background-color: rgb(200, 200, 200)
+    width: 80%
+    margin: 2rem auto
+
+.fancy-title
+    font-family: Kaushan Script
+    font-size: 4rem
+    color: white
+    margin-left: 2rem
+    margin-top: 2.5em
+    
+.img-and-text
+    width: 80%
+    margin: 2em auto
+
+    img
+        max-width: 250px
+        max-height: 250px
+        border-radius: 10px
+        display: inline-block
+        vertical-align: middle
+    
+    p
+        display: inline-block
+        vertical-align: top
+        font-size: 1.3rem
+        vertical-align: middle
+        margin: 0 3rem
+        width: calc(80% - 250px)
+
+.img-bg-white
+    background-color: white !important
+
+.float-right
+    float: right
+    margin-left: 4em
+    margin-right: 4em
+    // justify content
+    display: flex
+    flex-direction: row
+    justify-content: right
+
+
+.float-left
+    float: left
+    margin-left: 4em
+    margin-right: 4em
+    display: flex
+    flex-direction: row
+    justify-content: left
+
+
+.center-img-text-around
+    position: relative
+    text-align: center
+    padding: 2em
+
+    // plage img at center
+    img
+        display: block
+        margin: 2em auto 2em auto
+        width: 20%
+        box-shadow: 0 0 150px 40px rgba(255, 255, 255, 0.1)
+
+    // top-left text
+    .top-left
+        position: absolute
+        top: 0
+        left: 0
+        margin-left: 5em
+        margin-top: 1em
+
+    // bottom-right text
+    .bottom-right
+        position: absolute
+        bottom: 0
+        right: 0
+        margin-right: 5em
+        margin-bottom: 1em
+
+    // top-right text
+    .top-right
+        position: absolute
+        top: 0
+        right: 0
+        margin-right: 5em
+        margin-top: 1em
+
+    // bottom-left text
+    .bottom-left
+        position: absolute
+        bottom: 0
+        left: 0
+        margin-left: 5em
+        margin-bottom: 1em
+
+    p
+        font-size: 1.5rem
+        font-weight: 900
+        color: white
+        text-shadow: 0px 0px 10px black
+        margin: 0.5em 0 0.5em 0
+
+
+
+.narrow
+    width: 80% !important
+    margin-left: auto !important
+    margin-right: auto !important
+
+
+.unselectable
+    cursor: default
+    
+
+/* -------------------------------------------------------------------------- */
+/*                                   LANDING                                  */
+/* -------------------------------------------------------------------------- */
+
+.landing-hero
+    height: 100vh
+
+    .landing-hero-img
+        max-width: 400px
+        position: absolute
+        top: 40vh
+        left: 5em
+
+    .BCII-name
+        font-size: 12rem
+        line-height: 12rem
+        font-weight: 900
+        padding-left: 4rem
+        color: white
+        font-family: Cormorant Upright 
+
+    .BCII-slogan
+        font-size: 5rem
+        font-family: Cormorant Infant
+        text-align: center
+        line-height: 4.5rem
+        max-width: 70%
+        margin: 4rem 0 2rem auto
+
+        .slogan-second-line
+            text-decoration: underline
+            font-family: Kaushan Script
+            font-weight: 200
+
+    .scroll-down
+        position: relative
+        left: 50%
+        transform: translate(-50%, 0)
+        max-width: 70px
+        bottom: -150px
+
+// .landing-content
+//     margin-top: 4em
+//     height: 4000px
+
+//     .columns
+//         width: 90%
+//         margin: 3em auto
+
+//     .content-card
+//         width: 450px
+//         height: 500px
+//         border-radius: 10px
+//         // border: 2px solid white
+//         background-color: white
+//         margin: 0 auto
+//         position: relative
+//         text-align: center
+
+//         .content-card-text
+//             position: absolute
+//             top: 2%
+//             left: 0
+//             width: 100%
+//             z-index: 1
+//             padding: 10px
+//             border-radius: 0 0 10px 10px
+//             font-family: Space Mono
+//             font-size: 4rem
+//             font-weight: 900
+//             text-shadow: 0px 0px 5px black
+//             color: white
+
+//         .card-img
+//             // take up whole card
+//             width: 100%
+//             height: 100%
+//             object-fit: cover
+//             border-radius: 10px
+//             opacity: 0.5
+
+// .placeholder
+//     .card-img
+//         opacity: 0.5 !important
+    
+//     .content-card-text
+//         color: white !important
+//         text-shadow: 0px 0px 10px black !important
+
+/* ---------------------------------- event --------------------------------- */
+.event-link
+    text-decoration: none !important
+    color: white !important
+    .event-info
+        text-decoration: none !important
+
+    &:hover
+        .event
+            // scale 
+            transform: scale(1.02)
+            transition: transform 0.25s ease-in-out
+            box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1)
+
+            .event-img
+                transform: translateX(20px)
+                transform: scale(1.1)
+                transition: transform 0.25s ease-in-out
+
+    .event
+        // scale 
+        transform: scale(1)
+        transition: transform 0.25s ease-in-out
+        box-shadow: none
+
+        .event-img
+            transform: translateX(0px)
+            transform: scale(1)
+            transition: transform 0.25s ease-in-out
+
+
+.event
+    width: 80%
+    margin: 0 auto
+    margin-bottom: 2em
+    border-radius: 10px
+    padding: 1em 20% 1.5em 3em
+    border: 1px solid rgb(200, 200, 200)
+    background-color: $darker
+    position: relative
+    overflow: hidden
+
+    .event-img
+        height: 100%
+        position: absolute  
+        bottom: -20px
+        right: 0
+        border-radius: 10px
+        width: 20%
+
+        img
+            object-fit: contain
+            width: 100%
+            height: 100%
+            border-radius: 15px
+
+
+    .event-title
+        font-size: 2.5rem
+        font-weight: 900
+        margin-bottom: 0.5em
+        font-family: Teko
+        color: $highlight
+        position: relative
+
+    .event-description
+        font-family: Teko
+        font-size: 1.5rem
+        font-weight: 900
+        margin-bottom: 0.5em
+        font-family: Space Mono
+        color: white
+        position: relative
+
+    .event-info
+        // align content
+        margin-top: 1.5em
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        font-family: Space Mono
+        margin-bottom: 0
+
+        .event-date
+            // to the left
+            display: flex
+            flex-direction: row
+            justify-content: left
+            align-items: center
+        
+        .event-details
+            // to the right
+            display: flex
+            flex-direction: row
+            justify-content: right
+            align-items: center
+
+
+.event-placeholder
+    opacity: 0.5 !important
+
+    .event-title
+        color: white !important
+        opacity: 1 !important
+        font-size: 3rem
+        margin: 0 !important
+
+
+/* ---------------------------------- team ---------------------------------- */
+.team
+    margin-top: 1em
+    margin-bottom: 6em
+
+.team-member 
+    background-color: white
+    width: 250px
+    height: 350px
+    border-radius: 10px
+    // border: 2px solid white
+    background-color: $dark
+    margin: 0 auto
+    padding: 1em
+
+    .team-member-name
+        width: 100%
+        height: 20%
+        z-index: 1
+        padding: 10px
+        font-family: Space Mono
+        font-size: 1.25rem
+        font-weight: 900
+        color: white
+        text-align: center
+
+    .team-member-role
+        font-family: Cormorant Infant !important
+    
+    .team-member-img
+        // take up whole card
+        width: 100%
+        height: 80%
+        border-radius: 15px
+        opacity: 0.85
+
+        img
+            object-fit: cover
+            width: 100%
+            height: 100%
+            border-radius: 15px
+
+/* -------------------------------- partners -------------------------------- */
+
+.partners
+    margin-bottom: 6em
+
+/* --------------------------------- signup --------------------------------- */
+
+.landing-signup
+    margin: 4em 0 1em 0
+    background-color: white
+    color: black
+    height: 200px
+    width: 100vw
+    padding: 2em 4em 0.2em 4em
+
+    .signup-text
+        font-size: 1.5rem
+        font-family: Cormorant Upright
+        margin-bottom: 0.5em
+
+    .form-placeholder
+        background-color: rgb(230, 230, 230)
+        height: 50px
+        border-radius: 25px
+        border: 1px solid rgb(100, 100, 100)
+        margin-top: 2em
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  HACKATHON                                 */
+/* -------------------------------------------------------------------------- */
+
+
+    
+/* ------------------------------- at a glance ------------------------------ */
+.hackathon-at-a-glance
+    padding-top: 4em !important
+    margin-bottom: 4em
+    font-family: Space Mono
+
+    .hackathon-tile-title
+        font-size: 3rem
+        font-weight: 500
+        color: white
+        text-align: center
+        font-family: Cormorant Upright
+        margin-bottom: 0.25em
+
+.h-tile
+    border-radius: 10px
+    padding: 1rem 0rem
+
+    // animate on hover
+    &:hover
+        transform: scale(1.02)
+        transition: transform 0.25s ease-in-out
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1)
+
+    // off howver
+    transform: scale(1)
+    box-shadow: none
+    transition: transform 0.25s ease-in-out
+
+    .title
+        padding-left: 1rem
+        font-weight: 900
+        text-decoration: underline
+
+    .content
+        padding: 0 2rem 
+        font-size: 1.2rem
+
+
+
+.h-what
+    background-color: $darker
+    color: white
+    background-image: url(../imgs/hackathon/header_head_only_transp.png)
+    background-repeat: no-repeat
+    background-position: right bottom
+    background-size: 60% 
+    border: 1px solid white
+
+    .title
+        color: white
+
+.h-why
+    background-color: $darker
+    border: 1px solid  $highlight_light
+    color: white
+
+    .title
+        color: $highlight_light
+
+
+.h-when
+    background-color: $darker
+    border: 1px solid  $green
+    color: white
+
+    .title
+        color: $green
+
+
+.h-where
+    background-color: $darker
+    border: 1px solid  $salmon
+    color: white
+
+    .title
+        color: $salmon
+
+.h-how
+    background-color: $darker
+    border: 1px solid  $lightblue
+    color: white
+
+    .title
+        color: $lightblue
+
+/* ---------------------------------- info ---------------------------------- */
+.hackathon-info
+    .hackathon-subtitle
+        padding-left: 6rem
+        font-size: 1.5rem
+        font-weight: 900
+        margin-top: 1.5em
+        margin-bottom: 0.25em
+        font-family: Space Mono
+
+    .development-icon
+        color: rgb(180, 180,180)
+        font-size: 1.1rem
+        padding-left: 10rem
+
+
+    p
+        padding-left: 10rem
+
+/* -------------------------------------------------------------------------- */
+/*                                   NAVBAR                                   */
+/* -------------------------------------------------------------------------- */
+nav
+    background-color: $dark !important
+
+    .navbar-item:hover
+        color: $highlight
+
+    .navbar
+        height: 120px !important
+
+    img
+        width: 120px
+        height: 80px
+        max-height: 80px !important
+
+    .navbartitle
+        color: white !important
+        font-size: 60px
+        font-weight: 700
+        padding-left: 4rem
+
+    .navbarpage
+        color: white !important
+        font-size: 30px
+        font-weight: 700
+        margin-right: 2rem
+
+    .BCII-name-navbar
+        font-size: 6rem
+        line-height: 4rem
+        font-weight: 900
+        padding-left: 2rem
+        color: white
+        font-family: Cormorant Upright 
