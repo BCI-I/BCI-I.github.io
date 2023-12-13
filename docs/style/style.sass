@@ -42,7 +42,7 @@ body
 .sep-line
     height: 3px
     border-radius: 3px
-    background-color: white
+    background-color: rgb(200, 200, 200)
     width: 80%
     margin: 2rem auto
 
@@ -54,11 +54,11 @@ body
     
 .img-and-text
     width: 80%
-    margin-top: 2em
+    margin: 2em auto
 
     img
-        max-width: 150px
-        max-height: 150px
+        max-width: 250px
+        max-height: 250px
         border-radius: 10px
         display: inline-block
         vertical-align: middle
@@ -69,6 +69,7 @@ body
         font-size: 1.3rem
         vertical-align: middle
         margin: 0 3rem
+        width: calc(80% - 250px)
 
 .float-right
     float: right
@@ -141,34 +142,28 @@ body
         width: 450px
         height: 500px
         border-radius: 10px
-        border: 2px solid white
+        // border: 2px solid white
         background-color: $darker
         margin: 0 auto
         position: relative
         text-align: center
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75)
 
         .content-card-text
             position: absolute
-            bottom: 0
+            top: 2%
             left: 0
             width: 100%
             z-index: 1
-            background-color: rgba(0, 0, 20, 0.75)
+            // background-color: rgba(0, 0, 20, 0.75)
             padding: 10px
             // height: 25%
             border-radius: 0 0 10px 10px
             font-family: Space Mono
-
-            .content-card-title
-                font-size: 2rem
-
-            .content-card-body
-                display: none
-
-        // show body on hovr
-        &:hover
-            .content-card-body
-                display: block
+            font-size: 4rem
+            font-weight: 900
+            text-shadow: 0px 0px 5px black
+            color: $highlight
 
         .card-img
             // take up whole card
@@ -176,3 +171,12 @@ body
             height: 100%
             object-fit: cover
             border-radius: 10px
+            opacity: 0.95
+
+.placeholder
+    .card-img
+        opacity: 0.5 !important
+    
+    .content-card-text
+        color: white !important
+        text-shadow: 0px 0px 10px black !important
