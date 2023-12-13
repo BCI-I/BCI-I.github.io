@@ -126,6 +126,27 @@ body a:hover {
   margin: 0 3rem;
   width: calc(80% - 250px);
 }
+@media screen and (max-width: 600px) {
+  .img-and-text {
+    width: 95%;
+    margin: 2em auto;
+  }
+  .img-and-text img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+  }
+  .img-and-text p {
+    display: block;
+    vertical-align: top;
+    font-size: 1.3rem;
+    vertical-align: middle;
+    margin: 0 0;
+    width: 100%;
+  }
+}
 
 .img-bg-white {
   background-color: white !important;
@@ -267,6 +288,64 @@ body a:hover {
     justify-content: center;
     align-items: center;
   }
+}
+
+.note-white, .note-salmon,
+.note-green, .note-lightblue, .note-highlight {
+  margin: 2em 0 2em 0 !important;
+  border-radius: 15px;
+  height: fit-content;
+  padding: 1em 2em;
+}
+.note-white .note-title, .note-salmon .note-title,
+.note-green .note-title, .note-lightblue .note-title, .note-highlight .note-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: -1.5em;
+  background-color: #2A3947 !important;
+  width: fit-content !important;
+  padding: 0 12px !important;
+}
+.note-white p, .note-salmon p,
+.note-green p, .note-lightblue p, .note-highlight p {
+  padding: 0 !important;
+  color: white;
+}
+
+.note-white {
+  border: 2px solid rgb(180, 180, 180);
+}
+.note-white .note-title {
+  color: white !important;
+}
+
+.note-salmon {
+  border: 2px solid #fb835f;
+}
+.note-salmon .note-title {
+  color: #fb835f !important;
+  float: right;
+}
+
+.note-green {
+  border: 2px solid #6bce70;
+}
+.note-green .note-title {
+  color: #6bce70 !important;
+}
+
+.note-lightblue {
+  border: 2px solid #58b4ff;
+}
+.note-lightblue .note-title {
+  color: #58b4ff !important;
+}
+
+.note-highlight {
+  border: 2px solid rgba(255, 204, 103, 0.9843137255);
+}
+.note-highlight .note-title {
+  color: rgba(255, 204, 103, 0.9843137255) !important;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -577,7 +656,6 @@ body a:hover {
   margin: 4em 0 1em 0;
   background-color: white;
   color: black;
-  height: 200px;
   width: 100vw;
   padding: 2em 4em 0.2em 4em;
 }
@@ -586,12 +664,18 @@ body a:hover {
   font-family: Cormorant Upright;
   margin-bottom: 0.5em;
 }
+@media screen and (max-width: 600px) {
+  .landing-signup .signup-text {
+    font-size: 1.5rem;
+  }
+}
 .landing-signup .form-placeholder {
   background-color: rgb(230, 230, 230);
   height: 50px;
   border-radius: 25px;
   border: 1px solid rgb(100, 100, 100);
   margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -820,6 +904,12 @@ body a:hover {
   color: #2A3947 !important;
   padding: 0px 5% !important;
 }
+.sponsor_card .hidden {
+  display: none;
+}
+.sponsor_card:hover .hidden {
+  display: block;
+}
 .sponsor_card img {
   margin-bottom: 1rem;
 }
@@ -914,6 +1004,18 @@ nav .BCII-name-navbar {
   padding-left: 2rem;
   color: white;
   font-family: Cormorant Upright;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  materials                                 */
+/* -------------------------------------------------------------------------- */
+.materials-place-holder {
+  height: 100vh;
+  background-image: url(../imgs/patterns/diagonal-lines.svg);
+  background-repeat: repeat;
+  background-position: center center;
+  padding: 5rem;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

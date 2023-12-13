@@ -128,6 +128,25 @@ body
         margin: 0 3rem
         width: calc(80% - 250px)
 
+    @media screen and (max-width: 600px)
+        width: 95%
+        margin: 2em auto
+
+        img
+            max-width: 100%
+            max-height: 100%
+            border-radius: 10px
+            display: block
+            margin: 0 auto
+
+        p
+            display: block
+            vertical-align: top
+            font-size: 1.3rem
+            vertical-align: middle
+            margin: 0 0
+            width: 100%
+
 .img-bg-white
     background-color: white !important
 
@@ -274,6 +293,55 @@ body
         justify-content: center
         align-items: center
 
+
+.note-white, .note-salmon, 
+.note-green, .note-lightblue, .note-highlight
+    margin: 2em 0 2em  0 !important
+    border-radius: 15px
+    height: fit-content
+    padding: 1em 2em
+
+    .note-title
+        font-size: 1.5rem
+        font-weight: 900
+        margin-top: -1.5em
+        background-color: $dark !important
+        width: fit-content !important
+        padding: 0 12px !important
+
+    p
+        padding: 0 !important
+        color: white
+
+.note-white
+    border: 2px solid rgb(180, 180, 180)
+    .note-title
+        color: white !important
+
+.note-salmon
+    border: 2px solid $salmon
+
+    .note-title
+        color: $salmon !important
+        // to the right
+        float: right
+
+
+.note-green
+    border: 2px solid $green
+    .note-title
+        color: $green !important
+
+.note-lightblue
+    border: 2px solid $lightblue
+    .note-title
+        color: $lightblue !important
+
+.note-highlight
+    border: 2px solid $highlight
+    .note-title
+        color: $highlight !important
+    
 
 /* -------------------------------------------------------------------------- */
 /*                                   LANDING                                  */
@@ -572,7 +640,6 @@ body
     margin: 4em 0 1em 0
     background-color: white
     color: black
-    height: 200px
     width: 100vw
     padding: 2em 4em 0.2em 4em
 
@@ -581,12 +648,16 @@ body
         font-family: Cormorant Upright
         margin-bottom: 0.5em
 
+        @media screen and (max-width: 600px)
+            font-size: 1.5rem
+
     .form-placeholder
         background-color: rgb(230, 230, 230)
         height: 50px
         border-radius: 25px
         border: 1px solid rgb(100, 100, 100)
         margin-top: 2em
+        margin-bottom: 2em
 
 
 
@@ -813,6 +884,14 @@ body
         color: $dark !important
         padding: 0px 5% !important
 
+    .hidden
+        display: none
+
+    &:hover
+        .hidden
+            display: block
+
+
 
     img
         margin-bottom: 1rem
@@ -908,3 +987,18 @@ nav
         padding-left: 2rem
         color: white
         font-family: Cormorant Upright 
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  materials                                 */
+/* -------------------------------------------------------------------------- */
+
+.materials-place-holder
+    height: 100vh
+    background-image: url(../imgs/patterns/diagonal-lines.svg)
+    background-repeat: repeat
+    background-position: center center
+    // background-size: cover
+
+    padding: 5rem
+    font-size: 2rem
