@@ -39,24 +39,75 @@ body
 /*                               global elements                              */
 /* -------------------------------------------------------------------------- */
 
+.name-txt
+    font-family: Cormorant Upright
+    
+
+.highlight, .highlight-green, .highlight-salmon, .highlight-lightblue, .highlight-black, .highlight-white,.highlight-darker
+    color: $dark !important
+    font-weight: 750
+    border-radius: 5px
+    padding: 0.1em 0.25em
+
+.highlight-black
+    background-color: black !important
+    color: white !important
+
+.highlight-white
+    background-color: white !important
+    color: black !important
+
+.highlight
+    background-color: $highlight !important
+
+.highlight-green
+    background-color: $green !important
+
+.highlight-salmon
+    background-color: $salmon !important
+
+.highlight-lightblue
+    background-color: $lightblue !important
+
+.highlight-darker
+    background-color: $darker !important
+    color: white !important
+
 .textaccent
     color: $highlight !important
     font-weight: 900
     text-decoration: underline
 
+.text-green
+    color: $green !important
+    font-weight: 900
+    text-decoration: underline
+
+.text-quote
+    font-family: Mark Script !important
+    font-style: italic !important
+    font-size: 1.3rem !important
+    color: black !important
+    border-left: 5px solid $salmon !important
+    padding-left: 12px !important
+
 .sep-line
     height: 3px
     border-radius: 3px
     background-color: rgb(200, 200, 200)
-    width: 80%
-    margin: 2rem auto
+    width: 100%
 
 .fancy-title
     font-family: Kaushan Script
-    font-size: 4rem
+    font-size: 5rem
     color: white
     margin-left: 2rem
     margin-top: 2.5em
+
+    @media screen and (max-width: 600px)
+        font-size: 3rem
+        margin-left: 12px
+
     
 .img-and-text
     width: 80%
@@ -116,7 +167,8 @@ body
         position: absolute
         top: 0
         left: 0
-        margin-left: 5em
+        margin-left: 2em
+        padding-right: 2em
         margin-top: 1em
 
     // bottom-right text
@@ -124,7 +176,8 @@ body
         position: absolute
         bottom: 0
         right: 0
-        margin-right: 5em
+        margin-right: 2em
+        padding-left: 2em
         margin-bottom: 1em
 
     // top-right text
@@ -132,7 +185,8 @@ body
         position: absolute
         top: 0
         right: 0
-        margin-right: 5em
+        margin-right: 2em
+        padding-left: 2em
         margin-top: 1em
 
     // bottom-left text
@@ -140,15 +194,51 @@ body
         position: absolute
         bottom: 0
         left: 0
-        margin-left: 5em
+        margin-left: 2em
         margin-bottom: 1em
+        padding-right: 2em
 
     p
         font-size: 1.5rem
         font-weight: 900
         color: white
-        text-shadow: 0px 0px 10px black
         margin: 0.5em 0 0.5em 0
+        width: 40%
+
+    // on mobile show image on top and texts stacked vertically
+    @media screen and (max-width: 900px)
+        img
+            width: 50%
+            margin: 2em auto 2em auto
+
+        p
+            font-size: 1.2rem
+            margin: 0.5em 0 0.5em 0
+            width: 95% !important
+
+        .top-left
+            position: relative
+            margin: 0
+            margin-top: 1em
+            padding: 0
+
+        .bottom-right
+            position: relative
+            margin: 0
+            margin-top: 1em
+            padding: 0
+
+        .top-right
+            position: relative
+            margin: 0
+            margin-top: 1em
+            padding: 0
+
+        .bottom-left
+            position: relative
+            margin: 0
+            margin-top: 1em
+            padding: 0
 
 
 
@@ -168,6 +258,23 @@ body
     cursor: default
     
 
+.vert-on-mobile
+    // to the right
+    display: flex
+    flex-direction: row
+    justify-content: right
+    align-items: left
+
+    span
+        margin-right: 0.5em
+
+    // on mobile, stack vertically
+    @media screen and (max-width: 600px)
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+
 /* -------------------------------------------------------------------------- */
 /*                                   LANDING                                  */
 /* -------------------------------------------------------------------------- */
@@ -179,9 +286,20 @@ body
     background-position: center center
     background-size: cover
 
+
+
     .landing-hero-content
         max-width: 1600px
         margin: 0 auto
+
+        // on mobile content vertically
+        @media screen and (max-width: 600px)
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+
 
 
     .landing-hero-img
@@ -191,6 +309,14 @@ body
         top: 40vh
         left: 10em
 
+        @media screen and (max-width: 600px)
+            top: 60%
+            left: 50%
+            transform: translate(-50%, -50%)
+            opacity: 0.15
+            width: 60%
+            z-index: 0
+
     .BCII-name
         font-size: 12rem
         line-height: 12rem
@@ -198,6 +324,20 @@ body
         padding-left: 4rem
         color: white
         font-family: Cormorant Upright 
+        z-index: 2
+
+        @media screen and (min-width: 1600px)
+            font-size: 15rem
+            line-height: 15rem
+
+        @media screen and (max-width: 600px)
+            display: block
+            float: none
+            width: 100%
+            font-size: 3rem
+            width: 80%
+            margin: 0 auto
+            
 
     .BCII-slogan
         font-size: 5rem
@@ -206,12 +346,30 @@ body
         line-height: 4.5rem
         max-width: 70%
         margin: 4rem 0 2rem auto
+        z-index: 2
+        color: white
 
         .slogan-second-line
             text-decoration: underline
             font-family: Kaushan Script
             font-weight: 200
 
+        @media screen and (min-width: 1600px)
+            font-size: 6rem
+            line-height: 5.5rem
+
+
+        @media screen and (max-width: 600px)
+            display: block
+            float: none
+            width: 100%
+            margin: 0 !important
+            font-size: 4rem
+            text-shadow: 0px 0px 1px black
+
+            .slogan-second-line
+                font-size: 3rem
+            
     .scroll-down
         position: absolute
         width: 100px
@@ -219,6 +377,10 @@ body
         left: 50%
         transform: translate(-50%, 0)
         bottom: 2em
+
+        @media screen and (max-width: 600px)
+            width: 50px
+            height: 50px
 
 .landing-content
     max-width: 1600px
@@ -261,14 +423,18 @@ body
     margin: 0 auto
     margin-bottom: 2em
     border-radius: 10px
-    padding: 1em 20% 1.5em 3em
-    border: 1px solid rgb(200, 200, 200)
+    padding: 1em 10% 1.5em 3em
+    border: 2px solid green
     background-color: $darker
     position: relative
     overflow: hidden
 
+    @media screen and (max-width: 600px)
+        width: 95%
+        padding: 1em
+
+
     .event-img
-        height: 100%
         position: absolute  
         bottom: -20px
         right: 0
@@ -281,14 +447,24 @@ body
             height: 100%
             border-radius: 15px
 
+        @media screen and (max-width: 600px)
+            width: 60%
+            // make sure its at bottom of div
+            bottom: -5px
+            height: 80%
+            right: -50px
+
 
     .event-title
         font-size: 2.5rem
         font-weight: 900
         margin-bottom: 0.5em
         font-family: Teko
-        color: $highlight
+        color: $green
         position: relative
+
+        @media screen and (max-width: 600px)
+            font-size: 1.7rem
 
     .event-description
         font-family: Teko
@@ -299,33 +475,36 @@ body
         color: white
         position: relative
 
+        @media screen and (max-width: 600px)
+            font-size: 1.2rem
+
+    
     .event-info
         // align content
         margin-top: 1.5em
         display: flex
-        flex-direction: row
-        justify-content: space-between
-        align-items: center
         font-family: Space Mono
         margin-bottom: 0
 
-        .event-date
-            // to the left
-            display: flex
-            flex-direction: row
-            justify-content: left
-            align-items: center
-        
-        .event-details
-            // to the right
-            display: flex
-            flex-direction: row
-            justify-content: right
-            align-items: center
+        @media screen and (max-width: 600px)
+            font-size: 0.8rem
+            text-align: center
+            width: 95%
+
+            .column
+                padding: 0
+
+    .espace
+        margin-left: 24px
+        margin-right: -8px
+
+    .columns
+        width: 95% !important
 
 
 .event-placeholder
     opacity: 0.5 !important
+    border: 2px solid rgb(180, 180, 180)
 
     .event-title
         color: white !important
@@ -333,6 +512,8 @@ body
         font-size: 3rem
         margin: 0 !important
 
+        @media screen and (max-width: 600px)
+            font-size: 1.7rem !important
 
 /* ---------------------------------- team ---------------------------------- */
 .team
@@ -362,6 +543,9 @@ body
 
     .team-member-role
         font-family: Cormorant Infant !important
+        color: $salmon !important
+        text-decoration: underline !important
+        font-size: 1.4rem !important
     
     .team-member-img
         // take up whole card
@@ -393,7 +577,7 @@ body
     padding: 2em 4em 0.2em 4em
 
     .signup-text
-        font-size: 1.5rem
+        font-size: 2rem
         font-family: Cormorant Upright
         margin-bottom: 0.5em
 
@@ -413,10 +597,20 @@ body
 
     
 /* ------------------------------- at a glance ------------------------------ */
+.hack-at-glance-cont
+    background-image: url(../imgs/patterns/topography.svg)
+    background-repeat: repeat
+    background-position: center center
+    background-size: cover
+    
 .hackathon-at-a-glance
-    padding-top: 4em !important
-    margin-bottom: 4em
+    padding-top: 6em !important
+    padding-bottom: 6em !important
     font-family: Space Mono
+
+    @media screen and (max-width: 600px)
+        padding-top: 2em !important
+        padding-bottom: 2em !important
 
     .hackathon-tile-title
         font-size: 3rem
@@ -461,6 +655,11 @@ body
     background-size: 60% 
     border: 3px solid white
 
+    // resize background on mobile
+    @media screen and (max-width: 600px)
+        background-size: 40%  !important
+        background-position: right bottom
+
     .title
         color: white
 
@@ -498,9 +697,10 @@ body
     .title
         color: $lightblue
 
-
+/* -------------------------------- hardware -------------------------------- */
 .hardware-card
     background-color: black
+    border: 3px solid  white
     margin-top: 2em
     padding: 1em 2em
     border-radius: 15px
@@ -531,18 +731,32 @@ body
         text-align: center
         font-family: Space Mono
         margin-bottom: 0.25em
+        text-decoration: underline
 
     p
         padding: 0.5rem !important
         font-size: 1.2rem
         font-family: Space Mono
 
+    .highlight-salmon, .highlight-green, .highlight-lightblue   
+        color: black !important
+
+    a
+        color: white
+
 .whitebg
     background-color: white !important
     color: $darker !important
+    border: 3px solid  black !important
     
     .hardware-title
         color: $darker !important
+
+    .highlight-salmon, .highlight-green, .highlight-lightblue, .highlight
+        color: black !important
+
+    a
+        color: black !important
 
 /* ---------------------------------- info ---------------------------------- */
 .hackathon-info
@@ -559,9 +773,91 @@ body
         font-size: 1.1rem
         padding-left: 10rem
 
+    @media screen and (min-width: 1200px)
+        p
+            padding-left: 10rem
+            padding-right: 10rem
 
-    p
-        padding-left: 10rem
+
+    @media screen and (max-width: 600px)
+        .hackathon-subtitle
+            padding-left: 0
+            font-size: 1.4rem !important
+
+        .development-icon
+            color: rgb(180, 180,180)
+            font-size: 1.1rem
+            padding-left: 0
+
+        p
+            width: 95%
+            margin: 0 auto
+            padding-left: 0 !important
+            padding-right: 0 !important
+
+
+/* -------------------------------- /sponsor -------------------------------- */
+
+.sponsor_card
+    padding: 2rem
+    border-radius: 12px
+    max-width: 60%
+    margin: 2rem auto
+    background-color: white
+    font-family: Space Mono !important
+
+    @media (max-width: 768px)
+        max-width: 100%
+    
+    .sponsor-blurb
+        color: $dark !important
+        padding: 0px 5% !important
+
+
+    img
+        margin-bottom: 1rem
+
+    b
+        color: $dark !important
+        font-weight: 900 !important
+
+    a
+        color: black !important
+        font-weight: 800
+
+    a:hover
+        font-weight: 900
+        text-decoration: underline
+
+    .sponsor-name
+        font-size: 1.8rem
+        font-weight: 900
+        margin-bottom: 1rem
+        text-decoration: underline
+
+    
+.partner-logo
+    height: 100px
+    background: white
+    margin: 0.5em
+    line-height: 100px
+    text-align: center
+    max-width: 500px
+    border-radius: 10px
+
+    @media (max-width: 768px)
+        max-width: 80%
+        margin: 0.5em auto
+
+    img
+        max-width: 100%
+        height: 80px
+        max-height: 80px
+        border-radius: 10px
+        
+
+.partner-logo-transparent
+    background: transparent
 
 /* -------------------------------------------------------------------------- */
 /*                                   NAVBAR                                   */
