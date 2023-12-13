@@ -22,8 +22,75 @@ body a:hover {
 /* -------------------------------------------------------------------------- */
 /*                               global elements                              */
 /* -------------------------------------------------------------------------- */
+.textaccent {
+  color: #ffcc67fb !important;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.sep-line {
+  height: 3px;
+  border-radius: 3px;
+  background-color: white;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.fancy-title {
+  font-family: Kaushan Script;
+  font-size: 4rem;
+  color: white;
+  margin-left: 2rem;
+}
+
+.img-and-text {
+  width: 80%;
+  margin-top: 2em;
+}
+.img-and-text img {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.img-and-text p {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.3rem;
+  vertical-align: middle;
+  margin: 0 3rem;
+}
+
+.float-right {
+  float: right;
+  margin-left: 4em;
+  margin-right: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.float-left {
+  float: left;
+  margin-left: 4em;
+  margin-right: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   LANDING                                  */
+/* -------------------------------------------------------------------------- */
 .landing-hero {
   height: 100vh;
+}
+.landing-hero .landing-hero-img {
+  max-width: 400px;
+  position: absolute;
+  top: 40vh;
+  left: 5em;
 }
 .landing-hero .BCII-name {
   font-size: 12rem;
@@ -54,10 +121,49 @@ body a:hover {
   bottom: -150px;
 }
 
-.textaccent {
-  color: #ffcc67fb !important;
-  font-weight: 900;
-  text-decoration: underline;
+.landing-content {
+  margin-top: 10em;
+  height: 4000px;
+}
+.landing-content .columns {
+  width: 90%;
+  margin: 3em auto;
+}
+.landing-content .content-card {
+  width: 450px;
+  height: 500px;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: #1E2A35;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+.landing-content .content-card .content-card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 20, 0.75);
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  font-family: Space Mono;
+}
+.landing-content .content-card .content-card-text .content-card-title {
+  font-size: 2rem;
+}
+.landing-content .content-card .content-card-text .content-card-body {
+  display: none;
+}
+.landing-content .content-card:hover .content-card-body {
+  display: block;
+}
+.landing-content .content-card .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
