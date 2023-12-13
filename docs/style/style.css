@@ -6,6 +6,7 @@ body {
   color: white;
   font-size: 1rem;
   cursor: default;
+  padding-bottom: 3em;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -133,6 +134,16 @@ body a:hover {
   margin: 0.5em 0 0.5em 0;
 }
 
+.narrow {
+  width: 80% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.unselectable {
+  cursor: default;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                   LANDING                                  */
 /* -------------------------------------------------------------------------- */
@@ -174,63 +185,62 @@ body a:hover {
   bottom: -150px;
 }
 
-.landing-content {
-  margin-top: 4em;
-  height: 4000px;
-}
-.landing-content .columns {
-  width: 90%;
-  margin: 3em auto;
-}
-.landing-content .content-card {
-  width: 450px;
-  height: 500px;
-  border-radius: 10px;
-  background-color: white;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-}
-.landing-content .content-card .content-card-text {
-  position: absolute;
-  top: 2%;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-  padding: 10px;
-  border-radius: 0 0 10px 10px;
-  font-family: Space Mono;
-  font-size: 4rem;
-  font-weight: 900;
-  text-shadow: 0px 0px 5px black;
-  color: white;
-}
-.landing-content .content-card .card-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  opacity: 0.5;
-}
-
-.placeholder .card-img {
-  opacity: 0.5 !important;
-}
-.placeholder .content-card-text {
+/* ---------------------------------- event --------------------------------- */
+.event-link {
+  text-decoration: none !important;
   color: white !important;
-  text-shadow: 0px 0px 10px black !important;
+}
+.event-link .event-info {
+  text-decoration: none !important;
+}
+.event-link:hover .event {
+  transform: scale(1.02);
+  transition: transform 0.25s ease-in-out;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+}
+.event-link:hover .event .event-img {
+  transform: translateX(20px);
+  transform: scale(1.1);
+  transition: transform 0.25s ease-in-out;
+}
+.event-link .event {
+  transform: scale(1);
+  transition: transform 0.25s ease-in-out;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+}
+.event-link .event .event-img {
+  transform: translateX(0px);
+  transform: scale(1);
+  transition: transform 0.25s ease-in-out;
 }
 
 .event {
-  background-color: #1E2A35;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
+  margin-bottom: 2em;
   border-radius: 10px;
-  padding: 2em;
+  padding: 1em 20% 1.5em 3em;
   border: 1px solid #c8c8c8;
+  background-color: #1E2A35;
+  position: relative;
+  overflow: hidden;
+}
+.event .event-img {
+  height: 100%;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  border-radius: 10px;
+  width: 20%;
+}
+.event .event-img img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
 }
 .event .event-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 900;
   margin-bottom: 0.5em;
   font-family: Teko;
@@ -253,6 +263,7 @@ body a:hover {
   justify-content: space-between;
   align-items: center;
   font-family: Space Mono;
+  margin-bottom: 0;
 }
 .event .event-info .event-date {
   display: flex;
@@ -265,6 +276,85 @@ body a:hover {
   flex-direction: row;
   justify-content: right;
   align-items: center;
+}
+
+.event-placeholder {
+  opacity: 0.5 !important;
+}
+.event-placeholder .event-title {
+  color: white !important;
+  opacity: 1 !important;
+  font-size: 3rem;
+  margin: 0 !important;
+}
+
+/* ---------------------------------- team ---------------------------------- */
+.team {
+  margin-top: 1em;
+  margin-bottom: 6em;
+}
+
+.team-member {
+  background-color: white;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: #2A3947;
+  margin: 0 auto;
+  padding: 1em;
+}
+.team-member .team-member-name {
+  width: 100%;
+  height: 20%;
+  z-index: 1;
+  padding: 10px;
+  font-family: Space Mono;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+}
+.team-member .team-member-role {
+  font-family: Cormorant Infant !important;
+}
+.team-member .team-member-img {
+  width: 100%;
+  height: 80%;
+  border-radius: 15px;
+  opacity: 0.85;
+}
+.team-member .team-member-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+/* -------------------------------- partners -------------------------------- */
+.partners {
+  margin-bottom: 6em;
+}
+
+/* --------------------------------- signup --------------------------------- */
+.landing-signup {
+  margin: 4em 0 1em 0;
+  background-color: white;
+  color: black;
+  height: 200px;
+  width: 100vw;
+  padding: 2em 4em 0.2em 4em;
+}
+.landing-signup .signup-text {
+  font-size: 1.5rem;
+  font-family: Cormorant Upright;
+  margin-bottom: 0.5em;
+}
+.landing-signup .form-placeholder {
+  background-color: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #646464;
+  margin-top: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */
