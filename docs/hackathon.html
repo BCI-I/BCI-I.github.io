@@ -31,39 +31,41 @@
     <link rel="stylesheet"
       href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="style/style.css">
+
+    <!-- <meta http-equiv="refresh" content="2"> -->
   </head>
 
   <body>
     <!-- <p class="BCII-name-navbar">BCI <i style="font-weight: 400">initiative</i></p> -->
-      <!-- ------------------------------- navbar -------------------------------- -->
-      <nav class="navbar is-transparent">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="index.html">
-                <img src="imgs/white_logo.svg"
-                    alt="Brain Computer Initiative Logo">
-            </a>
-            <div class="navbar-burger"
-                data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <!-- ------------------------------- navbar -------------------------------- -->
+    <nav class="navbar is-transparent">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="imgs/white_logo.svg"
+            alt="Brain Computer Initiative Logo">
+        </a>
+        <div class="navbar-burger"
+          data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
 
-        <div class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item BCII-name-navbar"
-                    href="https://bci-i.github.io/">
-                    BCI initiative
-                </a>
-            </div>
-            <!-- <div class="navbar-end">
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item BCII-name-navbar"
+            href="https://bci-i.github.io/">
+            BCI initiative
+          </a>
+        </div>
+        <!-- <div class="navbar-end">
                 <a class="navbar-item navbarpage"
                     href="https://bci-i.github.io/hackathon">
                     MIT hackathon
                 </a>
             </div> -->
-        </div>
+      </div>
     </nav>
     <!-- ----------------------------------------------------------------------- -->
     <!--                               at a glance                               -->
@@ -140,12 +142,45 @@
       <p>
         Description about how the hackathon is structured
       </p>
+
+      <!-- ------------------------------ hardware ------------------------------- -->
       <h1 class="hackathon-subtitle">Hardware</h1>
       <p>Describe the hardware used</p>
 
+      <div class="columns narrow">
+        <div class="column">
+          <div class="hardware-card">
+            <h1 class="hardware-title">X.on EEG headset</h1>
+            <div class="videocontainer has-text-centered">
+              <video width="640" height="360" autoplay loop
+                style="border-radius: 15px;">
+                <source src="imgs/hackathon/x.on-hero-video.mp4"
+                  type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <p>Describe hardware 1</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="hardware-card whitebg">
+            <h1 class="hardware-title">Duckiebot</h1>
+            <div class="imgcontainer">
+              <img src="imgs/hackathon/duckiebot.jpg" alt="Duckiebot">
+            </div>
+            
+            <p>Describe hardware 2</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------- competition ----------------------------- -->
       <h1 class="hackathon-subtitle">Competition</h1>
       <p>Describe the competition</p>
 
+      <!-- -------------------------------- prize -------------------------------- -->
       <h1 class="hackathon-subtitle">Prizes</h1>
       <div class="development-icon">
         <span class="icon-text">
@@ -159,6 +194,7 @@
         </span>
       </div>
 
+      <!-- ------------------------------ schedule ------------------------------- -->
       <h1 class="hackathon-subtitle">Schedule</h1>
       <div class="development-icon">
         <span class="icon-text">
@@ -172,6 +208,7 @@
         </span>
       </div>
 
+      <!-- ------------------------------ preparing ------------------------------ -->
       <h1 class="hackathon-subtitle">Preparing for the hackathon</h1>
       <div class="development-icon">
         <span class="icon-text">

@@ -11,11 +11,11 @@ body {
   text-justify: inter-word;
 }
 body a {
-  color: #ad88ff;
+  color: rgb(173, 136, 255);
   font-weight: 800;
 }
 body a:hover {
-  color: #ffcc67fb;
+  color: rgba(255, 204, 103, 0.9843137255);
   font-weight: 900;
   text-decoration: underline;
 }
@@ -24,7 +24,7 @@ body a:hover {
 /*                               global elements                              */
 /* -------------------------------------------------------------------------- */
 .textaccent {
-  color: #ffcc67fb !important;
+  color: rgba(255, 204, 103, 0.9843137255) !important;
   font-weight: 900;
   text-decoration: underline;
 }
@@ -32,7 +32,7 @@ body a:hover {
 .sep-line {
   height: 3px;
   border-radius: 3px;
-  background-color: #c8c8c8;
+  background-color: rgb(200, 200, 200);
   width: 80%;
   margin: 2rem auto;
 }
@@ -96,7 +96,7 @@ body a:hover {
   display: block;
   margin: 2em auto 2em auto;
   width: 20%;
-  box-shadow: 0 0 150px 40px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1000px 20px rgba(255, 255, 255, 0.1);
 }
 .center-img-text-around .top-left {
   position: absolute;
@@ -138,6 +138,7 @@ body a:hover {
   width: 80% !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  max-width: 1200px !important;
 }
 
 .unselectable {
@@ -149,9 +150,16 @@ body a:hover {
 /* -------------------------------------------------------------------------- */
 .landing-hero {
   height: 100vh;
+  max-width: 1800px;
+  margin: 0 auto;
+  background-image: url(../imgs/patterns/topography.svg);
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: cover;
 }
 .landing-hero .landing-hero-img {
-  max-width: 400px;
+  max-width: 450px;
+  width: 40%;
   position: absolute;
   top: 40vh;
   left: 5em;
@@ -178,11 +186,17 @@ body a:hover {
   font-weight: 200;
 }
 .landing-hero .scroll-down {
-  position: relative;
+  position: absolute;
+  width: 100px;
+  height: 100px;
   left: 50%;
   transform: translate(-50%, 0);
-  max-width: 70px;
-  bottom: -150px;
+  bottom: 2em;
+}
+
+.landing-content {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 /* ---------------------------------- event --------------------------------- */
@@ -220,7 +234,7 @@ body a:hover {
   margin-bottom: 2em;
   border-radius: 10px;
   padding: 1em 20% 1.5em 3em;
-  border: 1px solid #c8c8c8;
+  border: 1px solid rgb(200, 200, 200);
   background-color: #1E2A35;
   position: relative;
   overflow: hidden;
@@ -244,7 +258,7 @@ body a:hover {
   font-weight: 900;
   margin-bottom: 0.5em;
   font-family: Teko;
-  color: #ffcc67fb;
+  color: rgba(255, 204, 103, 0.9843137255);
   position: relative;
 }
 .event .event-description {
@@ -328,6 +342,7 @@ body a:hover {
   width: 100%;
   height: 100%;
   border-radius: 15px;
+  border: 2px solid rgb(200, 200, 200);
 }
 
 /* -------------------------------- partners -------------------------------- */
@@ -350,10 +365,10 @@ body a:hover {
   margin-bottom: 0.5em;
 }
 .landing-signup .form-placeholder {
-  background-color: #e6e6e6;
+  background-color: rgb(230, 230, 230);
   height: 50px;
   border-radius: 25px;
-  border: 1px solid #646464;
+  border: 1px solid rgb(100, 100, 100);
   margin-top: 2em;
 }
 
@@ -404,7 +419,7 @@ body a:hover {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 60%;
-  border: 1px solid white;
+  border: 3px solid white;
 }
 .h-what .title {
   color: white;
@@ -412,38 +427,84 @@ body a:hover {
 
 .h-why {
   background-color: #1E2A35;
-  border: 1px solid #f8d794fb;
+  border: 3px solid rgba(255, 204, 103, 0.9843137255);
   color: white;
 }
 .h-why .title {
-  color: #f8d794fb;
+  color: rgba(255, 204, 103, 0.9843137255);
 }
 
 .h-when {
   background-color: #1E2A35;
-  border: 1px solid #64b168;
+  border: 3px solid #6bce70;
   color: white;
 }
 .h-when .title {
-  color: #64b168;
+  color: #6bce70;
 }
 
 .h-where {
   background-color: #1E2A35;
-  border: 1px solid #ec8566;
+  border: 3px solid #fb835f;
   color: white;
 }
 .h-where .title {
-  color: #ec8566;
+  color: #fb835f;
 }
 
 .h-how {
   background-color: #1E2A35;
-  border: 1px solid #61aeed;
+  border: 3px solid #58b4ff;
   color: white;
 }
 .h-how .title {
-  color: #61aeed;
+  color: #58b4ff;
+}
+
+.hardware-card {
+  background-color: black;
+  margin-top: 2em;
+  padding: 1em 2em;
+  border-radius: 15px;
+}
+.hardware-card .videocontainer {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hardware-card .imgcontainer {
+  height: 300px;
+  width: 90%;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+.hardware-card .imgcontainer img {
+  object-fit: fit;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.hardware-card .hardware-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  font-family: Space Mono;
+  margin-bottom: 0.25em;
+}
+.hardware-card p {
+  padding: 0.5rem !important;
+  font-size: 1.2rem;
+  font-family: Space Mono;
+}
+
+.whitebg {
+  background-color: white !important;
+  color: #1E2A35 !important;
+}
+.whitebg .hardware-title {
+  color: #1E2A35 !important;
 }
 
 /* ---------------------------------- info ---------------------------------- */
@@ -456,7 +517,7 @@ body a:hover {
   font-family: Space Mono;
 }
 .hackathon-info .development-icon {
-  color: #b4b4b4;
+  color: rgb(180, 180, 180);
   font-size: 1.1rem;
   padding-left: 10rem;
 }
@@ -471,7 +532,7 @@ nav {
   background-color: #2A3947 !important;
 }
 nav .navbar-item:hover {
-  color: #ffcc67fb;
+  color: rgba(255, 204, 103, 0.9843137255);
 }
 nav .navbar {
   height: 120px !important;
@@ -480,6 +541,16 @@ nav img {
   width: 120px;
   height: 80px;
   max-height: 80px !important;
+}
+nav a:hover {
+  color: white !important;
+  text-decoration: none;
+  transform: scale(1.02);
+  transition: transform 0.25s ease-in-out;
+}
+nav a {
+  transform: scale(1);
+  transition: transform 0.25s ease-in-out;
 }
 nav .navbartitle {
   color: white !important;
