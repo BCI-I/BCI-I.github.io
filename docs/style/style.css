@@ -206,7 +206,7 @@ body a:hover {
 .event-link .event {
   transform: scale(1);
   transition: transform 0.25s ease-in-out;
-  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 }
 .event-link .event .event-img {
   transform: translateX(0px);
@@ -355,6 +355,151 @@ body a:hover {
   border-radius: 25px;
   border: 1px solid #646464;
   margin-top: 2em;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  HACKATHON                                 */
+/* -------------------------------------------------------------------------- */
+/* ------------------------------- at a glance ------------------------------ */
+.hackathon-at-a-glance {
+  padding-top: 4em !important;
+  margin-bottom: 4em;
+  font-family: Space Mono;
+}
+.hackathon-at-a-glance .hackathon-tile-title {
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  font-family: Cormorant Upright;
+  margin-bottom: 0.25em;
+}
+
+.h-tile {
+  border-radius: 10px;
+  padding: 1rem 0rem;
+  transform: scale(1);
+  box-shadow: none;
+  transition: transform 0.25s ease-in-out;
+}
+.h-tile:hover {
+  transform: scale(1.02);
+  transition: transform 0.25s ease-in-out;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+}
+.h-tile .title {
+  padding-left: 1rem;
+  font-weight: 900;
+  text-decoration: underline;
+}
+.h-tile .content {
+  padding: 0 2rem;
+  font-size: 1.2rem;
+}
+
+.h-what {
+  background-color: #1E2A35;
+  color: white;
+  background-image: url(../imgs/hackathon/header_head_only_transp.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 60%;
+  border: 1px solid white;
+}
+.h-what .title {
+  color: white;
+}
+
+.h-why {
+  background-color: #1E2A35;
+  border: 1px solid #f8d794fb;
+  color: white;
+}
+.h-why .title {
+  color: #f8d794fb;
+}
+
+.h-when {
+  background-color: #1E2A35;
+  border: 1px solid #64b168;
+  color: white;
+}
+.h-when .title {
+  color: #64b168;
+}
+
+.h-where {
+  background-color: #1E2A35;
+  border: 1px solid #ec8566;
+  color: white;
+}
+.h-where .title {
+  color: #ec8566;
+}
+
+.h-how {
+  background-color: #1E2A35;
+  border: 1px solid #61aeed;
+  color: white;
+}
+.h-how .title {
+  color: #61aeed;
+}
+
+/* ---------------------------------- info ---------------------------------- */
+.hackathon-info .hackathon-subtitle {
+  padding-left: 6rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 1.5em;
+  margin-bottom: 0.25em;
+  font-family: Space Mono;
+}
+.hackathon-info .development-icon {
+  color: #b4b4b4;
+  font-size: 1.1rem;
+  padding-left: 10rem;
+}
+.hackathon-info p {
+  padding-left: 10rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   NAVBAR                                   */
+/* -------------------------------------------------------------------------- */
+nav {
+  background-color: #2A3947 !important;
+}
+nav .navbar-item:hover {
+  color: #ffcc67fb;
+}
+nav .navbar {
+  height: 120px !important;
+}
+nav img {
+  width: 120px;
+  height: 80px;
+  max-height: 80px !important;
+}
+nav .navbartitle {
+  color: white !important;
+  font-size: 60px;
+  font-weight: 700;
+  padding-left: 4rem;
+}
+nav .navbarpage {
+  color: white !important;
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 2rem;
+}
+nav .BCII-name-navbar {
+  font-size: 6rem;
+  line-height: 4rem;
+  font-weight: 900;
+  padding-left: 2rem;
+  color: white;
+  font-family: Cormorant Upright;
 }
 
 /*# sourceMappingURL=style.css.map */

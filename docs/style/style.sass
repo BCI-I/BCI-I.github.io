@@ -4,9 +4,14 @@ $darkest: #0d1e32
 $offwhite: #d5d5d5
 $grey: #aabfd1
 $highlight: #ffcc67fb
+$highlight_light: #f8d794fb
 $highlight_bold : #ffcc67fb
 $link: rgb(173, 136, 255)
 $h4color: #f4d392fb
+$salmon: #ec8566
+$green: #64b168
+$lightblue: #61aeed
+$lilla: #a98cdf
 
 body
     background-color: $dark !important
@@ -269,7 +274,7 @@ body
         // scale 
         transform: scale(1)
         transition: transform 0.25s ease-in-out
-        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1)
+        box-shadow: none
 
         .event-img
             transform: translateX(0px)
@@ -423,3 +428,153 @@ body
         border-radius: 25px
         border: 1px solid rgb(100, 100, 100)
         margin-top: 2em
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  HACKATHON                                 */
+/* -------------------------------------------------------------------------- */
+
+
+    
+/* ------------------------------- at a glance ------------------------------ */
+.hackathon-at-a-glance
+    padding-top: 4em !important
+    margin-bottom: 4em
+    font-family: Space Mono
+
+    .hackathon-tile-title
+        font-size: 3rem
+        font-weight: 500
+        color: white
+        text-align: center
+        font-family: Cormorant Upright
+        margin-bottom: 0.25em
+
+.h-tile
+    border-radius: 10px
+    padding: 1rem 0rem
+
+    // animate on hover
+    &:hover
+        transform: scale(1.02)
+        transition: transform 0.25s ease-in-out
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1)
+
+    // off howver
+    transform: scale(1)
+    box-shadow: none
+    transition: transform 0.25s ease-in-out
+
+    .title
+        padding-left: 1rem
+        font-weight: 900
+        text-decoration: underline
+
+    .content
+        padding: 0 2rem 
+        font-size: 1.2rem
+
+
+
+.h-what
+    background-color: $darker
+    color: white
+    background-image: url(../imgs/hackathon/header_head_only_transp.png)
+    background-repeat: no-repeat
+    background-position: right bottom
+    background-size: 60% 
+    border: 1px solid white
+
+    .title
+        color: white
+
+.h-why
+    background-color: $darker
+    border: 1px solid  $highlight_light
+    color: white
+
+    .title
+        color: $highlight_light
+
+
+.h-when
+    background-color: $darker
+    border: 1px solid  $green
+    color: white
+
+    .title
+        color: $green
+
+
+.h-where
+    background-color: $darker
+    border: 1px solid  $salmon
+    color: white
+
+    .title
+        color: $salmon
+
+.h-how
+    background-color: $darker
+    border: 1px solid  $lightblue
+    color: white
+
+    .title
+        color: $lightblue
+
+/* ---------------------------------- info ---------------------------------- */
+.hackathon-info
+    .hackathon-subtitle
+        padding-left: 6rem
+        font-size: 1.5rem
+        font-weight: 900
+        margin-top: 1.5em
+        margin-bottom: 0.25em
+        font-family: Space Mono
+
+    .development-icon
+        color: rgb(180, 180,180)
+        font-size: 1.1rem
+        padding-left: 10rem
+
+
+    p
+        padding-left: 10rem
+
+/* -------------------------------------------------------------------------- */
+/*                                   NAVBAR                                   */
+/* -------------------------------------------------------------------------- */
+nav
+    background-color: $dark !important
+
+    .navbar-item:hover
+        color: $highlight
+
+    .navbar
+        height: 120px !important
+
+    img
+        width: 120px
+        height: 80px
+        max-height: 80px !important
+
+    .navbartitle
+        color: white !important
+        font-size: 60px
+        font-weight: 700
+        padding-left: 4rem
+
+    .navbarpage
+        color: white !important
+        font-size: 30px
+        font-weight: 700
+        margin-right: 2rem
+
+    .BCII-name-navbar
+        font-size: 6rem
+        line-height: 4rem
+        font-weight: 900
+        padding-left: 2rem
+        color: white
+        font-family: Cormorant Upright 
