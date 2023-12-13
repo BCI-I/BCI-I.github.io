@@ -1,0 +1,71 @@
+$dark: #2A3947
+$darker: #1E2A35
+$darkest: #0d1e32
+$offwhite: #d5d5d5
+$grey: #aabfd1
+$highlight: #ffcc67fb
+$highlight_bold : #ffcc67fb
+$link: rgb(173, 136, 255)
+$h4color: #f4d392fb
+
+body
+    background-color: $dark !important
+    min-height: 100vh
+    min-width: 100vw
+    font-family: Nunito Sans
+    color: white
+    font-size: 1.0rem
+    cursor: default
+
+    text-align: justify
+    text-justify: inter-word
+
+    a
+        color: $link
+        font-weight: 800
+
+    a:hover
+        color: $highlight
+        font-weight: 900
+        text-decoration: underline
+
+
+/* -------------------------------------------------------------------------- */
+/*                               global elements                              */
+/* -------------------------------------------------------------------------- */
+
+.landing-hero
+    height: 100vh
+
+    .BCII-name
+        font-size: 12rem
+        line-height: 12rem
+        font-weight: 900
+        padding-left: 4rem
+        color: white
+        font-family: Cormorant Upright 
+
+    .BCII-slogan
+        font-size: 5rem
+        font-family: Cormorant Infant
+        text-align: center
+        line-height: 4.5rem
+        max-width: 70%
+        margin: 4rem 0 2rem auto
+
+        .slogan-second-line
+            text-decoration: underline
+            font-family: Kaushan Script
+            font-weight: 200
+
+    .scroll-down
+        position: relative
+        left: 50%
+        transform: translate(-50%, 0)
+        max-width: 70px
+        bottom: -150px
+
+.textaccent
+    color: $highlight !important
+    font-weight: 900
+    text-decoration: underline
