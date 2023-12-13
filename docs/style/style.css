@@ -41,6 +41,7 @@ body a:hover {
   font-size: 4rem;
   color: white;
   margin-left: 2rem;
+  margin-top: 2.5em;
 }
 
 .img-and-text {
@@ -63,6 +64,10 @@ body a:hover {
   width: calc(80% - 250px);
 }
 
+.img-bg-white {
+  background-color: white !important;
+}
+
 .float-right {
   float: right;
   margin-left: 4em;
@@ -79,6 +84,53 @@ body a:hover {
   display: flex;
   flex-direction: row;
   justify-content: left;
+}
+
+.center-img-text-around {
+  position: relative;
+  text-align: center;
+  padding: 2em;
+}
+.center-img-text-around img {
+  display: block;
+  margin: 2em auto 2em auto;
+  width: 20%;
+  box-shadow: 0 0 150px 40px rgba(255, 255, 255, 0.1);
+}
+.center-img-text-around .top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 5em;
+  margin-top: 1em;
+}
+.center-img-text-around .bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 5em;
+  margin-bottom: 1em;
+}
+.center-img-text-around .top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 5em;
+  margin-top: 1em;
+}
+.center-img-text-around .bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 5em;
+  margin-bottom: 1em;
+}
+.center-img-text-around p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 0px 0px 10px black;
+  margin: 0.5em 0 0.5em 0;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -123,7 +175,7 @@ body a:hover {
 }
 
 .landing-content {
-  margin-top: 10em;
+  margin-top: 4em;
   height: 4000px;
 }
 .landing-content .columns {
@@ -134,11 +186,10 @@ body a:hover {
   width: 450px;
   height: 500px;
   border-radius: 10px;
-  background-color: #1E2A35;
+  background-color: white;
   margin: 0 auto;
   position: relative;
   text-align: center;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 .landing-content .content-card .content-card-text {
   position: absolute;
@@ -152,14 +203,14 @@ body a:hover {
   font-size: 4rem;
   font-weight: 900;
   text-shadow: 0px 0px 5px black;
-  color: #ffcc67fb;
+  color: white;
 }
 .landing-content .content-card .card-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  opacity: 0.95;
+  opacity: 0.5;
 }
 
 .placeholder .card-img {
@@ -168,6 +219,52 @@ body a:hover {
 .placeholder .content-card-text {
   color: white !important;
   text-shadow: 0px 0px 10px black !important;
+}
+
+.event {
+  background-color: #1E2A35;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 2em;
+  border: 1px solid #c8c8c8;
+}
+.event .event-title {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 0.5em;
+  font-family: Teko;
+  color: #ffcc67fb;
+  position: relative;
+}
+.event .event-description {
+  font-family: Teko;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5em;
+  font-family: Space Mono;
+  color: white;
+  position: relative;
+}
+.event .event-info {
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Space Mono;
+}
+.event .event-info .event-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.event .event-info .event-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
