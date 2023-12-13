@@ -159,6 +159,10 @@ body
 
     max-width: 1200px !important
 
+    // wider on mobile
+    @media screen and (max-width: 600px)
+        width: 95% !important
+        margin: 0 12px !important
 
 .unselectable
     cursor: default
@@ -170,23 +174,22 @@ body
 
 .landing-hero
     height: 100vh
-    max-width: 1800px
-    margin: 0 auto
-
-    // add background pattern
     background-image: url(../imgs/patterns/topography.svg)
     background-repeat: repeat
     background-position: center center
     background-size: cover
 
+    .landing-hero-content
+        max-width: 1600px
+        margin: 0 auto
 
 
     .landing-hero-img
-        max-width: 450px
+        max-width: 500px
         width: 40%
         position: absolute
         top: 40vh
-        left: 5em
+        left: 10em
 
     .BCII-name
         font-size: 12rem
