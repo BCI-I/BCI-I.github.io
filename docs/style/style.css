@@ -38,38 +38,32 @@ body a:hover {
 }
 
 .highlight, .highlight-green, .highlight-salmon, .highlight-lightblue, .highlight-black, .highlight-white, .highlight-darker {
-  color: #2A3947 !important;
   font-weight: 550;
   padding: 0.05em 0.2em;
 }
 
 .highlight-salmon {
-  color: white !important;
   box-shadow: inset 0 -0.01em #2A3947, inset 0 -0.2em 0 0 #ff6d42;
   text-shadow: -1px -1px #2A3947, -1px 1px #2A3947, 1px -1px #2A3947, 1px 1px #2A3947;
 }
 
 .highlight {
-  color: white !important;
   box-shadow: inset 0 -0.01em #2A3947, inset 0 -0.2em 0 0 rgba(255, 187, 52, 0.9843137255);
   text-shadow: -1px -1px #2A3947, -1px 1px #2A3947, 1px -1px #2A3947, 1px 1px #2A3947;
 }
 
 .highlight-green {
-  color: white !important;
   box-shadow: inset 0 -0.01em #2A3947, inset 0 -0.2em 0 0 #42de49;
   text-shadow: -1px -1px #2A3947, -1px 1px #2A3947, 1px -1px #2A3947, 1px 1px #2A3947;
 }
 
 .highlight-lightblue {
-  color: white !important;
   box-shadow: inset 0 -0.01em #2A3947, inset 0 -0.2em 0 0 #3fa9ff;
   text-shadow: -1px -1px #2A3947, -1px 1px #2A3947, 1px -1px #2A3947, 1px 1px #2A3947;
 }
 
 .highlight-darker {
   background-color: rgba(28, 39, 50, 0.5) !important;
-  color: white !important;
   box-shadow: inset 0 -0.01em #2A3947, inset 0 -0.2em 0 0 #0f1d2a;
   text-shadow: -1px -1px #2A3947, -1px 1px #2A3947, 1px -1px #2A3947, 1px 1px #2A3947;
   color: white !important;
@@ -692,7 +686,7 @@ body a:hover {
 }
 
 .hackathon-at-a-glance {
-  padding-top: 3em !important;
+  padding-top: 1em !important;
   padding-bottom: 6em !important;
   font-family: Space Mono;
 }
@@ -834,15 +828,8 @@ body a:hover {
   font-size: 1.2rem;
   font-family: Space Mono;
 }
-.hardware-card .highlight-salmon, .hardware-card .highlight-green, .hardware-card .highlight-lightblue {
-  color: black !important;
-}
 .hardware-card a {
   color: white;
-}
-.hardware-card .highlight, .hardware-card .highlight-green, .hardware-card .highlight-salmon, .hardware-card .highlight-lightblue, .hardware-card .highlight-black, .hardware-card .highlight-white, .hardware-card .highlight-darker {
-  color: white !important;
-  text-shadow: none;
 }
 
 .whitebg {
@@ -852,9 +839,6 @@ body a:hover {
 }
 .whitebg .hardware-title {
   color: #1E2A35 !important;
-}
-.whitebg .highlight-salmon, .whitebg .highlight-green, .whitebg .highlight-lightblue, .whitebg .highlight {
-  color: black !important;
 }
 .whitebg a {
   color: black !important;
@@ -1016,6 +1000,8 @@ body a:hover {
 /* -------------------------------------------------------------------------- */
 nav {
   background-color: #2A3947 !important;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 nav .navbar-item:hover {
   color: #ffcc67fb;

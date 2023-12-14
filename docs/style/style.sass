@@ -88,34 +88,28 @@ body
 
 
 .highlight, .highlight-green, .highlight-salmon, .highlight-lightblue, .highlight-black, .highlight-white,.highlight-darker
-    color: $dark !important
     font-weight: 550
     // border-radius: 5px 5px 2px 2px
     padding: 0.05em 0.2em
 
 .highlight-salmon
     // background-color: color.adjust($salmon, $alpha: -0.1, $saturation: -10, $lightness: 15) !important
-    color: white !important
     box-shadow: inset 0 -0.01em $dark, inset 0 -0.2em 0 0 color.adjust($salmon, $saturation: 20, $lightness: -5) 
     text-shadow: -1px -1px $dark, -1px 1px $dark, 1px -1px $dark, 1px 1px $dark 
 .highlight
     // background-color: color.adjust($highlight, $alpha: -0.1, $saturation: -10, $lightness: 15) !important
-    color: white !important
     box-shadow: inset 0 -0.01em $dark, inset 0 -0.2em 0 0 color.adjust($highlight, $saturation: 40, $lightness: -10) 
     text-shadow: -1px -1px $dark, -1px 1px $dark, 1px -1px $dark, 1px 1px $dark 
 .highlight-green
     // background-color: color.adjust($green, $alpha: -0.1, $saturation: -10, $lightness: 15) !important
-    color: white !important
     box-shadow: inset 0 -0.01em $dark, inset 0 -0.2em 0 0 color.adjust($green, $saturation: 20, $lightness: -5) 
     text-shadow: -1px -1px $dark, -1px 1px $dark, 1px -1px $dark, 1px 1px $dark 
 .highlight-lightblue
     // background-color: color.adjust($lightblue, $alpha: -0.1, $saturation: -10, $lightness: 15) !important
-    color: white !important
     box-shadow: inset 0 -0.01em $dark, inset 0 -0.2em 0 0 color.adjust($lightblue, $saturation: 20, $lightness: -5) 
     text-shadow: -1px -1px $dark, -1px 1px $dark, 1px -1px $dark, 1px 1px $dark 
 .highlight-darker
     background-color: color.adjust($darker, $alpha:-0.5,   $lightness: -1) !important
-    color: white !important
     box-shadow: inset 0 -0.01em $dark, inset 0 -0.2em 0 0 color.adjust($darker, $saturation: 20, $lightness: -5) 
     text-shadow: -1px -1px $dark, -1px 1px $dark, 1px -1px $dark, 1px 1px $dark 
     color: white !important
@@ -408,6 +402,8 @@ body
 /* -------------------------------------------------------------------------- */
 nav
     background-color: $dark !important
+    padding-top: 1em
+    padding-bottom: 1em
 
     .navbar-item:hover
         color: $highlight
