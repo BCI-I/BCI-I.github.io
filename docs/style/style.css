@@ -445,6 +445,11 @@ body a:hover {
   transform: translate(-50%, 0);
   z-index: 0;
 }
+@media screen and (min-width: 1600px) {
+  .landing-hero .landing-hero-img {
+    max-width: 22em;
+  }
+}
 @media screen and (max-width: 600px) {
   .landing-hero .landing-hero-img {
     z-index: 0;
