@@ -30,7 +30,6 @@
         color: white
         font-family: DM Serif Display
         z-index: 2
-        width: 100vw
         text-align: center
         top: 5vh
         position: relative
@@ -57,8 +56,9 @@
         z-index: 2
 
         @media screen and (max-width: 600px)
-            font-size: 3rem
+            font-size: 2rem
             text-shadow: 0px 0px 1px black
+            width: 90%
     
     .landing-hero-img
         max-width: 18em
@@ -70,9 +70,13 @@
 
 
         @media screen and (max-width: 600px)
-            opacity: 0.15
-            width: 80%
+            // opacity: 0.15
+            // width: 80%
             z-index: 0
+            left: 50vw
+            transform: translate(-70%, 0)
+            top: 6em
+
 
     .scroll-down
         position: absolute
