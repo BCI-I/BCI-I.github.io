@@ -840,6 +840,29 @@ body a:hover {
   flex-direction: column;
   justify-content: center;
 }
+@media screen and (max-width: 600px) {
+  .hardware-card .videocontainer {
+    display: none;
+  }
+}
+.hardware-card .imgcontainer-mobile {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .hardware-card .imgcontainer-mobile {
+    display: block;
+    height: 300px;
+    width: 90%;
+    border-radius: 15px;
+    margin: 0 auto;
+  }
+  .hardware-card .imgcontainer-mobile img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+}
 .hardware-card .imgcontainer {
   height: 300px;
   width: 90%;

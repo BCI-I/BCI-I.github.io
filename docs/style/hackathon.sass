@@ -132,6 +132,28 @@
         flex-direction: column
         justify-content: center
 
+        // hide on mobile
+        @media screen and (max-width: 600px)
+            display: none
+
+    .imgcontainer-mobile
+        // hide on desktop
+        display: none
+
+        // show on mobile
+        @media screen and (max-width: 600px)
+            display: block
+            height: 300px
+            width: 90%
+            border-radius: 15px
+            margin: 0 auto
+
+            img
+                object-fit: contain
+                width: 100%
+                height: 100%
+                border-radius: 15px
+
     .imgcontainer
         height: 300px
         width: 90%
