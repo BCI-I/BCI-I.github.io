@@ -14,7 +14,7 @@ body a {
   font-weight: 800;
 }
 body a:hover {
-  color: rgba(255, 204, 103, 0.9843137255);
+  color: #ffcc67fb;
   font-weight: 900;
   text-decoration: underline;
 }
@@ -23,7 +23,7 @@ body a:hover {
   background-color: #1E2A35 !important;
   margin: 8em 0 0 0;
   padding: 1rem;
-  border-top: 1px solid rgb(200, 200, 200);
+  border-top: 1px solid #c8c8c8;
 }
 .footer a {
   max-width: 120px !important;
@@ -68,6 +68,7 @@ body a:hover {
 }
 
 .highlight-darker {
+  background-color: rgba(28, 39, 50, 0.5) !important;
   color: white !important;
   box-shadow: inset 0 -0.01em #2A3947, inset 0 -0.2em 0 0 #0f1d2a;
   text-shadow: -1px -1px #2A3947, -1px 1px #2A3947, 1px -1px #2A3947, 1px 1px #2A3947;
@@ -83,7 +84,7 @@ body a:hover {
 }
 
 .textaccent {
-  color: rgba(255, 204, 103, 0.9843137255) !important;
+  color: #ffcc67fb !important;
   font-weight: 900;
   text-decoration: underline;
 }
@@ -97,7 +98,7 @@ body a:hover {
 .sep-line {
   height: 3px;
   border-radius: 3px;
-  background-color: rgb(200, 200, 200);
+  background-color: #c8c8c8;
   width: 100%;
 }
 
@@ -321,7 +322,7 @@ body a:hover {
 }
 @media screen and (max-width: 600px) {
   .note-white .note-title, .note-salmon .note-title,
-  .note-green .note-title, .note-lightblue .note-title, .note-highlight .note-title {
+.note-green .note-title, .note-lightblue .note-title, .note-highlight .note-title {
     font-size: 1.2rem !important;
     margin-top: -1.6em;
   }
@@ -333,7 +334,7 @@ body a:hover {
 }
 
 .note-white {
-  border: 2px solid rgb(180, 180, 180);
+  border: 2px solid #b4b4b4;
 }
 .note-white .note-title {
   color: white !important;
@@ -362,10 +363,10 @@ body a:hover {
 }
 
 .note-highlight {
-  border: 2px solid rgba(255, 204, 103, 0.9843137255);
+  border: 2px solid #ffcc67fb;
 }
 .note-highlight .note-title {
-  color: rgba(255, 204, 103, 0.9843137255) !important;
+  color: #ffcc67fb !important;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -423,6 +424,7 @@ body a:hover {
   color: white;
   position: relative;
   top: 7vh;
+  z-index: 2;
 }
 @media screen and (max-width: 600px) {
   .landing-hero .BCII-slogan {
@@ -430,22 +432,13 @@ body a:hover {
     text-shadow: 0px 0px 1px black;
   }
 }
-.landing-hero .joinus {
-  font-size: 2rem;
-  font-family: Nunito Sans;
-  text-align: center;
-  position: absolute;
-  bottom: 140px;
-  left: 50%;
-  transform: translateX(-50%);
-}
 .landing-hero .landing-hero-img {
-  max-width: 500px;
-  width: 40%;
-  position: absolute;
+  max-width: 18em;
+  position: relative;
   left: 50%;
-  top: 55%;
-  transform: translate(-50%, -50%);
+  top: 3em;
+  transform: translate(-50%, 0);
+  z-index: 0;
 }
 @media screen and (max-width: 600px) {
   .landing-hero .landing-hero-img {
@@ -594,7 +587,7 @@ body a:hover {
 
 .event-placeholder {
   opacity: 0.5 !important;
-  border: 2px solid rgb(180, 180, 180);
+  border: 2px solid #b4b4b4;
 }
 .event-placeholder .event-title {
   color: white !important;
@@ -652,7 +645,7 @@ body a:hover {
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  border: 2px solid rgb(200, 200, 200);
+  border: 2px solid #c8c8c8;
 }
 
 /* -------------------------------- partners -------------------------------- */
@@ -679,10 +672,10 @@ body a:hover {
   }
 }
 .landing-signup .form-placeholder {
-  background-color: rgb(230, 230, 230);
+  background-color: #e6e6e6;
   height: 50px;
   border-radius: 25px;
-  border: 1px solid rgb(100, 100, 100);
+  border: 1px solid #646464;
   margin-top: 2em;
   margin-bottom: 2em;
 }
@@ -766,11 +759,11 @@ body a:hover {
 
 .h-why {
   background-color: #1E2A35;
-  border: 3px solid rgba(255, 204, 103, 0.9843137255);
+  border: 3px solid #ffcc67fb;
   color: white;
 }
 .h-why .title {
-  color: rgba(255, 204, 103, 0.9843137255);
+  color: #ffcc67fb;
 }
 
 .h-when {
@@ -881,7 +874,7 @@ body a:hover {
   font-family: Nunito Sans;
 }
 .hackathon-info .development-icon {
-  color: rgb(180, 180, 180);
+  color: #b4b4b4;
   font-size: 1.1rem;
   padding-left: 10rem;
 }
@@ -901,7 +894,7 @@ body a:hover {
     font-size: 1.6rem !important;
   }
   .hackathon-info .development-icon {
-    color: rgb(180, 180, 180);
+    color: #b4b4b4;
     font-size: 1.1rem;
     padding-left: 0;
   }
@@ -989,7 +982,7 @@ body a:hover {
   background-color: #58b4ff !important;
 }
 .sponsor_card .gold {
-  background-color: rgba(255, 204, 103, 0.9843137255) !important;
+  background-color: #ffcc67fb !important;
 }
 
 .partner-logo {
@@ -1025,7 +1018,7 @@ nav {
   background-color: #2A3947 !important;
 }
 nav .navbar-item:hover {
-  color: rgba(255, 204, 103, 0.9843137255);
+  color: #ffcc67fb;
 }
 nav .navbar {
   height: 120px !important;

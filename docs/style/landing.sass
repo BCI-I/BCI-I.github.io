@@ -1,0 +1,299 @@
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   LANDING                                  */
+/* -------------------------------------------------------------------------- */
+
+.landing-hero
+    height: 100vh
+    background-image: url(../imgs/patterns/topography.svg)
+    background-repeat: repeat
+    background-position: center center
+    background-size: cover
+
+    .landing-hero-content
+        max-width: 1600px
+        margin: 0 auto
+
+        // on mobile content vertically
+        @media screen and (max-width: 600px)
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+
+    .BCII-name
+        font-size: 12rem
+        line-height: 12rem
+        font-weight: 900
+        color: white
+        font-family: DM Serif Display
+        z-index: 2
+        width: 100vw
+        text-align: center
+        top: 5vh
+        position: relative
+
+        @media screen and (min-width: 1600px)
+            font-size: 15rem
+            line-height: 15rem
+
+        @media screen and (max-width: 600px)
+            width: 95%
+            font-size: 3.5rem
+            line-height: 5rem
+            
+
+
+    .BCII-slogan
+        font-size: 3rem
+        font-family: Rosario
+        text-align: center
+        line-height: 5rem
+        color: white
+        position: relative
+        top: 7vh
+        z-index: 2
+
+        @media screen and (max-width: 600px)
+            font-size: 3rem
+            text-shadow: 0px 0px 1px black
+    
+    .landing-hero-img
+        max-width: 18em
+        position: relative
+        left: 50%
+        top: 3em
+        transform: translate(-50%, 0)
+        z-index: 0
+
+
+        @media screen and (max-width: 600px)
+            opacity: 0.15
+            width: 80%
+            z-index: 0
+
+    .scroll-down
+        position: absolute
+        width: 100px
+        height: 100px
+        left: 50%
+        transform: translate(-60%, 0)
+        bottom: 2em
+
+        @media screen and (max-width: 600px)
+            width: 50px
+            height: 50px
+
+
+.landing-content
+    max-width: 1600px
+    margin: 0 auto
+
+
+/* ---------------------------------- event --------------------------------- */
+.event-link
+    text-decoration: none !important
+    color: white !important
+    .event-info
+        text-decoration: none !important
+
+    &:hover
+        .event
+            // scale 
+            transform: scale(1.02)
+            transition: transform 0.25s ease-in-out
+            box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1)
+
+            .event-img
+                transform: translateX(20px)
+                transform: scale(1.1)
+                transition: transform 0.25s ease-in-out
+
+    .event
+        // scale 
+        transform: scale(1)
+        transition: transform 0.25s ease-in-out
+        box-shadow: none
+
+        .event-img
+            transform: translateX(0px)
+            transform: scale(1)
+            transition: transform 0.25s ease-in-out
+
+
+.event
+    width: 80%
+    margin: 0 auto
+    margin-bottom: 2em
+    border-radius: 10px
+    padding: 1em 10% 1.5em 3em
+    border: 2px solid green
+    background-color: $darker
+    position: relative
+    overflow: hidden
+
+    @media screen and (max-width: 600px)
+        width: 95%
+        padding: 1em
+
+
+    .event-img
+        position: absolute  
+        bottom: -20px
+        right: 0
+        border-radius: 10px
+        width: 20%
+
+        img
+            object-fit: contain
+            width: 100%
+            height: 100%
+            border-radius: 15px
+
+        @media screen and (max-width: 600px)
+            width: 60%
+            // make sure its at bottom of div
+            bottom: -5px
+            height: 80%
+            right: -50px
+
+
+    .event-title
+        font-size: 2.5rem
+        font-weight: 900
+        margin-bottom: 0.5em
+        font-family: Teko
+        color: $green
+        position: relative
+
+        @media screen and (max-width: 600px)
+            font-size: 1.7rem
+
+    .event-description
+        font-family: Teko
+        font-size: 1.5rem
+        font-weight: 900
+        margin-bottom: 0.5em
+        font-family: Space Mono
+        color: white
+        position: relative
+
+        @media screen and (max-width: 600px)
+            font-size: 1.2rem
+
+    
+    .event-info
+        // align content
+        margin-top: 1.5em
+        display: flex
+        font-family: Space Mono
+        margin-bottom: 0
+
+        @media screen and (max-width: 600px)
+            font-size: 0.8rem
+            text-align: center
+            width: 95%
+
+            .column
+                padding: 0
+
+    .espace
+        margin-left: 24px
+        margin-right: -8px
+
+    .columns
+        width: 95% !important
+
+
+.event-placeholder
+    opacity: 0.5 !important
+    border: 2px solid rgb(180, 180, 180)
+
+    .event-title
+        color: white !important
+        opacity: 1 !important
+        font-size: 2.5rem
+        margin: 0 !important
+        font-family: Teko
+
+        @media screen and (max-width: 600px)
+            font-size: 1.7rem !important
+
+/* ---------------------------------- team ---------------------------------- */
+.team
+    margin-top: 1em
+    margin-bottom: 6em
+
+.team-member 
+    background-color: white
+    width: 250px
+    height: 350px
+    border-radius: 10px
+    background-color: $dark
+    margin: 0 auto
+    padding: 1em
+    
+
+    .team-member-name
+        width: 100%
+        height: 20%
+        z-index: 1
+        padding: 10px
+        font-family: Nunito Sans
+        font-size: 1.25rem
+        font-weight: 900
+        color: white
+        text-align: center
+
+    .team-member-role
+        color: $salmon !important
+        text-decoration: underline !important
+        font-size: 1.4rem !important
+    
+    .team-member-img
+        // take up whole card
+        width: 100%
+        height: 80%
+        border-radius: 15px
+        opacity: 1
+        background-color: white
+
+        img
+            object-fit: cover
+            width: 100%
+            height: 100%
+            border-radius: 15px
+            border: 2px solid rgb(200, 200, 200)
+
+/* -------------------------------- partners -------------------------------- */
+
+.partners
+    margin-bottom: 6em
+
+/* --------------------------------- signup --------------------------------- */
+
+.landing-signup
+    margin: 4em 0 1em 0
+    background-color: white
+    color: black
+    width: 100vw
+    padding: 2em 4em 0.2em 4em
+
+    .signup-text
+        font-size: 2rem
+        font-family: Cormorant Upright
+        margin-bottom: 0.5em
+
+        @media screen and (max-width: 600px)
+            font-size: 1.5rem
+
+    .form-placeholder
+        background-color: rgb(230, 230, 230)
+        height: 50px
+        border-radius: 25px
+        border: 1px solid rgb(100, 100, 100)
+        margin-top: 2em
+        margin-bottom: 2em
+
