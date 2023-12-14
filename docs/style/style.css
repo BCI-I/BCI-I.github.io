@@ -33,6 +33,11 @@ body a:hover {
 /* -------------------------------------------------------------------------- */
 /*                               global elements                              */
 /* -------------------------------------------------------------------------- */
+.clean-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .name-txt {
   font-family: Cormorant Upright;
 }
