@@ -404,6 +404,7 @@ body a:hover {
   z-index: 2;
   text-align: center;
   top: 5vh;
+  display: block;
   position: relative;
 }
 @media screen and (min-width: 1600px) {
@@ -440,7 +441,7 @@ body a:hover {
   max-width: 18em;
   position: relative;
   left: 50%;
-  top: 3em;
+  margin-top: 8em;
   transform: translate(-50%, 0);
   z-index: 0;
 }
@@ -449,7 +450,7 @@ body a:hover {
     z-index: 0;
     left: 50vw;
     transform: translate(-70%, 0);
-    top: 6em;
+    margin-top: 8em;
   }
 }
 .landing-hero .scroll-down {
