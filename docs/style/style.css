@@ -149,7 +149,6 @@ body a:hover {
   }
   .img-and-text p {
     display: block;
-    vertical-align: top;
     font-size: 1.3rem;
     vertical-align: middle;
     margin: 0 0;
@@ -774,7 +773,7 @@ nav .BCII-name-navbar {
   color: black;
   width: 100vw;
   padding: 2em 4em 0.2em 4em;
-  background-image: url(../imgs/patterns/topography.svg);
+  background-image: url(../imgs/patterns/topography_25.svg);
 }
 @media screen and (max-width: 600px) {
   .landing-signup {
