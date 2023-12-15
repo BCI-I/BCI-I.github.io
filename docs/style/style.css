@@ -99,6 +99,12 @@ body a:hover {
   text-decoration: underline;
 }
 
+.text-paragraph {
+  margin-top: 0.5em;
+  font-family: Nunito Sans;
+  font-size: 1.3rem;
+}
+
 .sep-line {
   height: 3px;
   border-radius: 3px;
@@ -113,6 +119,7 @@ body a:hover {
   margin-left: 2rem;
   margin-top: 1.5em;
   font-weight: 900;
+  display: inline-block;
 }
 @media screen and (max-width: 600px) {
   .fancy-title {
