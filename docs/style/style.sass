@@ -1,6 +1,7 @@
 @use 'sass:color'
     
 $dark: #2A3947
+$light: #4c6780
 $darker: #1E2A35
 $darkest: #0d1e32
 $offwhite: #d5d5d5
@@ -148,7 +149,7 @@ body
 
 .fancy-title
     font-family: DM Serif Display
-    font-size: 5rem
+    font-size: 4rem
     color: white
     margin-left: 2rem
     margin-top: 1.5em
@@ -412,8 +413,6 @@ body
     .note-title
         color: $highlight !important
     
-@import landing.sass
-@import hackathon.sass
 
 /* -------------------------------------------------------------------------- */
 /*                                   NAVBAR                                   */
@@ -481,3 +480,10 @@ nav
 
     padding: 5rem
     font-size: 2rem
+
+/* -------------------------------------------------------------------------- */
+/*                                   IMPORTS                                  */
+/* -------------------------------------------------------------------------- */
+@import landing.sass
+@import hackathon.sass
+@import about.sass

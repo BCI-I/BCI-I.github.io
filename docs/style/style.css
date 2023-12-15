@@ -103,7 +103,7 @@ body a:hover {
 
 .fancy-title {
   font-family: DM Serif Display;
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
   margin-left: 2rem;
   margin-top: 1.5em;
@@ -384,6 +384,71 @@ body a:hover {
   color: #ffcc67fb !important;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                   NAVBAR                                   */
+/* -------------------------------------------------------------------------- */
+nav {
+  background-color: #2A3947 !important;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+nav .navbar-item:hover {
+  color: #ffcc67fb;
+}
+nav .navbar {
+  height: 120px !important;
+}
+nav img {
+  width: 120px;
+  height: 80px;
+  max-height: 80px !important;
+}
+nav a:hover {
+  color: white !important;
+  text-decoration: none;
+  transform: scale(1.02);
+  transition: transform 0.25s ease-in-out;
+}
+nav a {
+  transform: scale(1);
+  transition: transform 0.25s ease-in-out;
+}
+nav .navbartitle {
+  color: white !important;
+  font-size: 60px;
+  font-weight: 700;
+  padding-left: 4rem;
+}
+nav .navbarpage {
+  color: white !important;
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 2rem;
+}
+nav .BCII-name-navbar {
+  font-size: 6rem;
+  line-height: 4rem;
+  font-weight: 900;
+  padding-left: 2rem;
+  color: white;
+  font-family: DM Serif Display;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  materials                                 */
+/* -------------------------------------------------------------------------- */
+.materials-place-holder {
+  height: 100vh;
+  background-image: url(../imgs/patterns/diagonal-lines.svg);
+  background-repeat: repeat;
+  background-position: center center;
+  padding: 5rem;
+  font-size: 2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   IMPORTS                                  */
+/* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 /*                                   LANDING                                  */
 /* -------------------------------------------------------------------------- */
@@ -1187,66 +1252,77 @@ body a:hover {
   background: transparent;
 }
 
-/* -------------------------------------------------------------------------- */
-/*                                   NAVBAR                                   */
-/* -------------------------------------------------------------------------- */
-nav {
-  background-color: #2A3947 !important;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-nav .navbar-item:hover {
-  color: #ffcc67fb;
-}
-nav .navbar {
-  height: 120px !important;
-}
-nav img {
-  width: 120px;
-  height: 80px;
-  max-height: 80px !important;
-}
-nav a:hover {
-  color: white !important;
-  text-decoration: none;
-  transform: scale(1.02);
-  transition: transform 0.25s ease-in-out;
-}
-nav a {
-  transform: scale(1);
-  transition: transform 0.25s ease-in-out;
-}
-nav .navbartitle {
-  color: white !important;
-  font-size: 60px;
-  font-weight: 700;
-  padding-left: 4rem;
-}
-nav .navbarpage {
-  color: white !important;
-  font-size: 30px;
-  font-weight: 700;
-  margin-right: 2rem;
-}
-nav .BCII-name-navbar {
-  font-size: 6rem;
-  line-height: 4rem;
-  font-weight: 900;
-  padding-left: 2rem;
-  color: white;
-  font-family: DM Serif Display;
+/* ---------------------------------- team ---------------------------------- */
+.team .column {
+  text-align: center;
 }
 
-/* -------------------------------------------------------------------------- */
-/*                                  materials                                 */
-/* -------------------------------------------------------------------------- */
-.materials-place-holder {
-  height: 100vh;
-  background-image: url(../imgs/patterns/diagonal-lines.svg);
-  background-repeat: repeat;
-  background-position: center center;
-  padding: 5rem;
-  font-size: 2rem;
+.team-member {
+  max-width: 500px;
+  height: auto;
+  padding: 0 !important;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 0 auto;
+}
+.team-member:hover .tm-photo-col {
+  display: block;
+}
+.team-member:hover .tm-photo-bw {
+  display: none;
+}
+.team-member:hover .tm-name {
+  text-decoration: underline;
+}
+.team-member:hover .tm-role {
+  color: #fb835f;
+}
+.team-member:hover .tm-blurb {
+  opacity: 1;
+}
+
+.tm-photo {
+  margin-bottom: -2em;
+  text-align: center;
+  display: inline-flex;
+  border-radius: 50%;
+}
+.tm-photo img {
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 6px solid white;
+}
+.tm-photo .tm-photo-col {
+  display: none;
+}
+
+.tm-bio .tm-title {
+  text-align: center;
+  width: 95%;
+  margin: 0 auto 0em auto;
+  border-radius: 10px 10px 10px 10px;
+  padding: 12px 0px;
+}
+.tm-bio .tm-title .tm-name {
+  font-family: Nunito Sans !important;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.tm-bio .tm-title .tm-role {
+  font-family: Nunito Sans !important;
+  font-size: 1.3rem;
+}
+.tm-bio .tm-blurb {
+  opacity: 0;
+  padding: 2px 4px;
+  width: 100%;
+  margin: 0 auto;
+  text-justify: justify;
+  float: left;
+  font-family: Nunito Sans !important;
+  font-size: 1.1rem;
+  transition: opacity 0.5s, transform 1s;
 }
 
 /*# sourceMappingURL=style.css.map */
