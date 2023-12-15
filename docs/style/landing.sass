@@ -14,14 +14,18 @@
     .landing-hero-content
         max-width: 1600px
         margin: 0 auto
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
 
-        // on mobile content vertically
-        @media screen and (max-width: 600px)
-            display: flex
-            flex-direction: column
-            justify-content: center
-            align-items: center
-
+    .landing-text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
 
     .BCII-name
         font-size: 12rem
@@ -31,7 +35,7 @@
         font-family: DM Serif Display
         z-index: 2
         text-align: center
-        top: 5vh
+        margin-top: 5vh
         display: block
         position: relative
 
@@ -53,23 +57,19 @@
         line-height: 5rem
         color: white
         position: relative
-        top: 7vh
         z-index: 2
         opacity: 0
         transition: opacity .5s, transform 1s
 
         @media screen and (max-width: 600px)
             font-size: 2rem
-            text-shadow: 0px 0px 1px black
             width: 90%
+            line-height: 2.5rem
+            margin-bottom: 2em
+
     
     .landing-hero-img
-        max-width: 18em
-        position: relative
-        left: 50%
-        // top: 3em
-        margin-top: 3em
-        transform: translate(-50%, 0)
+        max-width: 40vh
         z-index: 0
         opacity: 0
         transition: opacity .6s, transform 1.3s
@@ -84,9 +84,7 @@
             // opacity: 0.15
             // width: 80%
             z-index: 0
-            left: 50vw
-            transform: translate(-70%, 0)
-            margin-top: 8em
+            margin-top: 2em
 
 
     .scroll-down

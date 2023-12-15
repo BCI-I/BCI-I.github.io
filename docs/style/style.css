@@ -14,7 +14,7 @@ body a {
   font-weight: 800;
 }
 body a:hover {
-  color: #ffcc67fb;
+  color: rgba(255, 204, 103, 0.9843137255);
   font-weight: 900;
   text-decoration: underline;
 }
@@ -23,7 +23,7 @@ body a:hover {
   background-color: #1E2A35 !important;
   margin: 8em 0 0 0;
   padding: 1rem;
-  border-top: 1px solid #c8c8c8;
+  border-top: 1px solid rgb(200, 200, 200);
 }
 .footer a {
   max-width: 120px !important;
@@ -83,7 +83,7 @@ body a:hover {
 }
 
 .textaccent {
-  color: #ffcc67fb !important;
+  color: rgba(255, 204, 103, 0.9843137255) !important;
   font-weight: 900;
   text-decoration: underline;
 }
@@ -97,7 +97,7 @@ body a:hover {
 .sep-line {
   height: 3px;
   border-radius: 3px;
-  background-color: #c8c8c8;
+  background-color: rgb(200, 200, 200);
   width: 100%;
 }
 
@@ -149,6 +149,7 @@ body a:hover {
   }
   .img-and-text p {
     display: block;
+    vertical-align: top;
     font-size: 1.3rem;
     vertical-align: middle;
     margin: 0 0;
@@ -336,7 +337,7 @@ body a:hover {
 }
 @media screen and (max-width: 600px) {
   .note-white .note-title, .note-salmon .note-title,
-.note-green .note-title, .note-lightblue .note-title, .note-highlight .note-title {
+  .note-green .note-title, .note-lightblue .note-title, .note-highlight .note-title {
     font-size: 1.2rem !important;
     margin-top: -1.6em;
   }
@@ -348,7 +349,7 @@ body a:hover {
 }
 
 .note-white {
-  border: 2px solid #b4b4b4;
+  border: 2px solid rgb(180, 180, 180);
 }
 .note-white .note-title {
   color: white !important;
@@ -377,10 +378,10 @@ body a:hover {
 }
 
 .note-highlight {
-  border: 2px solid #ffcc67fb;
+  border: 2px solid rgba(255, 204, 103, 0.9843137255);
 }
 .note-highlight .note-title {
-  color: #ffcc67fb !important;
+  color: rgba(255, 204, 103, 0.9843137255) !important;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -392,7 +393,7 @@ nav {
   padding-bottom: 1em;
 }
 nav .navbar-item:hover {
-  color: #ffcc67fb;
+  color: rgba(255, 204, 103, 0.9843137255);
 }
 nav .navbar {
   height: 120px !important;
@@ -461,14 +462,18 @@ nav .BCII-name-navbar {
 .landing-hero .landing-hero-content {
   max-width: 1600px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-@media screen and (max-width: 600px) {
-  .landing-hero .landing-hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.landing-hero .landing-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .landing-hero .BCII-name {
   font-size: 12rem;
@@ -478,7 +483,7 @@ nav .BCII-name-navbar {
   font-family: DM Serif Display;
   z-index: 2;
   text-align: center;
-  top: 5vh;
+  margin-top: 5vh;
   display: block;
   position: relative;
 }
@@ -502,7 +507,6 @@ nav .BCII-name-navbar {
   line-height: 5rem;
   color: white;
   position: relative;
-  top: 7vh;
   z-index: 2;
   opacity: 0;
   transition: opacity 0.5s, transform 1s;
@@ -510,16 +514,13 @@ nav .BCII-name-navbar {
 @media screen and (max-width: 600px) {
   .landing-hero .BCII-slogan {
     font-size: 2rem;
-    text-shadow: 0px 0px 1px black;
     width: 90%;
+    line-height: 2.5rem;
+    margin-bottom: 2em;
   }
 }
 .landing-hero .landing-hero-img {
-  max-width: 18em;
-  position: relative;
-  left: 50%;
-  margin-top: 3em;
-  transform: translate(-50%, 0);
+  max-width: 40vh;
   z-index: 0;
   opacity: 0;
   transition: opacity 0.6s, transform 1.3s;
@@ -533,9 +534,7 @@ nav .BCII-name-navbar {
 @media screen and (max-width: 600px) {
   .landing-hero .landing-hero-img {
     z-index: 0;
-    left: 50vw;
-    transform: translate(-70%, 0);
-    margin-top: 8em;
+    margin-top: 2em;
   }
 }
 .landing-hero .scroll-down {
@@ -700,7 +699,7 @@ nav .BCII-name-navbar {
 
 .event-placeholder {
   opacity: 0.5 !important;
-  border: 2px solid #b4b4b4;
+  border: 2px solid rgb(180, 180, 180);
 }
 .event-placeholder .event-title {
   color: white !important;
@@ -758,7 +757,7 @@ nav .BCII-name-navbar {
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  border: 2px solid #c8c8c8;
+  border: 2px solid rgb(200, 200, 200);
 }
 
 /* -------------------------------- partners -------------------------------- */
@@ -792,10 +791,10 @@ nav .BCII-name-navbar {
   }
 }
 .landing-signup .form-placeholder {
-  background-color: #e6e6e6;
+  background-color: rgb(230, 230, 230);
   height: 50px;
   border-radius: 25px;
-  border: 1px solid #646464;
+  border: 1px solid rgb(100, 100, 100);
   margin-top: 2em;
   margin-bottom: 2em;
 }
@@ -824,10 +823,10 @@ nav .BCII-name-navbar {
   font-family: Nunito Sans;
   font-size: 1rem;
   border-radius: 25px;
-  border: 1px solid #646464;
+  border: 1px solid rgb(100, 100, 100);
 }
 .mc-field-group .required {
-  color: #ff6464;
+  color: rgb(255, 100, 100);
   font-size: 0.8;
   padding-left: 1rem;
   font-weight: 500;
@@ -986,11 +985,11 @@ nav .BCII-name-navbar {
 
 .h-why {
   background-color: #1E2A35;
-  border: 3px solid #ffcc67fb;
+  border: 3px solid rgba(255, 204, 103, 0.9843137255);
   color: white;
 }
 .h-why .title {
-  color: #ffcc67fb;
+  color: rgba(255, 204, 103, 0.9843137255);
 }
 
 .h-when {
@@ -1114,7 +1113,7 @@ nav .BCII-name-navbar {
   font-family: Nunito Sans;
 }
 .hackathon-info .development-icon {
-  color: #b4b4b4;
+  color: rgb(180, 180, 180);
   font-size: 1.1rem;
   padding-left: 10rem;
 }
@@ -1134,7 +1133,7 @@ nav .BCII-name-navbar {
     font-size: 1.6rem !important;
   }
   .hackathon-info .development-icon {
-    color: #b4b4b4;
+    color: rgb(180, 180, 180);
     font-size: 1.1rem;
     padding-left: 0;
   }
@@ -1222,7 +1221,7 @@ nav .BCII-name-navbar {
   background-color: #58b4ff !important;
 }
 .sponsor_card .gold {
-  background-color: #ffcc67fb !important;
+  background-color: rgba(255, 204, 103, 0.9843137255) !important;
 }
 
 .partner-logo {
