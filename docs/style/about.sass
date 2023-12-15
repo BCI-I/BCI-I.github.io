@@ -1,11 +1,18 @@
-/* ---------------------------------- team ---------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    team                                    */
+/* -------------------------------------------------------------------------- */
 
 .team
+
+    margin-top: 2em
+
     .column
         text-align: center
 
 .team-member
-    max-width: 500px
+    width: 100%
     height: auto
     padding: 0 !important
     border-radius: 15px
@@ -14,7 +21,8 @@
 
     &:hover
         .tm-photo-col
-            display: block
+            // display: block
+            filter: grayscale(0%)
 
         .tm-photo-bw
             display: none
@@ -36,17 +44,15 @@
     border-radius: 50%
 
     img
+        max-width: 250px
         height: auto
         margin: 0 auto
         border-radius: 50%
         border: 6px solid white
-
-    .tm-photo-col
-        display: none
+        filter: grayscale(100%)  //  /* 100% desaturation */
+        transition: filter 0.1s ease-in-out  //  /* Smooth transition */
 
 .tm-bio
-    // text-align: left
-
     .tm-title
         text-align: center
         width: 95%
