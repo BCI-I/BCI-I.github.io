@@ -14,7 +14,7 @@ body a {
   font-weight: 800;
 }
 body a:hover {
-  color: #ffcc67fb;
+  color: rgba(255, 204, 103, 0.9843137255);
   font-weight: 900;
   text-decoration: underline;
 }
@@ -23,7 +23,7 @@ body a:hover {
   background-color: #1E2A35 !important;
   margin: 8em 0 0 0;
   padding: 1rem;
-  border-top: 1px solid #c8c8c8;
+  border-top: 1px solid rgb(200, 200, 200);
 }
 .footer a {
   max-width: 120px !important;
@@ -83,7 +83,7 @@ body a:hover {
 }
 
 .textaccent {
-  color: #ffcc67fb !important;
+  color: rgba(255, 204, 103, 0.9843137255) !important;
   font-weight: 900;
   text-decoration: underline;
 }
@@ -97,7 +97,7 @@ body a:hover {
 .sep-line {
   height: 3px;
   border-radius: 3px;
-  background-color: #c8c8c8;
+  background-color: rgb(200, 200, 200);
   width: 100%;
 }
 
@@ -337,7 +337,7 @@ body a:hover {
 }
 @media screen and (max-width: 600px) {
   .note-white .note-title, .note-salmon .note-title,
-.note-green .note-title, .note-lightblue .note-title, .note-highlight .note-title {
+  .note-green .note-title, .note-lightblue .note-title, .note-highlight .note-title {
     font-size: 1.2rem !important;
     margin-top: -1.6em;
   }
@@ -349,7 +349,7 @@ body a:hover {
 }
 
 .note-white {
-  border: 2px solid #b4b4b4;
+  border: 2px solid rgb(180, 180, 180);
 }
 .note-white .note-title {
   color: white !important;
@@ -378,10 +378,10 @@ body a:hover {
 }
 
 .note-highlight {
-  border: 2px solid #ffcc67fb;
+  border: 2px solid rgba(255, 204, 103, 0.9843137255);
 }
 .note-highlight .note-title {
-  color: #ffcc67fb !important;
+  color: rgba(255, 204, 103, 0.9843137255) !important;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -636,7 +636,7 @@ body a:hover {
 
 .event-placeholder {
   opacity: 0.5 !important;
-  border: 2px solid #b4b4b4;
+  border: 2px solid rgb(180, 180, 180);
 }
 .event-placeholder .event-title {
   color: white !important;
@@ -694,7 +694,7 @@ body a:hover {
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  border: 2px solid #c8c8c8;
+  border: 2px solid rgb(200, 200, 200);
 }
 
 /* -------------------------------- partners -------------------------------- */
@@ -709,7 +709,7 @@ body a:hover {
   color: black;
   width: 100vw;
   padding: 2em 4em 0.2em 4em;
-  background-image: url(../imgs/patterns/topography.svg);
+  background-image: url(../imgs/patterns/topography_25.svg);
 }
 @media screen and (max-width: 600px) {
   .landing-signup {
@@ -728,10 +728,10 @@ body a:hover {
   }
 }
 .landing-signup .form-placeholder {
-  background-color: #e6e6e6;
+  background-color: rgb(230, 230, 230);
   height: 50px;
   border-radius: 25px;
-  border: 1px solid #646464;
+  border: 1px solid rgb(100, 100, 100);
   margin-top: 2em;
   margin-bottom: 2em;
 }
@@ -760,10 +760,10 @@ body a:hover {
   font-family: Nunito Sans;
   font-size: 1rem;
   border-radius: 25px;
-  border: 1px solid #646464;
+  border: 1px solid rgb(100, 100, 100);
 }
 .mc-field-group .required {
-  color: #ff6464;
+  color: rgb(255, 100, 100);
   font-size: 0.8;
   padding-left: 1rem;
   font-weight: 500;
@@ -922,11 +922,11 @@ body a:hover {
 
 .h-why {
   background-color: #1E2A35;
-  border: 3px solid #ffcc67fb;
+  border: 3px solid rgba(255, 204, 103, 0.9843137255);
   color: white;
 }
 .h-why .title {
-  color: #ffcc67fb;
+  color: rgba(255, 204, 103, 0.9843137255);
 }
 
 .h-when {
@@ -1050,7 +1050,7 @@ body a:hover {
   font-family: Nunito Sans;
 }
 .hackathon-info .development-icon {
-  color: #b4b4b4;
+  color: rgb(180, 180, 180);
   font-size: 1.1rem;
   padding-left: 10rem;
 }
@@ -1070,7 +1070,7 @@ body a:hover {
     font-size: 1.6rem !important;
   }
   .hackathon-info .development-icon {
-    color: #b4b4b4;
+    color: rgb(180, 180, 180);
     font-size: 1.1rem;
     padding-left: 0;
   }
@@ -1158,7 +1158,7 @@ body a:hover {
   background-color: #58b4ff !important;
 }
 .sponsor_card .gold {
-  background-color: #ffcc67fb !important;
+  background-color: rgba(255, 204, 103, 0.9843137255) !important;
 }
 
 .partner-logo {
@@ -1196,7 +1196,7 @@ nav {
   padding-bottom: 1em;
 }
 nav .navbar-item:hover {
-  color: #ffcc67fb;
+  color: rgba(255, 204, 103, 0.9843137255);
 }
 nav .navbar {
   height: 120px !important;
