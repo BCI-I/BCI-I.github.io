@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const sloganElement = document.querySelector('.BCII-slogan');
   const imgElement = document.querySelector('.landing-hero-img');
 
-  const delaySlogan = 500;
-  const delayImg = 1500;
+  const delaySlogan = 250;
+  const delayImg = 1000;
 
   fadeIn(sloganElement, delaySlogan);
   fadeIn(imgElement, delayImg);
