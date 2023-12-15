@@ -273,14 +273,25 @@ body a:hover {
   }
 }
 
+.narrow-30 {
+  width: 30%;
+}
+
+.narrow-50 {
+  width: 50%;
+}
+
 .narrow {
-  width: 80% !important;
+  width: 80%;
+}
+
+.narrow, .narrow-30, .narrow-50 {
   margin-left: auto !important;
   margin-right: auto !important;
   max-width: 1200px !important;
 }
 @media screen and (max-width: 600px) {
-  .narrow {
+  .narrow, .narrow-30, .narrow-50 {
     width: 95% !important;
     margin: 0 12px !important;
   }
@@ -693,11 +704,18 @@ body a:hover {
 
 /* --------------------------------- signup --------------------------------- */
 .landing-signup {
-  margin: 4em 0 1em 0;
+  margin: 4em 0 0em 0;
   background-color: white;
   color: black;
   width: 100vw;
   padding: 2em 4em 0.2em 4em;
+  background-image: url(../imgs/patterns/topography.svg);
+}
+@media screen and (max-width: 600px) {
+  .landing-signup {
+    padding: 2.5% 2em 2.5% 2em;
+    text-align: center;
+  }
 }
 .landing-signup .signup-text {
   font-size: 2rem;
@@ -716,6 +734,108 @@ body a:hover {
   border: 1px solid #646464;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+/* ------------------------------- signup form ------------------------------ */
+#mc_embed_signup {
+  background: none !important;
+}
+
+@media screen and (max-width: 600px) {
+  .mc-embedded-subscribe-form {
+    margin: 0px !important;
+  }
+}
+
+.mc-field-group {
+  width: 100% !important;
+}
+.mc-field-group label {
+  font-family: Nunito Sans;
+  font-size: 1rem;
+  font-weight: 900;
+  padding-left: 2rem;
+}
+.mc-field-group input {
+  font-family: Nunito Sans;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: 1px solid #646464;
+}
+.mc-field-group .required {
+  color: #ff6464;
+  font-size: 0.8;
+  padding-left: 1rem;
+  font-weight: 500;
+}
+@media screen and (max-width: 600px) {
+  .mc-field-group {
+    margin-bottom: 1em !important;
+  }
+}
+
+.mce-EMAIL {
+  margin-top: 0.25em;
+}
+
+.form-cols {
+  margin-bottom: 0 !important;
+}
+@media screen and (max-width: 600px) {
+  .form-cols {
+    margin-top: 1em !important;
+  }
+}
+.form-cols .column {
+  padding-bottom: 0 !important;
+}
+@media screen and (max-width: 600px) {
+  .form-cols .column {
+    padding-top: 0 !important;
+  }
+}
+
+.buttons {
+  display: block !important;
+  text-align: center;
+}
+.buttons input {
+  margin: 0 auto !important;
+  border: 3px solid #2A3947 !important;
+  background-color: white !important;
+  color: #2A3947 !important;
+  font-family: Nunito Sans !important;
+  font-size: 1.5rem !important;
+  font-weight: 900 !important;
+  border-radius: 8px !important;
+  line-height: 0em !important;
+  padding: 0.8em 1em !important;
+  height: fit-content !important;
+  width: fit-content !important;
+}
+.buttons input:hover {
+  background-color: #2A3947 !important;
+  color: white !important;
+  border: 3px solid #2A3947 !important;
+}
+@media screen and (max-width: 600px) {
+  .buttons input {
+    font-size: 1rem !important;
+  }
+}
+
+.response {
+  color: green !important;
+  font-size: 1.1rem !important;
+  font-weight: 900 !important;
+  font-family: Nunito Sans !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media screen and (max-width: 600px) {
+  .response {
+    font-size: 1rem !important;
+  }
 }
 
 /* -------------------------------------------------------------------------- */

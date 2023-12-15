@@ -316,19 +316,26 @@ body
             padding: 0
             text-align: center
 
-
-
+.narrow-30
+    width: 30% 
+.narrow-50
+    width: 50% 
 .narrow
-    width: 80% !important
+    width: 80% 
+
+.narrow, .narrow-30, .narrow-50
     margin-left: auto !important
     margin-right: auto !important
-
+    // min-width: 600px !important
     max-width: 1200px !important
 
     // wider on mobile
     @media screen and (max-width: 600px)
         width: 95% !important
         margin: 0 12px !important
+        // min-width: 100px !important
+
+
 
 .unselectable
     cursor: default

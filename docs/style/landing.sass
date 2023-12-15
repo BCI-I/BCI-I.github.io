@@ -310,11 +310,18 @@
 /* --------------------------------- signup --------------------------------- */
 
 .landing-signup
-    margin: 4em 0 1em 0
+    margin: 4em 0 0em 0
     background-color: white
     color: black
     width: 100vw
     padding: 2em 4em 0.2em 4em
+
+    // background image
+    background-image: url(../imgs/patterns/topography.svg)
+
+    @media screen and (max-width: 600px)
+        padding: 2.5% 2em 2.5% 2em
+        text-align: center
 
     .signup-text
         font-size: 2rem
@@ -332,3 +339,93 @@
         margin-top: 2em
         margin-bottom: 2em
 
+
+
+/* ------------------------------- signup form ------------------------------ */
+
+#mc_embed_signup
+    background: none !important
+
+
+.mc-embedded-subscribe-form
+    @media screen and (max-width: 600px)
+        margin: 0px !important
+
+.mc-field-group
+    width: 100% !important
+
+
+    label
+        font-family: Nunito Sans
+        font-size: 1rem
+        font-weight: 900
+        padding-left: 2rem
+
+    input
+        font-family: Nunito Sans
+        font-size: 1rem
+        border-radius: 25px
+        border: 1px solid rgb(100, 100, 100)
+
+    .required
+        color: rgb(255, 100, 100)
+        font-size: 0.8
+        padding-left: 1rem
+        font-weight: 500
+
+    // increase padding between elements on small screen
+    @media screen and (max-width: 600px)
+        margin-bottom: 1em !important
+
+.mce-EMAIL
+    margin-top: 0.25em
+
+.form-cols
+    margin-bottom: 0 !important
+
+    @media screen and (max-width: 600px)
+        margin-top: 1em !important
+
+    .column
+        padding-bottom: 0 !important 
+
+        @media screen and (max-width: 600px)
+            padding-top: 0 !important
+
+.buttons
+    display: block !important
+    text-align: center
+
+    input
+        margin: 0 auto !important
+        border: 3px solid $dark !important
+        background-color: white !important
+        color: $dark !important
+        font-family: Nunito Sans !important
+        font-size: 1.5rem !important
+        font-weight: 900 !important
+        border-radius: 8px !important
+        line-height: 0em !important
+        padding: 0.8em 1em !important
+        height: fit-content !important
+        width: fit-content !important
+
+        &:hover
+            background-color: $dark !important
+            color: white !important
+            border: 3px solid $dark !important
+
+
+        @media screen and (max-width: 600px)
+            font-size: 1rem !important
+
+.response
+    color: green !important
+    font-size: 1.1rem !important
+    font-weight: 900 !important
+    font-family: Nunito Sans !important
+    margin: 0 !important
+    padding: 0 !important
+
+    @media screen and (max-width: 600px)
+        font-size: 1rem !important
