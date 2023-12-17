@@ -1189,10 +1189,15 @@ nav .BCII-name-navbar {
 .sponsor_card:hover .hidden {
   display: block;
 }
-.sponsor_card img {
+.sponsor_card .card-image {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sponsor_card .card-image img {
   margin-bottom: 1rem;
-  height: 150px;
-  width: auto;
+  margin-top: 1.5rem;
 }
 .sponsor_card b {
   color: #2A3947 !important;
