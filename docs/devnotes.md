@@ -1,5 +1,6 @@
 ```
-sass --watch docs/style.sass:docs/style.css
+cd docs
+sass --watch style/style.sass:style/style.css
 ```
 
 ```
