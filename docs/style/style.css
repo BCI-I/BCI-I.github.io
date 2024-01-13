@@ -10,13 +10,16 @@ body {
   text-justify: inter-word;
 }
 body a {
-  color: white;
+  color: #fe8181;
   font-weight: 800;
 }
 body a:hover {
   color: #ffcc67fb;
   font-weight: 900;
   text-decoration: underline;
+}
+body .link-no-style {
+  color: white;
 }
 
 .footer {
@@ -38,6 +41,9 @@ body a:hover {
 /* -------------------------------------------------------------------------- */
 /*                               global elements                              */
 /* -------------------------------------------------------------------------- */
+.clean-link {
+  color: white;
+}
 .clean-link:hover {
   color: white;
   text-decoration: none;

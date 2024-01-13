@@ -2,6 +2,7 @@
     
 $dark: #2A3947
 $light: #4c6780
+$link: #fe8181
 $darker: #1E2A35
 $darkest: #0d1e32
 $offwhite: #d5d5d5
@@ -9,7 +10,6 @@ $grey: #aabfd1
 $highlight: #ffcc67fb
 $highlight_light: #f8d794fb
 $highlight_bold : #ffcc67fb
-$link: rgb(173, 136, 255)
 $h4color: #f4d392fb
 $salmon: #fb835f
 $green: #6bce70
@@ -28,13 +28,16 @@ body
     text-justify: inter-word
 
     a
-        color: white
+        color: $link
         font-weight: 800
 
     a:hover
         color: $highlight
         font-weight: 900
         text-decoration: underline
+
+    .link-no-style
+        color: white
 
 .footer
     background-color: $darker !important
@@ -57,6 +60,8 @@ body
 /* -------------------------------------------------------------------------- */
 
 .clean-link
+    color: white
+    
     // style hove
     &:hover
         color: white
