@@ -1121,6 +1121,10 @@ nav .BCII-name-navbar {
 .whitebg a {
   color: black !important;
 }
+.whitebg a:hover {
+  font-weight: 900;
+  color: #fe8181 !important;
+}
 .whitebg .highlight, .whitebg .highlight-green, .whitebg .highlight-salmon, .whitebg .highlight-lightblue, .whitebg .highlight-black, .whitebg .highlight-white, .whitebg .highlight-darker {
   color: black !important;
   text-shadow: none;
