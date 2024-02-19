@@ -632,13 +632,44 @@ nav .BCII-name-navbar {
   transition: transform 0.25s ease-in-out;
 }
 
+.event-green {
+  background-color: #6bce70;
+  border: 2px solid #6bce70;
+}
+.event-green .event-title {
+  color: #6bce70;
+}
+
+.event-blue {
+  background-color: #58b4ff;
+  border: 2px solid #58b4ff;
+}
+.event-blue .event-title {
+  color: #58b4ff;
+}
+
+.event-red {
+  background-color: #fb835f;
+  border: 2px solid #fb835f;
+}
+.event-red .event-title {
+  color: #fb835f;
+}
+
+.event-yellow {
+  background-color: #ffcc67fb;
+  border: 2px solid #ffcc67fb;
+}
+.event-yellow .event-title {
+  color: #ffcc67fb;
+}
+
 .event {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 2em;
   border-radius: 10px;
   padding: 1em 10% 1.5em 3em;
-  border: 2px solid green;
   background-color: #1E2A35;
   position: relative;
   overflow: hidden;
@@ -675,7 +706,6 @@ nav .BCII-name-navbar {
   font-weight: 900;
   margin-bottom: 0.5em;
   font-family: Teko;
-  color: #6bce70;
   position: relative;
 }
 @media screen and (max-width: 600px) {
