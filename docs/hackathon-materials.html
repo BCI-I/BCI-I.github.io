@@ -219,11 +219,11 @@
     <br>
     <p>
       Alongside the physical robots, Duckietown has developed the 
-      <span class="highlight-salmon">DuckieMatrix </span> a physically-realistic digital twin of the Duckiebot.
-      We will use the DuckieMatrix to simulated the Duckiebots during development of 
+      <span class="highlight-salmon">Duckiematrix </span> a physically-realistic digital twin of the Duckiebot.
+      We will use the Duckiematrix to simulated the Duckiebots during development of 
       the BCI algorithms. For the final competition, we will switch to using 
       the physical Duckiebots.
-      These instructions will help you set up you computer to run the DuckieMatrix
+      These instructions will help you set up you computer to run the Duckiematrix
       and provide some example for controlling your robots. 
     </p>
     
@@ -236,13 +236,13 @@
 
     <p>
       To get ready to use the Duckietown software, start by reading both the 
-      <a href="https://docs.duckietown.com/ente/devmanual-duckiematrix/intro.html" target="_blank">DuckieMatrix</a>
+      <a href="https://docs.duckietown.com/ente/devmanual-Duckiematrix/intro.html" target="_blank">Duckiematrix</a>
       and <a href="https://docs.duckietown.com/ente/opmanual-duckiebot/intro.html" target="_blank">Duckiebot</a>
       user manuals.
     </p>
     <br>
     <p>
-      To being setting up your computer to run the DuckieMatrix, you will need to install
+      To being setting up your computer to run the Duckiematrix, you will need to install
       Python as a <b>system installation</b> (i.e. not in a virtual environment with pip or conda).
       To do that, follow the instructions 
       <a href="https://www.python.org/downloads/release/python-3100/" target="_blank">here</a>.
@@ -279,7 +279,7 @@
         <br>
       Once you have connected the account, enter: 
       <!-- add inline code -->
-      <code>dts command</code> to finish installing the Duckietown 
+      <code>dts commands</code> to finish installing the Duckietown 
       CLI. 
       If everything went well, you should be able to run commands like
       <code>dts fleet discover</code>
@@ -304,7 +304,7 @@
 
     <br><br>
     <p>
-      If everything went correctly, you should have the DuckieMatrix open, 
+      If everything went correctly, you should have the Duckiematrix open, 
       and you should be able to see a map and a Duckiebot in it. 
       Next, we will share some code for moving the robot and to read data 
       from it. Note that the same code will work for both the simulated 
@@ -385,10 +385,10 @@
       <pre><code class="language-python">
         # ToF
         def _range_finder_cb(data: Optional[float]):
-        if data is None:
-            print("Out of range.")
-            return
-        print(f"Range: {data} meters.")
+          if data is None:
+              print("Out of range.")
+              return
+          print(f"Range: {data} meters.")
 
         robot.range_finder.start()
         stime: float = time.time()
@@ -401,7 +401,9 @@
 
         # Camera
         def _camera_cb(data: BGRImage):
-        print(f"Received image of shape: {data.shape}")
+          print(f"Received image of shape: {data.shape}")
+
+
         robot.camera.start()
         stime: float = time.time()
         while time.time() - stime < 2:
