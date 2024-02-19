@@ -33,7 +33,10 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
 
     <!-- <meta http-equiv="refresh" content="2"> -->
+
+    <link href="./prism.css" rel="stylesheet" />
   </head>
+
 
   <body>
     <!-- <p class="BCII-name-navbar">BCI <i style="font-weight: 400">initiative</i></p> -->
@@ -70,112 +73,393 @@
 
     <section class="hackathon-info narrow">
       <a class="fancy-title clean-link" style="margin-top:1.5em" id="materials"
-      href="#materials">Preparing for the hackathon</a>
-        <p>
-          This page contains material to learn about the software and hardware that will be used for the BCI-I hackathon.
-        </p>
-      </br>
-
-      <!-- ----------------------------------------------------------------------- -->
-      <!--                                 generic                                  -->
-      <!-- ----------------------------------------------------------------------- -->
-      <a class="hackathon-subtitle clean-link" style="margin-top:1.5em" id="accounts"
-      href="#accounts">Accounts</a>
-
+        href="#materials">Preparing for the hackathon</a>
       <p>
-        In order to access some of the software needed, for example, to interact with the Duckiebots, 
-        you will need a 
-        <a href="https://github.com/join" target="_blank">GitHub</a> account, a 
-        <a href="https://hub.docker.com/signup" target="_blank">Docker Hub</a> account and an 
-        account on the 
-        <a href="https://hub.duckietown.com/" target="_blank">Duckietown Hub</a>.
-        Making sure that you have all accounts ready ahead of the competition will help you save time that 
-        you can spend hacking instead.
+        This page contains material to learn about the software and hardware
+        that will be used for the BCI-I hackathon.
       </p>
-      
-      <!-- ---------------------------- requirements ----------------------------- -->
-      <a class="hackathon-subtitle clean-link" style="margin-top:1.5em" id="requirements"
-      href="#requirements">Hardware requirements</a>
-
-      <p>
-        In order to participate in the hackathon, each time will require at least one computer
-        that can run the software needed to interact with the EEG headset and the Duckiebots.
-        The recomended platform is a MacBook with an Intel chip, computers Apple M1-2-3 chips may not work.
-        All recomended software has been tested on this platform and should therefore run smoothly.
-        Teams with laptop running Ubuntu should be able to get the software to work, but this has not been
-        tested yet. Windows machine are not supported. Though it might be possible to get them to work using a 
-        virtual machine, this has not been tested and we encourage all teams to use a MacBook instead.
-      </p>
-      <br>
-      <p>
-        Streaming data from the EEG headset requires an Android device with Bluetooth connection. 
-        We strongly encourage all teams to ensure that they have access to such a device.
-        We will have a very limited number of devices available for teams that do not have access to one, 
-        but we cannot guarantee that we will have enough for everyone.
-      </p>
-
-        
-
-        <!-- ----------------------------------------------------------------------- -->
-        <!--                                  X.on                                   -->
-        <!-- ----------------------------------------------------------------------- -->
-        <a class="hackathon-subtitle clean-link" style="margin-top:1.5em" id="eeg"
-        href="#eeg">X.on EEG headset</a>
-        
-        <div class="development-icon">
-          <span class="icon-text">
-            <span class="icon is-large">
-              <i class="fa-solid fa-code"></i>
-            </span>
-            <span>under development</span>
-            <span class="icon is-large">
-              <i class="fa-solid fa-code"></i>
-            </span>
-          </span>
-        </div>
-
-
-        <!-- ----------------------------------------------------------------------- -->
-        <!--                               Duckietown                                -->
-        <!-- ----------------------------------------------------------------------- -->
-        <a class="hackathon-subtitle clean-link" style="margin-top:1.5em" id="db"
-        href="#db">Duckiebot</a>
-
-        <div class="development-icon">
-          <span class="icon-text">
-            <span class="icon is-large">
-              <i class="fa-solid fa-code"></i>
-            </span>
-            <span>under development</span>
-            <span class="icon is-large">
-              <i class="fa-solid fa-code"></i>
-            </span>
-          </span>
-        </div>
-    </section>
+    </br>
 
     <!-- ----------------------------------------------------------------------- -->
-    <!--                                 footer                                  -->
+    <!--                                 generic                                  -->
     <!-- ----------------------------------------------------------------------- -->
-    <footer class="footer">
-      <div class="columns">
-        <div class="column has-text-centered">
-          <p>BCI initiative is part of the Xheladin & Xhufe Morina Foundation.
-          </p>
-          <a href="https://www.xhmf.org/" target="_blank">
-            <img src="imgs/xhmf_logo.svg"
-              alt="Xheladin & Xhufe Morina Fondation Logo">
-          </a>
-        </div>
-        <div class="column">
-          <p class="footer-text">
-              <a href="https://bci-i.github.io/about#contact-form">Contact us</a> 
-              or reach out at
-              <br>
-              <a href="mailto:bciinitiative@proton.me">bciinitiative@proton.me</a>
-          </p>
-          
-        </div>
+    <a class="hackathon-subtitle clean-link" style="margin-top:1.5em"
+      id="before"
+      href="#before">Before the hackathon</a>
+
+    <p>
+      In order to access some of the software needed you will need:
+    </p>
+
+    <ul>
+      <li>a <a href="https://github.com/join" target="_blank">GitHub</a>
+        account</li>
+      <li>a <a href="https://hub.docker.com/signup" target="_blank">Docker
+          Hub</a> acount</li>
+      <li>a <a href="https://hub.duckietown.com/" target="_blank">Duckietown
+          Hub</a> account</li>
+    </ul>
+
+    <p>
+      Making sure that you have all accounts ready ahead of the competition will
+      help you save time that
+      you can spend hacking instead.
+    </p>
+
+    <div class="note-salmon narrow">
+      <div class="note-title">
+        Hardware requirements
       </div>
-    </footer>
-    </body>
+      <p class="note-content">
+        To participate in the hackathon, each team needs to be able to stream data from the EEG headset and to 
+        send and receive data to and from the Duckiebot. You will need to rely on the manufacturer's software to do so, 
+        and this means that you will need devices that can run the software.<br><br>
+
+        For the Duckiebot you will need either Linux or MacOS laptops (ideally with Intel silicon). 
+        For the EEG headset you will need an Android device with Bluetooth connectivity.
+        We strongly encourage all teams to ensure that they have access to such devices. 
+        <br><br>
+        <b>
+        We will have a very limited number of Android devices available </b>for teams that do not have access to one, but we cannot guarantee that we will have enough for everyone.
+        Please fill in 
+        <a href="https://forms.gle/FQkiAFPthqyqAbGh6" target="_blank"> this form </a>
+        let us know ahead of time what hardware you or your team have available to help us plan accordingly.
+      
+      </p>
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  Brain Products                         -->
+    <!-- ----------------------------------------------------------------------- -->
+    <a class="hackathon-subtitle clean-link" style="margin-top:1.5em" id="eeg"
+      href="#eeg">X.on EEG headset</a>
+
+    <p>
+      The <a href="https://xon-eeg.com/" target="_blank">X.on EEG headset</a> is an affordable and easy 
+      to use EEG headset. It's light and wireless, making it very portable yet it's capable of 
+      recording high quality EEG data from its 8 channels (+ reference) and 3-axis accelerometer.
+    </p>
+    <br>
+    <p>
+      To learn more about the X.on design and specifications, you can check the website for the
+      <a href="https://xon-eeg.com/" target="_blank">X.on EEG headset</a>. 
+      On the day of the hackahton, we will provide the <span class="highlight">X.on user manual</span>
+      describing how to setup and use the headset (also
+      seet this
+      <a href="https://www.youtube.com/watch?v=2HwxGtheWJ8" target="_blank">video</a>.
+      )
+    </p>
+    
+
+    <!-- -------------------------------- X.on --------------------------------- -->
+    <a class="hackathon-subtitle clean-link" style="margin-top:1.5em"
+      id="xsoftware"
+      href="#xsoftware">X.on Software
+    </a>
+
+    <p>
+      <span class="highlight-green">Streaming data from the X.on</span>. To stream EEG data from the headset, 
+      you will need to connect it to to an Android device with a Bluetooth connection. The X.on user manual
+      will describe how to do this. 
+      Once connected, go to "monitor" and the X.on app will stream the data over WiFi using the <a href="https://labstreaminglayer.org/#/" target="_blank">Lab Streaming Layer (LSL)</a>.
+      <br><br>
+      To <span class="highlight-lightblue">read the data on your laptop</span>, you can use the 
+      <a href="https://github.com/labstreaminglayer/pylsl" target="_blank">pylsl</a> Python library.
+      We recomend familiarizing yourself with 
+      both LSL and pylsl before the hackathon.
+      <br><br>
+      This <b>code</b> shows how to stream eeg data in Python using pylsl:
+    </p>
+
+      
+    <div class="narrow">
+    <pre><code class="language-python">
+      """
+        Example program to show how to read a 
+        multi-channel time series from LSL.
+      """
+
+      from pylsl import StreamInlet, resolve_stream
+      
+      
+      def main():
+          # first resolve an EEG stream on the lab network
+          print("looking for an EEG stream...")
+          streams = resolve_stream('type', 'EEG')
+      
+          # create a new inlet to read from the stream
+          # you'll need to make sure that you're accessing YOUR headset
+          inlet = StreamInlet(streams[0])
+      
+          while True:
+              # get a new sample
+              sample, timestamp = inlet.pull_sample()
+              print(timestamp, sample)
+      
+      
+      if __name__ == '__main__':
+          main()
+    </code></pre>
+    </div>
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               Duckietown                                -->
+    <!-- ----------------------------------------------------------------------- -->
+    <a class="hackathon-subtitle clean-link" style="margin-top:1.5em" id="db"
+      href="#db">Duckietown</a>
+
+    <p>
+      The Duckiebots are affordable self-driving cars with several sensors and enough
+      computational power to run complex algorithms. They are designed to be used in
+      educational environments and are a great platform to learn about robotics and
+      autonomous vehicles. We will use them as a platform to test the BCI-I hackathon
+      participants' ability to control a robot using their brain activity.
+    </p>
+    <br>
+    <p>
+      Alongside the physical robots, Duckietown has developed the 
+      <span class="highlight-salmon">DuckieMatrix </span> a physically-realistic digital twin of the Duckiebot.
+      We will use the DuckieMatrix to simulated the Duckiebots during development of 
+      the BCI algorithms. For the final competition, we will switch to using 
+      the physical Duckiebots.
+      These instructions will help you set up you computer to run the DuckieMatrix
+      and provide some example for controlling your robots. 
+    </p>
+    
+
+
+  <!-- ------------------------------ Duckiebot ------------------------------ -->
+  <a class="hackathon-subtitle clean-link" style="margin-top:1.5em"
+    id="dbsoftware"
+    href="#dbsoftware">Duckiebot Software</a>
+
+    <p>
+      To get ready to use the Duckietown software, start by reading both the 
+      <a href="https://docs.duckietown.com/ente/devmanual-duckiematrix/intro.html" target="_blank">DuckieMatrix</a>
+      and <a href="https://docs.duckietown.com/ente/opmanual-duckiebot/intro.html" target="_blank">Duckiebot</a>
+      user manuals.
+    </p>
+    <br>
+    <p>
+      To being setting up your computer to run the DuckieMatrix, you will need to install
+      Python as a <b>system installation</b> (i.e. not in a virtual environment with pip or conda).
+      To do that, follow the instructions 
+      <a href="https://www.python.org/downloads/release/python-3100/" target="_blank">here</a>.
+      Next, make sure you'll be using the system python version:
+    </p>
+    <br>
+
+    <div class="imgcontainer">
+      <img src="imgs/carbon(19).png" alt="Duckiebot">
+    </div>
+
+    <br>
+    <p>
+      Next, you will install the <span class="highlight-lightblue">Duckietown Shell</span>:
+    </p>
+    <div class="narrow">
+      <pre><code class="language-bash">
+        python -m pip  install git+https://github.com/duckietown/duckietown-shell@v6
+        which dts
+      </code></pre>
+    </div>
+
+    <br>
+    <p>
+      If everything went correct, 
+      you can connect your duckietown account. Enter 
+      <!-- add inline code -->
+      <code>dts</code> 
+      in the terminal, 
+      select the account type <b>ente</b> and generate a token
+      by going to 
+      <a href="https://hub.duckietown.com/signin/?next=/profile/token/generator/"
+        target="_blank">this link</a>.
+        <br>
+      Once you have connected the account, enter: 
+      <!-- add inline code -->
+      <code>dts command</code> to finish installing the Duckietown 
+      CLI. 
+      If everything went well, you should be able to run commands like
+      <code>dts fleet discover</code>
+    </p>
+    <br>
+    <p>
+      To install the <span class="highlight-lightblue">Duckietown Matrix</span> 
+      run: <code>dts matrix install</code> and then to start the matrix,
+      run:
+      <code>dts matrix engine run --sandbox --vv</code>.
+      To <b>see</b> the matrix, you will launch the <code>.app</code> file
+      it comes with. To see where this is stored on your computer, run:
+      <code>dts matrix run --standalone --sandbox</code> -  you'll
+      get an error message with the path to the file.
+    </p>
+    <br>
+    <p>
+      Finally, you will need to install the Duckietown SDK to actually control
+      your robots (both virtual and real):
+      <code>python -m pip  install "duckietown-sdk<=1"</code>
+    </p>
+
+    <br><br>
+    <p>
+      If everything went correctly, you should have the DuckieMatrix open, 
+      and you should be able to see a map and a Duckiebot in it. 
+      Next, we will share some code for moving the robot and to read data 
+      from it. Note that the same code will work for both the simulated 
+      and real robots, you will just need to change the robot name accordingly.
+      <br>Start by creating a reference to your robot:
+    </p>
+    <div class="narrow">
+      <pre><code class="language-python">
+        import time
+        from typing import Tuple, List
+        from duckietown.sdk.robots.duckiebot import DB21J
+        from duckietown.sdk.types import LEDsPattern, RGBAColor
+
+        SIMULATED_ROBOT_NAME: str = "map_0/vehicle_0"
+        REAL_ROBOT_NAME: str = "rover"
+
+        robot: DB21J = DB21J(SIMULATED_ROBOT_NAME, simulated=True)  # change accordingly
+      </code></pre>
+    </div>
+
+    <p>Next, you can use this code to send commands to the wheels
+      and LEDs:
+    </p>
+
+    <div class="narrow">
+      <pre><code class="language-python">
+        # move wheels
+        speeds = (0.5, 0.5)
+        robot.motors.start()
+        stime: float = time.time()
+        while time.time() - stime < 4:
+            robot.motors.publish(speeds)
+            time.sleep(0.25)
+            print("speedy")
+        robot.motors.stop()
+        print("Stopped.")
+
+
+        # LED lights show
+        frequency: float = 1.4
+        off: RGBAColor = (0, 0, 0, 0.0)
+        amber: RGBAColor = (1, 0.7, 0, 1.0)
+        lights_on: LEDsPattern = LEDsPattern(front_left=amber, front_right=amber, rear_right=amber, rear_left=amber)
+        lights_off: LEDsPattern = LEDsPattern(front_left=off, front_right=off, rear_right=off, rear_left=off)
+        pattern: List[LEDsPattern] = [lights_on, lights_off]
+        robot.lights.start()
+        stime: float = time.time()
+        i: int = 0
+        while time.time() - stime < 8:
+            lights: LEDsPattern = pattern[i % 2]
+            robot.lights.publish(lights)
+            time.sleep(1. / frequency)
+            i += 1
+        robot.lights.stop()
+        print("Stopped.")
+      </code></pre>
+    </div>
+
+    <div class="note-salmon narrow">
+      <div class="note-title">
+        Careful
+      </div>
+      <p class="note-content">
+        When using a real Duckiebot, make sure that the bot is on the ground
+        and that there's no obstacle in front of it. When you send a command 
+        to it, it <b>will move</b> - avoid damaging it by checking 
+        the environment first.
+      </p>
+    </div>
+
+
+    <p>
+      To stream data from the ToF (Time of Flight; distance) sensor and 
+      camera, you can use this code:
+    </p>
+
+    <div class="narrow">
+      <pre><code class="language-python">
+        # ToF
+        def _range_finder_cb(data: Optional[float]):
+        if data is None:
+            print("Out of range.")
+            return
+        print(f"Range: {data} meters.")
+
+        robot.range_finder.start()
+        stime: float = time.time()
+        while time.time() - stime < 2:
+            data = robot.range_finder.capture(block=True)
+            _range_finder_cb(data)
+        print("Stopped.")
+        robot.range_finder.stop()
+
+
+        # Camera
+        def _camera_cb(data: BGRImage):
+        print(f"Received image of shape: {data.shape}")
+        robot.camera.start()
+        stime: float = time.time()
+        while time.time() - stime < 2:
+            data = robot.camera.capture(block=True)
+            _camera_cb(data)
+        print("Stopped.")
+        robot.camera.stop()
+      </code></pre>
+    </div>
+
+    <br><br>
+    <p>
+      The last thing you need to know, is how to use the real Duckiebots.
+      Start with <code>dts fleet discover</code> to make sure that 
+      your Duckiebot is on and connected to the internet, take note of the 
+      name. Beyond that, just replace the robot name above with the physical 
+      robot's name from the fleet discovery, and you're good to go!
+      To turn off the physical robot, run:
+      <code>dts duckiebot shutdown ROBOT_NAME</code>.
+
+      You can also go to: <code>ROBOT_NAME.local/dashboard/robot</code>
+      in your web browser to see the robot's status and some 
+      additional info.
+    </p>
+
+    <p>
+      That's it! You now know how to stream data from the X.on headset and 
+      control the robot - the rest is up to you!
+    </p>
+
+
+  </section>
+
+
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                                 footer                                  -->
+  <!-- ----------------------------------------------------------------------- -->
+  <footer class="footer">
+    <div class="columns">
+      <div class="column has-text-centered">
+        <p>BCI initiative is part of the Xheladin & Xhufe Morina Foundation.
+        </p>
+        <a href="https://www.xhmf.org/" target="_blank">
+          <img src="imgs/xhmf_logo.svg"
+            alt="Xheladin & Xhufe Morina Fondation Logo">
+        </a>
+      </div>
+      <div class="column">
+        <p class="footer-text">
+          <a href="https://bci-i.github.io/about#contact-form">Contact us</a>
+          or reach out at
+          <br>
+          <a href="mailto:bciinit@proton.me">bciinit@proton.me</a>
+        </p>
+
+      </div>
+    </div>
+  </footer>
+	<script src="prism.js"></script>
+</body>
