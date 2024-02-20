@@ -287,14 +287,32 @@
     <br>
     <p>
       To install the <span class="highlight-lightblue">Duckietown Matrix</span> 
-      run: <code>dts matrix install</code> and then to start the matrix,
-      run:
-      <code>dts matrix engine run --sandbox --vv</code>.
-      To <b>see</b> the matrix, you will launch the <code>.app</code> file
-      it comes with. To see where this is stored on your computer, run:
-      <code>dts matrix run --standalone --sandbox</code> -  you'll
-      get an error message with the path to the file.
+      run: <code>dts matrix install</code>.
+      Among other things, this will install an <code>.app</code> file running the matrix. 
+      You'll need to know where it is, to find it, run:
+      <code>dts matrix run -s -S</code>. <br>
+      The first time you run the matrix's .app file, you might get a message saying that 
+      the file couldn't be opened because it was downloaded from the internet.
+      To enable it, go to <code>System Preferences > Security & Privacy </code> and you should 
+      see a message asking if you want to open it anyways - say yes. 
     </p>
+    <br>
+    <p>
+      One of the great featues of the Duckiematrix is that you can create realistic looking maps. 
+      You can use a replica of the competition maps - download it
+      <a href="https://github.com/BCI-I/MIT-BCI-Hackathon" target="_blank">here</a>.
+      Download the folder and move <code>BCI-I</code> to the <code>.app</code> folder.
+    </p>
+    <br><br>
+    <p>
+      To <span class="highlight-salmon">run the matix</span>, you will need to launch the simulation engine in 
+      the back - go to the app folder <code>cd APP_PATH</code> and run: <code>dts matrix run -S -m ./bci-i/</code>.
+      Now, open the .app - you should see a window with a map and a Duckiebot in it, you can use a keyboard to move it. 
+      <br>
+      Below, we will show how to use the Duckietown SDK to control the robot: when you do so, you should see the robot in the
+      matrix move accordingly!
+    </p>
+
     <br>
     <p>
       Finally, you will need to install the Duckietown SDK to actually control
