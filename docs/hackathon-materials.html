@@ -202,6 +202,46 @@
     </code></pre>
     </div>
 
+    <div class="note-lightblue narrow">
+      <div class="note-title">
+        Ensuring correct streaming
+      </div>
+      <p class="note-content">
+        To make sure that your computer can see the LSL stream, you need to have both your 
+        laptop and Android device connected to the same Wi-Fi network. If you're still unable
+        to see the stream, enable Bluetooth thetering and WiFi hotspot on your phone. 
+      </p>
+    </div>
+
+    <br>
+    <p>
+      During the hackathon, there will be a lot of devices on at the same time, each streaming data.
+      To make sure that you can see the stream from your headset, first take note of the SN (Serial Number) 
+      indicated near the carging port of your headset. Next, in the X.on App make sure you're connected to 
+      the device with the same SN. <br>
+      In pylsl, you can get a list of all the LSL streams and check for the one with the same SN:
+    </p>
+
+
+    <div class="narrow">
+      <pre><code class="language-python">
+      import pylsl
+
+      # Resolve EEG streams
+      streams = pylsl.resolve_streams()
+      
+      # Iterate through streams
+      print(f"Found {len(streams)} streams")
+      print("---------------")
+      
+      for stream in streams:
+          print("Stream Name:", stream.name())
+          print("Stream Type:", stream.type())
+          print("Stream ID:", stream.source_id())   # this should match your X.on Serial Number
+          print("Stream Unique Identifier:", stream.uid())
+          print("---------------")
+      </code></pre>
+
 
     <!-- ----------------------------------------------------------------------- -->
     <!--                               Duckietown                                -->
