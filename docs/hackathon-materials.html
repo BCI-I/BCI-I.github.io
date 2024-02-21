@@ -213,7 +213,7 @@
       The Duckiebots are affordable self-driving cars with several sensors and enough
       computational power to run complex algorithms. They are designed to be used in
       educational environments and are a great platform to learn about robotics and
-      autonomous vehicles. We will use them as a platform to test the BCI-I hackathon
+      autonomous vehicles. We will use them as a platform to test the BCI hackathon
       participants' ability to control a robot using their brain activity.
     </p>
     <br>
@@ -242,7 +242,7 @@
     </p>
     <br>
     <p>
-      To being setting up your computer to run the Duckiematrix, you will need to install
+      To beging setting up your computer to run the Duckiematrix, you will need to install
       Python as a <b>system installation</b> (i.e. not in a virtual environment with pip or conda).
       To do that, follow the instructions 
       <a href="https://www.python.org/downloads/release/python-3100/" target="_blank">here</a>.
@@ -269,7 +269,6 @@
     <p>
       If everything went correct, 
       you can connect your duckietown account. Enter 
-      <!-- add inline code -->
       <code>dts</code> 
       in the terminal, 
       select the account type <b>ente</b> and generate a token
@@ -278,19 +277,19 @@
         target="_blank">this link</a>.
         <br>
       Once you have connected the account, enter: 
-      <!-- add inline code -->
-      <code>dts commands</code> to finish installing the Duckietown 
+      <code>dts commands</code> in your terminal to finish installing the Duckietown 
       CLI. 
       If everything went well, you should be able to run commands like
-      <code>dts fleet discover</code>
+      <code>dts fleet discover</code> without errors.
     </p>
     <br>
     <p>
       To install the <span class="highlight-lightblue">Duckietown Matrix</span> 
       run: <code>dts matrix install</code>.
-      Among other things, this will install an <code>.app</code> file running the matrix. 
-      You'll need to know where it is, to find it, run:
+      Among other things, this will install an <code>.app</code> file running the matrix's renderer. 
+      You'll need to know its location in your computer, to find it, run:
       <code>dts matrix run -s -S</code>. <br>
+      Once we're ready to launch the matrix's renderer, you will need to double click the .app file. 
       The first time you run the matrix's .app file, you might get a message saying that 
       the file couldn't be opened because it was downloaded from the internet.
       To enable it, go to <code>System Preferences > Security & Privacy </code> and you should 
@@ -298,16 +297,18 @@
     </p>
     <br>
     <p>
+      Before launching the matrix's renderer, you will need to launch the simulation engine. 
+      To do so, you need to specify a <i>map</i> to use.
       One of the great featues of the Duckiematrix is that you can create realistic looking maps. 
-      You can use a replica of the competition maps - download it
+      You will use a replica of the competition maps - download it
       <a href="https://github.com/BCI-I/MIT-BCI-Hackathon" target="_blank">here</a>.
-      Download the folder and move <code>BCI-I</code> to the <code>.app</code> folder.
+      Download the folder and move <code>BCI-I</code> to the <code>.app</code> file's folder.
     </p>
     <br><br>
     <p>
-      To <span class="highlight-salmon">run the matix</span>, you will need to launch the simulation engine in 
-      the back - go to the app folder <code>cd APP_PATH</code> and run: <code>dts matrix run -S -m ./bci-i/</code>.
-      Now, open the .app - you should see a window with a map and a Duckiebot in it, you can use a keyboard to move it. 
+      To <span class="highlight-salmon">run the matix</span>, engine - <code>cd</code> to the app folder and run: <code>dts matrix run -S -m ./bci-i/</code>.
+      Now, open the .app: you should see a window with a rendering of the map and a Duckiebot in it. You have different views at your disposal, and 
+      you can use the WASD keys to move the camera around and even control the duckiebot!
       <br>
       Below, we will show how to use the Duckietown SDK to control the robot: when you do so, you should see the robot in the
       matrix move accordingly!
@@ -315,9 +316,9 @@
 
     <br>
     <p>
-      Finally, you will need to install the Duckietown SDK to actually control
-      your robots (both virtual and real):
-      <code>python -m pip  install "duckietown-sdk<=1"</code>
+      To control
+      your robots (both virtual and real) you'll need to install the Duckietown SDK:
+      <code>python -m pip  install "duckietown-sdk<=1"</code>.
     </p>
 
     <br><br>
@@ -431,6 +432,18 @@
         robot.camera.stop()
       </code></pre>
     </div>
+
+    <div class="note-green narrow">
+      <div class="note-title">
+        Is it working?
+      </div>
+      <p class="note-content">
+        If everything is working correctly, you should see the robot move in the Duckiematrix!
+        Keep an eye out for the terminal where you're running the matrix's engine, you should see
+        messages letting you know when you hit obstacles with the robot.
+      </p>
+    </div>
+
 
     <br><br>
     <p>
