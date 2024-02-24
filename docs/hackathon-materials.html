@@ -486,11 +486,13 @@
         robot.motors.start()
         stime: float = time.time()
         while time.time() - stime < 4:
-            robot.motors.publish(speeds)
-            time.sleep(0.25)
-            print("speedy")
+          robot.motors.publish(speeds)
+          time.sleep(0.25)
+          print("speedy")
         robot.motors.stop()
         print("Stopped.")
+      </code></pre>
+      <pre><code class="language-python">
 
 
         # LED lights show
@@ -504,10 +506,10 @@
         stime: float = time.time()
         i: int = 0
         while time.time() - stime < 8:
-            lights: LEDsPattern = pattern[i % 2]
-            robot.lights.publish(lights)
-            time.sleep(1. / frequency)
-            i += 1
+          lights: LEDsPattern = pattern[i % 2]
+          robot.lights.publish(lights)
+          time.sleep(1. / frequency)
+          i += 1
         robot.lights.stop()
         print("Stopped.")
       </code></pre>
@@ -549,6 +551,8 @@
         print("Stopped.")
         robot.range_finder.stop()
 
+        <pre><code class="language-python">
+        </code></pre>
 
         # Camera
         def _camera_cb(data: BGRImage):
