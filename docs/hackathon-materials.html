@@ -539,8 +539,8 @@
         # ToF
         def _range_finder_cb(data: Optional[float]):
           if data is None:
-              print("Out of range.")
-              return
+            print("Out of range.")
+            return
           print(f"Range: {data} meters.")
 
         robot.range_finder.start()
@@ -551,19 +551,18 @@
         print("Stopped.")
         robot.range_finder.stop()
 
-        <pre><code class="language-python">
-        </code></pre>
-
+      </code></pre>
+      <pre><code class="language-python">
         # Camera
         def _camera_cb(data: BGRImage):
-            print(f"Received image of shape: {data.shape}")
+          print(f"Received image of shape: {data.shape}")
 
 
         robot.camera.start()
         stime: float = time.time()
         while time.time() - stime < 2:
-            data = robot.camera.capture(block=True)
-            _camera_cb(data)
+          data = robot.camera.capture(block=True)
+          _camera_cb(data)
         print("Stopped.")
         robot.camera.stop()
       </code></pre>
