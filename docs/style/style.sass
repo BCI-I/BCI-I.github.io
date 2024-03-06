@@ -71,40 +71,6 @@ body
 .name-txt
     font-family: Cormorant Upright
     
-// ! option for highlights with an underline only
-// .highlight, .highlight-green, .highlight-salmon, .highlight-lightblue, .highlight-black, .highlight-white,.highlight-darker
-//     font-weight: 750
-
-// .highlight-salmon
-//     color: $salmon !important
-//     box-shadow: inset 0 -0.05em $dark, inset 0 -0.2em 0 0 $salmon
-//     text-shadow: -1px -1px $dark, -1px 1px $dark, 1px -1px $dark, 1px 1px $dark 
-// .highlight-black
-//     color: black !important
-//     box-shadow: inset 0 -0.05em $dark, inset 0 -0.2em 0 0 black
-//     text-shadow: -1px -1px $dark, -1px 1px $dark, 1px -1px $dark, 1px 1px $dark 
-// .highlight-white
-//     color: white !important
-//     box-shadow: inset 0 -0.05em $dark, inset 0 -0.2em 0 0 white
-//     text-shadow: -1px -1px $dark, -1px 1px $dark, 1px -1px $dark, 1px 1px $dark 
-// .highlight
-//     color: $highlight !important
-//     box-shadow: inset 0 -0.05em $dark, inset 0 -0.2em 0 0 $highlight
-//     text-shadow: -1px -1px $dark, -1px 1px $dark, 1px -1px $dark, 1px 1px $dark 
-// .highlight-green
-//     color: $green !important
-//     box-shadow: inset 0 -0.05em $dark, inset 0 -0.2em 0 0 $green
-//     text-shadow: -1px -1px $dark, -1px 1px $dark, 1px -1px $dark, 1px 1px $dark 
-// .highlight-lightblue
-//     color: $lightblue !important
-//     box-shadow: inset 0 -0.05em $dark, inset 0 -0.2em 0 0 $lightblue
-//     text-shadow: -1px -1px $dark, -1px 1px $dark, 1px -1px $dark, 1px 1px $dark 
-// .highlight-darker
-//     color: $darker !important
-//     box-shadow: inset 0 -0.05em $dark, inset 0 -0.2em 0 0 $darker
-//     text-shadow: -1px -1px $dark, -1px 1px $dark, 1px -1px $dark, 1px 1px $dark 
-
-
 
 .highlight, .highlight-green, .highlight-salmon, .highlight-lightblue, .highlight-black, .highlight-white,.highlight-darker
     font-weight: 550
@@ -499,6 +465,37 @@ nav
 
     padding: 5rem
     font-size: 2rem
+
+/* -------------------------------------------------------------------------- */
+/*                                EVENT SUMMARY                               */
+/* -------------------------------------------------------------------------- */
+
+.event-summary
+    background-color: $darker !important
+    min-height: 100px
+    padding: 2rem 10%
+
+    .fancy-title
+        text-align: center
+        margin: 0 auto 2rem auto
+        width: 100%
+
+    .is-child
+        background-color: $dark
+        color: white
+        font-family: Nunito Sans
+        font-size: 1.2rem
+        border: 1px solid $grey
+        
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+    .is-img-tile
+        border: none
+
+
+
 
 /* -------------------------------------------------------------------------- */
 /*                                   IMPORTS                                  */
