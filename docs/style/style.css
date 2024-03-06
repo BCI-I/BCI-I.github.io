@@ -38,6 +38,13 @@ body .link-no-style {
   display: inline-block;
   text-decoration: underline;
 }
+.footer .social-media {
+  color: white;
+}
+.footer .social-media i {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                               global elements                              */
