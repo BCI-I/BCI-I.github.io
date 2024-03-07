@@ -7,37 +7,10 @@
   </head>
 
   <body>
-    <!-- <p class="BCII-name-navbar">BCI <i style="font-weight: 400">initiative</i></p> -->
     <!-- ------------------------------- navbar -------------------------------- -->
-    <nav class="navbar is-transparent">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://bci-i.github.io/">
-          <img src="imgs/white_logo.svg"
-            alt="Brain Computer Initiative Logo">
-        </a>
-        <!-- <div class="navbar-burger"
-          data-target="navbarExampleTransparentExample">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div> -->
-      </div>
+    <div id="navbar-container"></div>
 
-      <div class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item BCII-name-navbar"
-            href="https://bci-i.github.io/">
-            BCI initiative
-          </a>
-        </div>
-        <div class="navbar-end">
-          <a class="navbar-item navbarpage"
-            href="https://bci-i.github.io/about">
-            about
-          </a>
-        </div>
-      </div>
-    </nav>
+
     <!-- ----------------------------------------------------------------------- -->
     <!--                               at a glance                               -->
     <!-- ----------------------------------------------------------------------- -->
@@ -148,8 +121,8 @@
       <a class="fancy-title clean-link" id="event-summary"
         href="#event-summary">Event Summary</a>
 
-      <div class="tile is-ancestor narrow">
-        <div class="tile is-4 is-vertical is-parent">
+      <div class="tile is-ancestor">
+        <div class="tile is-3 is-vertical is-parent">
           <div class="tile is-child">
             <p>
               <span class="highlight-green">60</span> participants, from 7 MIT departments. 
@@ -169,12 +142,10 @@
         </div>
         <div class="tile is-parent">
           <div class="tile is-child is-photos-tile">
-
             <div class="tile is-parent">
               <div class="tile is-4 is-vertical is-parent">
                 <div class="tile is-child is-img-tile ">
                   <figure class="image is-square">
-
                     <img class="event-photo" src="imgs/hackathon/square_one.jpg">
                   </figure>
                 </div>
@@ -201,7 +172,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
 
@@ -672,15 +642,6 @@
                   Established in 2021, we are a leader in the development and
                   commercialization of brain–computer interfaces (BCI).
                 </p>
-
-                <!-- <p class="sponsor-blurb hidden">
-                  
-                  Precision Neuroscience is building a direct connection between the human brain and computers, to benefit the hundreds of millions of people worldwide suffering from neurological conditions. Established in 2021, we are a leader in the development and commercialization of brain–computer interfaces (BCI).
-
-                  Precision has employees across a diverse array of fields – including neurosurgery, mechanical engineering, machine learning, and microfabrication – who push the boundaries of what is possible. In the two years since Precision’s founding, we have built and validated a product and have begun human trials in partnership with some of the country’s leading neurosurgery programs. Our goal is to restore function to people living with devastating neurological conditions, including stroke, spinal cord injury, traumatic brain injury, and neurodegenerative disease such as ALS. Our platform will enable these individuals to regain independence, communicate with loved ones, and return to work.
-
-
-                </p> -->
               </div>
             </div>
           </div>
@@ -727,9 +688,17 @@
       </div>
     </section>
 
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                                 footer                                  -->
-    <!-- ----------------------------------------------------------------------- -->
+    <!-- ------------------------------- footer -------------------------------- -->
     <dev id="footer"></dev>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              REACT SCRIPTS                              -->
+    <!-- ----------------------------------------------------------------------- -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script src="./js/navbar.js"></script>
     <script src="./js/footer.js"></script>
     </body>

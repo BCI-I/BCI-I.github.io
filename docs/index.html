@@ -3,6 +3,8 @@
   <head>
     <title>BCII</title>
     <script src="js/head_loader.js"></script>
+    <script src="js/landing.js"></script>
+
   </head>
 
   <body>
@@ -87,148 +89,38 @@
           fostering knowledge exchange, inclusivity, and innovation.
         </p>
 
-        <!-- ----------------------------------------------------------------------- -->
-        <!--                                 events                                  -->
-        <!-- ----------------------------------------------------------------------- -->
+        <!-- ------------------------------- events -------------------------------- -->
         <a class="fancy-title clean-link" id="events" href="#events"
           style="margin-top: 1em">Our Events</a>
 
-        <!-- ------------------------------ hackathon ------------------------------ -->
-        <a href="https://bci-i.github.io/hackathon" class="event-link">
-          <div class="event event-green" style="margin-top: 2em">
-            <div class="event-content">
-              <p class="event-title">MIT BCI Hackathon</p>
-              <p class="event-description ">MIT's first BCI hackathon.</p>
-              <div class="event-info vert-on-mobile">
-                <div class="columns">
-                  <div class="column is-4">
-                    Boston, February '24
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="event-img">
-              <img src="imgs/hackathon/header_head_only_transp.png"
-                alt="MIT BCI Hackathon">
-            </div>
-          </div>
-        </a>
-
-        <!-- -------------------------- hackathon network -------------------------- -->
-        <a href="https://www.meetup.com/neurotechbos/events/298910223"
-          class="event-link">
-          <div class="event event-blue" style="margin-top: 2em">
-            <div class="event-content">
-              <p class="event-title">NTBOS & BCI-I Networking event</p>
-              <p class="event-description ">An evening of networking with the
-                Boston BCI community.</p>
-              <div class="event-info vert-on-mobile">
-                <div class="columns">
-                  <div class="column is-4">
-                    Boston, February '24
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </a>
+        <!-- Container for your React component -->
+        <div id="landing-events"></div>
 
         <div class="event event-placeholder">
           <p class="event-title">More to come...</p>
         </div>
-
-        <!-- ----------------------------------------------------------------------- -->
-        <!--                                 signup                                  -->
-        <!-- ----------------------------------------------------------------------- -->
       </section>
 
+      <!-- ------------------------------- signup -------------------------------- -->
       <section class="landing-signup" id="signup">
-        <p class="signup-text">
-          <b>Sign up</b> to our <b
-            style="font-family:Cormorant Infant">newsletter</b>
-          to stay up to date
-        </p>
+        <div id="signup-container"></div>
+      </section>
 
-        <div id="mc_embed_shell">
-          <div class="narrow-50" id="mc_embed_signup">
-            <form
-              action="https://github.us21.list-manage.com/subscribe/post?u=41f96ef81a9e369790ea5f0bb&amp;id=e4ef6dcf6e&amp;f_id=0045efe6f0"
-              method="post" id="mc-embedded-subscribe-form"
-              name="mc-embedded-subscribe-form" class="validate"
-              target="_blank">
-              <div id="mc_embed_signup_scroll">
-                <!-- name & surname -->
-                <div class="columns form-cols">
-                  <div class="column">
-                    <div class="mc-field-group">
-                      <label
-                        for="mce-FNAME">First Name
-                      </label>
-                      <input type="text"
-                        name="FNAME" class=" text" id="mce-FNAME" value>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div
-                      class="mc-field-group">
-                      <label for="mce-LNAME">Last Name
-                      </label>
-                      <input type="text" name="LNAME" class=" text"
-                        id="mce-LNAME" value>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- email -->
-                <div class="mc-field-group">
-                  <label for="mce-EMAIL">Email Address <span
-                      class="required">required</span>
-                  </label>
-                  <input type="email"
-                    name="EMAIL" class="required email" id="mce-EMAIL" required
-                    value>
-                </div>
-
-                <!-- responses -->
-                <div id="mce-responses" class="clear foot">
-                  <div class="response" id="mce-error-response"
-                    style="display: none;"></div>
-                  <div class="response" id="mce-success-response"
-                    style="display: none;"></div>
-                </div>
-                <div style="position: absolute; left: -5000px;"
-                  aria-hidden="true">
-                  /* real people should not fill this in and expect good things
-                  - do not remove this or risk form bot signups */
-                  <input type="text"
-                    name="b_41f96ef81a9e369790ea5f0bb_e4ef6dcf6e" tabindex="-1"
-                    value>
-                </div>
-                <div class="optionalParent">
-                  <div class="clear foot buttons">
-                    <input type="submit" name="subscribe"
-                      id="mc-embedded-subscribe" class="button"
-                      value="Subscribe">
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <script type="text/javascript"
-            src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script
-            type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
-
-      </div>
     </section>
 
-  </section>
+    <!-- ------------------------------- footer -------------------------------- -->
+    <dev id="footer"></dev>
 
-  <!-- ----------------------------------------------------------------------- -->
-  <!--                                 footer                                  -->
-  <!-- ----------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 SCRIPTS                                 -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- Include React and ReactDOM libraries -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-  <dev id="footer"></dev>
-  <script src="./js/footer.js"></script>
-</body>
+    <script src="js/landing_event.js"></script>
+    <script src="js/signup_form.js"></script>
+    <script src="./js/footer.js"></script>
+  </body>

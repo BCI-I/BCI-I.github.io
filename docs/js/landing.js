@@ -14,10 +14,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
   fadeIn(sloganElement, delaySlogan);
   fadeIn(imgElement, delayImg);
-  
-  // shift img left after fade in 
-    // setTimeout(function() {
-    //     imgElement.style.transform = `translateX(-30vw)`;
-    // }, delayImg + 500);
-
 });

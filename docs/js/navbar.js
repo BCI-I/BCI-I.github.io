@@ -10,74 +10,52 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var e = React.createElement;
 
-var Footer = function (_React$Component) {
-  _inherits(Footer, _React$Component);
+var Navbar = function (_React$Component) {
+  _inherits(Navbar, _React$Component);
 
-  function Footer() {
-    _classCallCheck(this, Footer);
+  function Navbar() {
+    _classCallCheck(this, Navbar);
 
-    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
   }
 
-  _createClass(Footer, [{
+  _createClass(Navbar, [{
     key: "render",
     value: function render() {
       return React.createElement(
-        "div",
-        { className: "columns footer" },
+        "nav",
+        { className: "navbar is-transparent" },
         React.createElement(
           "div",
-          { className: "column has-text-centered" },
-          React.createElement(
-            "p",
-            null,
-            "BCI initiative is part of the Xheladin & Xhufe Morina Foundation."
-          ),
+          { className: "navbar-brand" },
           React.createElement(
             "a",
-            { href: "https://www.xhmf.org/", target: "_blank" },
-            React.createElement("img", { src: "imgs/xhmf_logo.svg",
-              alt: "Xheladin & Xhufe Morina Fondation Logo" })
+            { className: "navbar-item", href: "https://bci-i.github.io/" },
+            React.createElement("img", { src: "imgs/white_logo.svg",
+              alt: "Brain Computer Initiative Logo" })
           )
         ),
         React.createElement(
           "div",
-          { className: "column" },
+          { className: "navbar-menu" },
           React.createElement(
-            "p",
-            { className: "footer-text" },
+            "div",
+            { className: "navbar-start" },
             React.createElement(
               "a",
-              { href: "https://bci-i.github.io/about#contact-form" },
-              "About."
-            ),
-            React.createElement("br", null),
-            React.createElement(
-              "a",
-              {
-                href: "https://us21.list-manage.com/contact-form?u=41f96ef81a9e369790ea5f0bb&form_id=a809be92be7821fe4014d6da5c26beb6",
-                target: "_blank" },
-              "Contact us"
-            ),
-            "\xA0or reach out at\xA0",
-            React.createElement(
-              "a",
-              { href: "mailto:bciinit@proton.me" },
-              "bciinit@proton.me"
+              { className: "navbar-item BCII-name-navbar",
+                href: "https://bci-i.github.io/" },
+              "BCI initiative"
             )
           ),
           React.createElement(
             "div",
-            { className: "social-media" },
+            { className: "navbar-end" },
             React.createElement(
               "a",
-              { href: "https://www.linkedin.com/company/bci-initiative", target: "_blank" },
-              React.createElement("i", { className: "fab fa-linkedin social-media" })
-            ),
-            React.createElement(
-              "a",
-              { href: "https://twitter.com/BCI_init", target: "_blank" },
-              React.createElement("i", { className: "fab fa-twitter-square social-media" })
+              { className: "navbar-item navbarpage",
+                href: "https://bci-i.github.io/about" },
+              "about"
             )
           )
         )
@@ -85,9 +63,9 @@ var Footer = function (_React$Component) {
     }
   }]);
 
-  return Footer;
+  return Navbar;
 }(React.Component);
 
-var domContainer = document.querySelector('#footer');
+var domContainer = document.querySelector('#navbar-container');
 var root = ReactDOM.createRoot(domContainer);
-root.render(e(Footer));
+root.render(e(Navbar));

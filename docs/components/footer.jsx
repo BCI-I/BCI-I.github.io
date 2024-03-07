@@ -1,3 +1,5 @@
+"use strict";
+
 const e = React.createElement;
 
 class Footer extends React.Component {
