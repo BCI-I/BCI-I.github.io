@@ -25,9 +25,10 @@ body .link-no-style {
 
 .footer {
   background-color: #1E2A35 !important;
-  margin: 8em 0 0 0;
-  padding: 1rem;
+  margin: 2em 0 0 0;
+  padding: 1rem !important;
   border-top: 1px solid #c8c8c8;
+  color: white;
 }
 .footer .footer-text {
   font-size: 1.2 rem;
@@ -37,6 +38,7 @@ body .link-no-style {
   max-width: 120px !important;
   display: inline-block;
   text-decoration: underline;
+  color: #ffcc67fb;
 }
 .footer .social-media {
   color: white;
@@ -64,6 +66,7 @@ body .link-no-style {
 .highlight, .highlight-green, .highlight-salmon, .highlight-lightblue, .highlight-black, .highlight-white, .highlight-darker {
   font-weight: 550;
   padding: 0.05em 0.2em;
+  margin: 0.1em 0.1em;
 }
 
 .highlight-salmon {
@@ -117,6 +120,7 @@ body .link-no-style {
   margin-top: 0.5em;
   font-family: Nunito Sans;
   font-size: 1.3rem;
+  color: white;
 }
 
 .sep-line {
@@ -254,7 +258,6 @@ body .link-no-style {
 }
 .center-img-text-around p {
   font-size: 1.5rem;
-  font-weight: 900;
   color: white;
   margin: 0.5em 0 0.5em 0;
   width: 40% !important;
@@ -637,6 +640,8 @@ nav .BCII-name-navbar {
 .landing-content {
   max-width: 1600px;
   margin: 0 auto;
+  padding-bottom: 1em;
+  width: 90%;
 }
 
 .aim-num {
@@ -877,7 +882,7 @@ nav .BCII-name-navbar {
   background-color: white;
   color: black;
   width: 100vw;
-  padding: 2em 4em 0.2em 4em;
+  padding: 2em 4em 2em 4em;
   background-image: url(../imgs/patterns/topography_25.svg);
 }
 @media screen and (max-width: 600px) {
