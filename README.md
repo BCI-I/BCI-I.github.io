@@ -1,7 +1,7 @@
  - [x] Landing
- - [ ] Hackathon
+ - [x] Hackathon
  - [x] About
  - [ ] Hackathon Materials
 
 
- - [ ] making sure everything's linked correctly
+ - [x] making sure everything's linked correctly

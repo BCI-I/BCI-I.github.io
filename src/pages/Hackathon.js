@@ -6,15 +6,28 @@ import HackathonOverview from '../components/HackathonOverview';
 import SepLine from '../components/SepLine';
 import EventSummary from '../components/EventSummary';
 import { Red, Blue, Green, Yellow, White } from '../components/Highlights';
-import TitleLink from '../components/TitleLink';
 import Note from '../components/Note';
 import { ContentSection, ContentSubSection } from '../components/ContentSection';
-
+import { CardImage, CardVideo } from '../components/Card';
+import { ScheduleDay, ScheduleEntry } from '../components/Schedule';
+import {Sponsor, Partner} from '../components/Sponsor';
+import { SubTitleLink } from '../components/TitleLink';
 
 import Square from '../imgs/hackathon/square_one.jpg';
 import Vert from '../imgs/hackathon/vert.jpg';
 import Big from '../imgs/hackathon/big.jpg';
 import Banner from '../imgs/hackathon/banner.jpg';
+import XonVideo from '../imgs/hackathon/x.on-hero-video.mp4'
+import XonImg from '../imgs/hackathon/xon_nobg.png'
+import Duckiebot from '../imgs/hackathon/duckiebot_nobg.png'
+import BrainProducts from '../imgs/hackathon/BrainProductsLogo.svg'
+import Duckitown from '../imgs/hackathon/Duckietown-logo-2020.png'
+import Precision from '../imgs/hackathon/precision_logo.svg'
+import McGovern from '../imgs/hackathon/mcgovern_logo.svg'
+import Sandbox from '../imgs/hackathon/sandbox.png'
+import BCS from '../imgs/hackathon/bcs_logo.png'
+import YangTan from '../imgs/hackathon/Yang-Tan-Collective-Logo_Color.jpg'
+
 
 const HackathonPage = () => {
 
@@ -197,11 +210,11 @@ const HackathonPage = () => {
                             out
                             <a href="https://forms.gle/HBg5pvTfkRXiiy7h6" target="_blank"> this
                                 form </a>.
-                            Make sure that all team participants are MIT members and have 
+                            Make sure that all team participants are MIT members and have
                             <a
                                 href="https://www.eventbrite.co.uk/e/mit-bci-hackathon-tickets-796876237277?aff=oddtdtcreator"
                                 target="_blank">
-                                 signed up
+                                signed up
                             </a> for the hackathon!
                             <br /><br />
                             For those that do not have a team yet, we will assign you to one at
@@ -225,24 +238,260 @@ const HackathonPage = () => {
 
                 <ContentSubSection title="Hardware" title_id="h-hardware">
                     <p>
-                            This hackathon is unique in that it involves using brain activity to
-                            control a physical robot.
-                        </p><br/>
-                        <p>
-                            The hackathon is a competition, so to ensure a level playing field, we
-                            will provide all teams with identical hardware.
-                            You will use an <a href="https://xon-eeg.com/"
+                        This hackathon is unique in that it involves using brain activity to
+                        control a physical robot.
+                    </p><br />
+                    <p>
+                        The hackathon is a competition, so to ensure a level playing field, we
+                        will provide all teams with identical hardware.
+                        You will use an <a href="https://xon-eeg.com/"
                             target="_blank">X.on EEG </a>
-                            headset to record brain activity and a
-                            <a
+                        headset to record brain activity and a
+                        <a
                             href="https://get.duckietown.com/products/duckiebot-db21?variant=41543707099311"
                             target="_blank"> Duckiebots </a>
-                            for control.
-                        </p><br/>
+                        for control.
+                    </p><br />
 
+                    <div className="columns narrow">
+                        <div className="column">
+                            <CardVideo title="X.on EEG headset" video={XonVideo} img={XonImg} img_alt="X.on headset">
+                                The
+                                <a href="https://xon-eeg.com/"
+                                    style={{ 'textDecoration': "underline" }}
+                                    target="_blank"> X.on </a>
+                                <Blue>wireless EEG</Blue>
+                                headset by Brain Products has
+                                <Red>7 EEG channels</Red>
+                                for high-quality EEG recordings.
+                                <br />
+                            </CardVideo>
+                        </div>
+                        <div className="column">
+                            <CardImage title="Duckiebot" img={Duckiebot} img_alt="Duckiebot robot">
+                                <a
+                                    href="https://get.duckietown.com/products/duckiebot-db21?variant=41543707099311"
+                                    style={{ 'textDecoration': "underline" }}
+                                    target="_blank">Duckiebots </a>
+                                are
+                                <Yellow> affordable self-driving cars </Yellow>
+                                designed by
+                                <a href="https://duckietown.com/" target="_blank"> Duckietown </a>
+                                to promote education on self-driving vehicles.
+                            </CardImage>
+                        </div>
+                    </div>
+
+                    <Note title="Additional Information" color="green">
+                        Closer to the competition date, we will add additional information
+                        about the hardware used during the competition
+                        as well as instructions on how to use it
+                        <a href="https://bci-i.github.io/hackathon-materials"
+                            target="_blank"> here</a>.
+                    </Note>
                 </ContentSubSection>
 
+
+                <ContentSubSection title="Competition" title_id="h-comp">
+                    <p>
+                        The hackathon adopts a competitive structure.
+                        Team's performance will be scored based on how accurately and
+                        effectively they can control the robots.
+                    </p><br />
+                    <p>
+                        At the end of the competition, teams will
+                        participate in a <Red>live
+                            demonstration</Red> of their algorithm to
+                        determine the winners.
+                    </p>
+                </ContentSubSection>
+
+                <ContentSubSection title="Prizes" title_id="h-prizes">
+                    <p>
+                        Winning teams will be provided with the opportunity to participate in
+                        the MIT Sandbox Innovation Fund Program.
+                        MIT Sandbox plays a pivotal role in entrepreneurship education,
+                        extending essential funding and mentorship to empower MIT student
+                        innovators.
+                        Selected teams will gain access to the program, receiving mentorship
+                        along with a small budget to prototype their venture ideas.
+                    </p><br />
+
+                    <p>
+                        Sandbox generously offers three prizes:
+
+                        <br />
+                        &emsp;<Green>First place</Green>
+                        &ensp;&ensp;&ensp;- $1,500
+                        <br />
+                        &emsp;<Blue>Second place</Blue> - $1,000
+                        <br />
+                        &emsp;<Red>Third place</Red> &ensp;&ensp;-
+                        $500
+                    </p>
+
+
+                    <Note title="Participating in Sandbox" color="salmon">
+                        Participation in MIT Sandbox's program involves specific
+                        requirements:
+                        each team must have at least one MIT student in a leadership role
+                        and
+                        participation is conditional on proposing a venture project.
+                        Furthermore, the proposed venture project must align with Sandbox's
+                        mission and guidelines,
+                        reflecting a commitment to the values and goals of MIT Sandbox,
+                        emphasizing innovation and entrepreneurship.
+                        Teams seeking sponsorship approval <b>must submit a venture project
+                            application</b>, subject to a final review by MIT Sandbox.
+                    </Note>
+
+                    <Note title="Cash prizes" color="green">
+                        For those teams that do not meet the criteria or choose not to
+                        enroll in the Sandbox program, we're considering providing an
+                        alternative option —
+                        a cash prize of $500 (max 2 teams).
+                    </Note>
+                </ContentSubSection>
+
+                <ContentSubSection title="Schedule" title_id="h-schedule">
+                    <p>
+                        <ScheduleDay day="1" date="February 24th" />
+                        <ScheduleEntry time="10:00 - 10:30" description="Registration" />
+                        <ScheduleEntry time="10:30 - 12:00" description="Opening remarks and invited talks" />
+                        <ScheduleEntry time="12:00 - 20:00" description="Hacking" />
+                    </p>
+                    <br />
+                    <p>
+                        <ScheduleDay day="2" date="February 25th" />
+                        <ScheduleEntry time="09:00 - 09:30" description="Registration" />
+                        <ScheduleEntry time="09:30 - 16:30" description="Hacking" />
+                        <ScheduleEntry time="16:30 - 19:00" description="Competition" />
+                        <ScheduleEntry time="19:00 - 20:00" description="Awards and closing remarks" />
+                    </p>
+                    <br /><br />
+                    <p>
+                        The schedule is subject to change.
+                        We will provide snacks, hot drinks and lunch on both days.
+                    </p>
+                </ContentSubSection>
+
+                <ContentSubSection title="Preparing for the hackathon" title_id="h-prep">
+
+                    <p>
+                        Unlike traditional hackathons, in this hackathon you will need to use
+                        different bits
+                        of hardware that you might not be familiar with.
+                        To help you hit the ground running and start hacking right away, we're
+                        collecting useful resources.
+                        Check out the material we are preparing <a
+                            href="https://bci-i.github.io/hackathon-materials"
+                            target="_blank"> here</a>.
+                    </p>
+
+
+                    <Note title="Hardware requirements" color="salmon">
+                        To participate in the hackathon, each team will need at least one
+                        laptop running either Ubuntu or MacOS (Intel, not
+                        the new M chips) and an Android phone or tablet (ideally with
+                        Bluetooth 5.0 or newer). If your team does not have access to these devices,
+                        please let us know when you're
+                        <a href="https://forms.gle/HBg5pvTfkRXiiy7h6" target="_blank"> registering your team  </a>
+                        and we will try to help you out.
+                        More details about the requirements can be found <a
+                            href="https://bci-i.github.io/hackathon-materials"
+                            target="_blank"> on this page.</a>
+                    </Note>
+                </ContentSubSection>
             </ContentSection>
+
+            <ContentSection title="Our Sponsors" title_id="sponsors">
+                <p>
+                    This event would not be possible without the generous
+                    support of our sponsors.
+                    <br /><br />
+                    <Blue>Platinum</Blue> level sponsor made
+                    this event possible by
+                    lending the hardware used during the competition.
+                    The EEG headsets and robots were generously provided by
+                    the following companies.
+                    These companies are passionate about BCI and robotics
+                    and are excited
+                    to promote education and research in this field.
+                    <br /><br />
+                    <Yellow>Gold</Yellow> level sponsors financially
+                    supported the hackathon.
+                </p>
+
+
+                <div class="columns">
+                    <div class="column">
+                        <Sponsor tier="platinum"
+                            url="https://www.brainproducts.com/"
+                            logo={BrainProducts} name="Brain Products"
+                            quote="Advancing human knowledge in the field of neuroscience research."
+                        >
+                            Brain Products is a leading
+                            manufacturer of
+                            hardware and software solutions for
+                            neurophysiological research.
+                            They supported the hackathon by lending their
+                            new
+                            <a href="https://xon-eeg.com/" target="_blank"> X.on </a>
+                            wireless EEG headset.
+                        </Sponsor>
+                    </div>
+                    <div class="column">
+                        <Sponsor tier="platinum"
+                            url="https://duckietown.com/"
+                            logo={Duckitown}
+                            name="Ducketown"
+                            quote="Making the world excited about the beauty,
+                            the fun,
+                            the importance, and the challenges of
+                            robotics and AI, through learning
+                            experiences that are tangible, accessible,
+                            and inclusive."
+                        >
+
+                            Duckietown develops affordable hardware,
+                            software and educational content to promote
+                            education on robotics and self driving vehicles
+                            across the globe.
+                        </Sponsor>
+                    </div>
+                    <div class="column">
+                        <Sponsor 
+                            tier="gold" 
+                            url="https://precisionneuro.io/" 
+                            logo={Precision} 
+                            name="Precision"
+                            quote="Restoring freedom through brain–computer interfaces."
+                        >
+                                Precision Neuroscience is building a direct connection between
+                                the
+                                human brain and computers, to benefit the hundreds of millions
+                                of
+                                people worldwide suffering from neurological conditions.
+                                Established in 2021, we are a leader in the development and
+                                commercialization of brain–computer interfaces (BCI).      
+                        </Sponsor>
+                    </div>
+                </div>
+
+
+                <SubTitleLink title="Partners" id="h-partners" />
+                <p>The hackathon was supported by the following MIT Centers.</p><br/>
+                <div class="columns narrow">
+                    <Partner url="https://mcgovern.mit.edu/" img={McGovern} alt="McGovern Institute Logo" transparent="true" />
+                    <Partner url="https://sandbox.mit.edu/" img={Sandbox} alt="Sandbox Logo" />
+                </div>
+                    
+                <div class="columns narrow">
+                    <Partner url="https://bcs.mit.edu/" img={BCS} alt="Brain and Cognitive Sciences Logo" />
+                    <Partner url="https://yangtan.mit.edu/k-lisa-yang-center-for-bionics/" img={YangTan} alt="K. Lisa Yang Logo" />
+                </div>
+            </ContentSection>
+            <br /><br />
         </div>
     );
 };
