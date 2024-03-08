@@ -1,7 +1,8 @@
 import './style/style.css'
 
 import LandingPage from './pages/Landing';
-import AboutPage from './pages/About'; // Import other pages as needed
+import AboutPage from './pages/About'; 
+import HackathonPage from './pages/Hackathon';
 
 import HeadTags from './components/HeadTags';
 import Footer from './components/Footer';
@@ -20,6 +21,7 @@ function App() {
         <Routes> {/* Use Routes instead of Switch */}
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/hackathon" element={<HackathonPage />} />
         </Routes>
       </Router>
       <Footer />

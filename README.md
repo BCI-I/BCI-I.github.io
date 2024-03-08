@@ -1,6 +1,6 @@
- - [ ] Landing
+ - [x] Landing
  - [ ] Hackathon
- - [ ] About
+ - [x] About
  - [ ] Hackathon Materials
 
 

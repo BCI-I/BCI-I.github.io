@@ -7,6 +7,7 @@ import ImgTextSurround from '../components/ImgTextSurround';
 import TitleLink from '../components/TitleLink';
 import LandingEvent from '../components/LandingEvent';
 import SignupForm from '../components/SignupForm';
+import {Red, Blue, Green, Yellow} from '../components/Highlights';
 
 import globe_network from '../imgs/abstract/earth_network_2.png';
 import banner from '../imgs/hackathon/header_head_only_transp.png';
@@ -42,25 +43,25 @@ document.addEventListener('DOMContentLoaded', function() {
 const LandingPage = () => {
 
   const top_left = <span>
-                Strive to support <span className="highlight"> global education</span>
+                Strive to support <Yellow> global education</Yellow>
             and research in Brain-Computer Interfaces
   </span>
 
   const top_right = <span>
-            Ensure an inclusive and <span className="highlight-salmon">equitable
-              future</span> for BCIs.
+            Ensure an inclusive and <Red>equitable
+              future</Red> for BCIs.
   </span>
 
   const bottom_right = <span>
             Make BCI
-            <span className="highlight-lightblue">knowledge accessible to
-              everyone</span>,
+            <Blue>knowledge accessible to
+              everyone</Blue>,
             everywhere.
     </span>
 
   const bottom_left = <span>
-            Identify and <span className="highlight-green">support talented
-              individuals</span> pursuing careers in BCIs.
+            Identify and <Green>support talented
+              individuals</Green> pursuing careers in BCIs.
   </span>
 
 
