@@ -13,4 +13,15 @@ class TitleLink extends React.Component {
     }
 }
 
-export default TitleLink;
+class SubTitleLink extends React.Component {
+  render() {
+    return (
+      <a className="hackathon-subtitle clean-link" id={this.props.id}
+        href={"#" + this.props.id}>
+          {this.props.title}
+      </a>
+      );
+    }
+}
+
+export {TitleLink, SubTitleLink};

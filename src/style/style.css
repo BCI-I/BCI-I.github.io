@@ -353,6 +353,7 @@ body .link-no-style {
   border-radius: 15px;
   height: fit-content;
   padding: 1em 2em;
+  color: white;
 }
 .note-white .note-title, .note-salmon .note-title,
 .note-green .note-title, .note-lightblue .note-title, .note-highlight .note-title {
@@ -1219,6 +1220,9 @@ nav .BCII-name-navbar {
 }
 
 /* ---------------------------------- info ---------------------------------- */
+.hackathon-info {
+  color: white;
+}
 .hackathon-info .hackathon-subtitle {
   padding-left: 6rem;
   font-size: 2rem;

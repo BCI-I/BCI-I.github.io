@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import Hero from '../components/Hero';
 import SepLine from '../components/SepLine';
 import ImgTextSurround from '../components/ImgTextSurround';
-import TitleLink from '../components/TitleLink';
+import {TitleLink} from '../components/TitleLink';
 import LandingEvent from '../components/LandingEvent';
 import SignupForm from '../components/SignupForm';
 import {Red, Blue, Green, Yellow} from '../components/Highlights';

@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 import Navbar from '../components/Nav';
 import TeamMember from '../components/TeamMember';
-import TitleLink from '../components/TitleLink';
+import {TitleLink} from '../components/TitleLink';
 
 import Federico from '../imgs/federico.png';
 import Egzona from '../imgs/egzona.png';
