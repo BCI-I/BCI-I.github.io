@@ -1,6 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
+import '../style/style.css';
+import '../style/prism.css';
+
 const HeadTags = () => {
   return (
     <Helmet>
@@ -36,10 +39,13 @@ const HeadTags = () => {
               href="https://fonts.googleapis.com/css?family=DM Serif Display"/>
           <link rel="stylesheet"
               href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-          <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+
+          {/* <link rel="stylesheet" type="text/css" href="style/style.css" />
+          <link  type="text/css"  href="./style/prism.css" rel="stylesheet" /> */}
 
           <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-          {/* <script defer src="js/landing.js"></script> */}
+          
 
 
           <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
@@ -48,7 +54,6 @@ const HeadTags = () => {
             #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
           </style> */}
 
-          <link href="./prism.css" rel="stylesheet" />
       </Helmet>
   );
 };

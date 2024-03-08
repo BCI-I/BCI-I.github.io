@@ -238,7 +238,7 @@ const HackathonMaterialsPage = () => {
                     </p>
                     <br />
 
-                    <div class="imgcontainer">
+                    <div className="imgcontainer">
                         <img src={CodeImg} alt="Duckiebot" />
                     </div>
 
