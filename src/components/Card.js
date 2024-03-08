@@ -52,7 +52,7 @@ class CardImage extends React.Component {
       return (
           <div className="hardware-card whitebg">
               <h1 className="hardware-title">{this.props.title}</h1>
-              <div class="imgcontainer">
+              <div className="imgcontainer">
                 <img src={this.props.img} alt={this.props.img_alt} />
               </div>
               <p>

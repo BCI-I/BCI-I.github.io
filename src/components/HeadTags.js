@@ -48,7 +48,7 @@ const HeadTags = () => {
             #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
           </style> */}
 
-          <link  type="text/css"  href="./prism.css" rel="stylesheet" />
+          <link href="./prism.css" rel="stylesheet" />
       </Helmet>
   );
 };

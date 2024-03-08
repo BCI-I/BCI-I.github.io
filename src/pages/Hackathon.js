@@ -423,8 +423,8 @@ const HackathonPage = () => {
                 </p>
 
 
-                <div class="columns">
-                    <div class="column">
+                <div className="columns">
+                    <div className="column">
                         <Sponsor tier="platinum"
                             url="https://www.brainproducts.com/"
                             logo={BrainProducts} name="Brain Products"
@@ -440,7 +440,7 @@ const HackathonPage = () => {
                             wireless EEG headset.
                         </Sponsor>
                     </div>
-                    <div class="column">
+                    <div className="column">
                         <Sponsor tier="platinum"
                             url="https://duckietown.com/"
                             logo={Duckitown}
@@ -459,7 +459,7 @@ const HackathonPage = () => {
                             across the globe.
                         </Sponsor>
                     </div>
-                    <div class="column">
+                    <div className="column">
                         <Sponsor 
                             tier="gold" 
                             url="https://precisionneuro.io/" 
@@ -481,12 +481,12 @@ const HackathonPage = () => {
 
                 <SubTitleLink title="Partners" id="h-partners" />
                 <p>The hackathon was supported by the following MIT Centers.</p><br/>
-                <div class="columns narrow">
+                <div className="columns narrow">
                     <Partner url="https://mcgovern.mit.edu/" img={McGovern} alt="McGovern Institute Logo" transparent="true" />
                     <Partner url="https://sandbox.mit.edu/" img={Sandbox} alt="Sandbox Logo" />
                 </div>
                     
-                <div class="columns narrow">
+                <div className="columns narrow">
                     <Partner url="https://bcs.mit.edu/" img={BCS} alt="Brain and Cognitive Sciences Logo" />
                     <Partner url="https://yangtan.mit.edu/k-lisa-yang-center-for-bionics/" img={YangTan} alt="K. Lisa Yang Logo" />
                 </div>
