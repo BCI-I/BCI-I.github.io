@@ -1,15 +1,11 @@
 // NotFoundPage.js
 import React, { useEffect } from 'react';
-import { useHistory, useLocation } from 'react-router-dom';
 
 const NotFoundPage = () => {
-  const history = useHistory();
-  const location = useLocation();
-
   useEffect(() => {
     // Redirect to the modified URL with '#' before the pathname
-    history.replace(`#/${location.pathname}`);
-  }, [history, location.pathname]);
+    window.location.replace(`#${window.location.pathname}`);
+  }, []);
 
   return (
     <div>
