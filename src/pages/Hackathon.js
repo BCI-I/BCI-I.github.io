@@ -286,7 +286,7 @@ const HackathonPage = () => {
                         Closer to the competition date, we will add additional information
                         about the hardware used during the competition
                         as well as instructions on how to use it
-                        <a href="https://bci-i.github.io/hackathon-materials"
+                        <a href="https://bci-i.github.io/#/hackathon-materials"
                             target="_blank"> here</a>.
                     </Note>
                 </ContentSubSection>
@@ -384,7 +384,7 @@ const HackathonPage = () => {
                         To help you hit the ground running and start hacking right away, we're
                         collecting useful resources.
                         Check out the material we are preparing <a
-                            href="https://bci-i.github.io/hackathon-materials"
+                            href="https://bci-i.github.io/#/hackathon-materials"
                             target="_blank"> here</a>.
                     </p>
 
@@ -398,7 +398,7 @@ const HackathonPage = () => {
                         <a href="https://forms.gle/HBg5pvTfkRXiiy7h6" target="_blank"> registering your team  </a>
                         and we will try to help you out.
                         More details about the requirements can be found <a
-                            href="https://bci-i.github.io/hackathon-materials"
+                            href="https://bci-i.github.io/#/hackathon-materials"
                             target="_blank"> on this page.</a>
                     </Note>
                 </ContentSubSection>

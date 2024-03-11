@@ -105,7 +105,7 @@ const LandingPage = () => {
       <TitleLink title="Our Events" id="events" />
       <div id="landing-events">
         <LandingEvent
-          url="https://bci-i.github.io/hackathon"
+          url="https://bci-i.github.io/#/hackathon"
           color="green"
           title="MIT BCI Hackathon"
           description="MIT's first BCI hackathon."

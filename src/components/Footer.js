@@ -17,7 +17,7 @@ class Footer extends React.Component {
 
       <div className="column">
         <p className="footer-text">
-          <a href="https://bci-i.github.io/about#contact-form">About.</a>
+          <a href="https://bci-i.github.io/#/about#contact-form">About.</a>
           <br />
           <a
             href="https://us21.list-manage.com/contact-form?u=41f96ef81a9e369790ea5f0bb&form_id=a809be92be7821fe4014d6da5c26beb6"
