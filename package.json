@@ -2,7 +2,7 @@
   "name": "bcii",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://BCI-I.github.io/BCI-I.github.io",
+  "homepage": "https://bci-i.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
