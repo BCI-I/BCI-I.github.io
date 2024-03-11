@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <HeadTags />
-      <Router basename="/https://bci-i.github.io/">
+      <Router basename="https://bci-i.github.io/">
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<AboutPage />} />
