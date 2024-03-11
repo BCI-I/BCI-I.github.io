@@ -18,8 +18,8 @@ function App() {
   return (
     <div className="App">
       <HeadTags />
-      <Router>
-        <Routes> {/* Use Routes instead of Switch */}
+      <Router basename="https://bci-i.github.io/">
+        <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/hackathon" element={<HackathonPage />} />
