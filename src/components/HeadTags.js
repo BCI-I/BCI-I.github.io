@@ -1,5 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import LOGO from '../imgs/white_logo.svg';
+
 
 import '../style/style.css';
 import '../style/prism.css';
@@ -10,7 +12,7 @@ const HeadTags = () => {
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-          <link rel="icon" href="imgs/white_logo.svg" type="image/x-icon" />
+          <link rel="icon" href={LOGO} type="image/x-icon" />
 
 
           <script src="https://kit.fontawesome.com/a85270c6fc.js"
