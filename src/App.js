@@ -20,10 +20,10 @@ function App() {
       <HeadTags />
       <Router>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/hackathon" element={<HackathonPage />} />
-          <Route path="/hackathon-materials" element={<HackathonMaterialsPage />} />
+          <Route path="/bcii/" element={<LandingPage />} />
+          <Route path="/bcii/about" element={<AboutPage />} />
+          <Route path="/bcii/hackathon" element={<HackathonPage />} />
+          <Route path="/bcii/hackathon-materials" element={<HackathonMaterialsPage />} />
         </Routes>
       </Router>
       <Footer />
