@@ -4,6 +4,7 @@ import LandingPage from './pages/Landing';
 import AboutPage from './pages/About'; 
 import HackathonPage from './pages/Hackathon';
 import HackathonMaterialsPage from './pages/HackathonMaterials';
+import NotFoundPage from './pages/NotFound';
 
 import HeadTags from './components/HeadTags';
 import Footer from './components/Footer';
@@ -24,6 +25,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/hackathon" element={<HackathonPage />} />
           <Route path="/hackathon-materials" element={<HackathonMaterialsPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
       <Footer />
