@@ -9,7 +9,7 @@ import HeadTags from './components/HeadTags';
 import Footer from './components/Footer';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
