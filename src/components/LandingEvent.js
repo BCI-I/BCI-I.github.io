@@ -8,7 +8,7 @@ class LandingEvent extends React.Component {
       }
       
       return (
-          <a href={this.props.url} className="event-link" target="_blank">
+          <a href={this.props.url} className="event-link">
             <div className={"event event-" + this.props.color}>
               <div className="event-content">
                 <p className="event-title">{this.props.title}</p>
